@@ -35,7 +35,7 @@ class Header extends React.Component {
           data-aos-duration={500}
           onclick="location.replace('/')"
         >
-          <Link to="/">&lt;/hV&gt;</Link>
+          <Link to="/">SemiKolan</Link>
         </span>
         <i
           onClick={() => {

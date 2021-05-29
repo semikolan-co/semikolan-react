@@ -98,7 +98,7 @@ export default function App() {
             <Technologies num="03." />
 
             <Helmet>
-              <title>About | Harsh Vishwakarma | Pseudo Web Developer</title>
+              <title>About | SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
 
@@ -113,7 +113,7 @@ export default function App() {
             <Work num="01." removeViewMore />
 
             <Helmet>
-              <title>Work | Harsh Vishwakarma | Pseudo Web Developer</title>
+              <title>Work | SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
 
@@ -133,7 +133,7 @@ export default function App() {
 
             <Helmet>
               <title>
-                Achievements | Harsh Vishwakarma | Pseudo Web Developer
+                Achievements | SemiKolan | Pseudo Web Developer
               </title>
             </Helmet>
           </Route>
@@ -150,7 +150,7 @@ export default function App() {
             <ContactForm />
 
             <Helmet>
-              <title>Contact | Harsh Vishwakarma | Pseudo Web Developer</title>
+              <title>Contact | SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
           <Route path="/">
@@ -168,7 +168,7 @@ export default function App() {
             <Contact num="04." />
 
             <Helmet>
-              <title>Harsh Vishwakarma | Pseudo Web Developer</title>
+              <title>SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
         </Switch>
