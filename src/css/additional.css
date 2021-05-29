@@ -1,0 +1,140 @@
+.circle-chart {
+    width: 150px;
+    height: 150px;
+}
+
+.circle-chart__circle {
+    stroke: #6a7b7d;
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse;
+    /* 1 */
+    transform: rotate(-90deg);
+    /* 2, 3 */
+    transform-origin: center;
+    /* 4 */
+}
+
+.circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1, -1);
+    /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+    stroke: var(--Slate);
+    stroke-width: 2;
+    fill: none;
+}
+
+.circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+    color: var(--LightestSlate);
+}
+
+.circle-chart__percent {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 8px;
+}
+
+.circle-chart__subline {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 3px;
+}
+
+.success-stroke {
+    stroke: #00C851;
+}
+
+.warning-stroke {
+    stroke: #ffbb33;
+}
+
+.danger-stroke {
+    stroke: #ff4444;
+}
+
+@keyframes circle-chart-fill {
+    to {
+        stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes circle-chart-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills {
+    color: var(--LightestSlate);
+}
+
+.skills_section {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.skill-head {
+    margin: 80px 0;
+}
+
+.skill-head h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.skill-head p {
+    margin-bottom: 10px;
+}
+
+.skills-area {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-skill {
+    width: 25%;
+    margin-bottom: 80px;
+}
+
+.success-stroke {
+    stroke: var(--Green);
+}
+
+.circle-chart__background {
+    stroke: var(--Slate);
+    stroke-width: 1;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .skill-head {
+        margin: 50px 0;
+    }
+    .skill-head h1 {
+        font-size: 30px;
+    }
+    .skill-icon {
+        width: 50%;
+    }
+    .skill-icon i {
+        font-size: 70px;
+    }
+    .single-skill {
+        width: 50%;
+    }
+    .circle-chart {
+        width: 130px;
+        height: 130px;
+    }
+}

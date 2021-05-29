@@ -1,0 +1,176 @@
+        /* Header Start  */
+        
+        @media only screen and (max-width: 1024px) {
+            .nav01 {
+                width: 100%;
+                background-color: var(--Navy);
+            }
+            .header01>i {
+                display: block;
+            }
+            .nav01>ul {
+                display: none;
+                /* margin-top: 80px; */
+            }
+            .nav01>ul>li {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .header01 {
+                padding: 20px 20px;
+                font-size: 0.8em;
+            }
+            .header01>i {
+                padding: 10px 20px;
+            }
+        }
+        /* Header Close */
+        
+        @media only screen and (max-width: 1270px) {
+            .achievementdiv>div {
+                max-width: 270px;
+                font-size: 0.9em;
+            }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            .projectheight {
+                min-height: 350px;
+            }
+            .lottie {
+                right: 50px;
+                bottom: -50px;
+            }
+            .contactlottie {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 1150px) {
+            .projectdiv>div>div {
+                background: var(--Navy);
+                opacity: 0.8;
+            }
+            .projectheight {
+                width: 100%;
+            }
+            .projectdiv:nth-child(odd)>div:nth-child(2) {
+                right: 30px;
+            }
+            .projectdiv:nth-child(even)>div:nth-child(2) {
+                left: 30px;
+            }
+        }
+        
+        @media only screen and (max-width: 1150px) {
+            .aboutdiv {
+                flex-direction: column-reverse;
+                text-align: justify;
+                justify-content: center;
+                align-items: center;
+            }
+            .aboutdiv>div>p {
+                padding-right: 0;
+            }
+            .aboutdiv>div:first-child {
+                margin-top: 50px;
+            }
+            .container-80 {
+                width: 80vw;
+            }
+        }
+        
+        @media only screen and (max-width: 820px) {
+            .socialicons {
+                position: static;
+            }
+            .iconsdiv {
+                flex-direction: row;
+            }
+            .line {
+                display: none;
+            }
+            .container-80 {
+                width: 90vw;
+            }
+            .projectheight {
+                min-height: 0px;
+            }
+            .lottie {
+                position: static;
+            }
+            .home01 {
+                flex-direction: column;
+            }
+            .lottie-element {
+                width: 60vw;
+            }
+            .homebox01 {
+                padding-left: 10vw;
+                padding-right: 10vw;
+                font-size: 0.8em;
+            }
+            .projectdiv>div>span:nth-child(3) {
+                max-width: 400px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .homebox01 {
+                font-size: 0.7em;
+            }
+            .projectdiv>div>span:nth-child(3) {
+                max-width: 375px;
+            }
+            .titleline {
+                font-size: 1.6em;
+            }
+            .projectdiv:nth-child(odd)>div:nth-child(2) {
+                right: 10px;
+            }
+            .projectdiv:nth-child(even)>div:nth-child(2) {
+                left: 10px;
+            }
+        }
+        
+        @media only screen and (max-width: 450px) {
+            .homebox01 {
+                font-size: 0.6em;
+            }
+            .projectdiv>div>span:nth-child(3) {
+                max-width: 325px;
+            }
+            .img {
+                width: 275px;
+                height: 275px;
+            }
+            .projectdiv:nth-child(odd)>div:nth-child(2) {
+                right: 6px;
+            }
+            .projectdiv:nth-child(even)>div:nth-child(2) {
+                left: 6px;
+            }
+        }
+        
+        @media only screen and (max-width: 350px) {
+            .homebox01 {
+                font-size: 0.5em;
+            }
+            .projectdiv>div>span:nth-child(3) {
+                max-width: 290px;
+            }
+            .img {
+                width: 250px;
+                height: 250px;
+            }
+            .projectdiv:nth-child(odd)>div:nth-child(2) {
+                right: 3px;
+            }
+            .projectdiv:nth-child(even)>div:nth-child(2) {
+                left: 3px;
+            }
+        }
