@@ -6,7 +6,7 @@ export default function Footer() {
       
       <div className="socialicons">
         <div className="iconsdiv">
-          <a href="https://instagram.com/meinhoonharsh">
+          <a href="https://instagram.com/instakolan">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -14,7 +14,7 @@ export default function Footer() {
               className="fa fa-instagram"
             />
           </a>
-          <a href="https://lindedin.com/in/meinhoonharsh">
+          <a href="https://linkedin.com/company/semikolan">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -22,7 +22,7 @@ export default function Footer() {
               className="fa fa-linkedin"
             />
           </a>
-          <a href="https://github.com/meinhoonharsh">
+          <a href="https://github.com/semikolan-dev">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -30,7 +30,7 @@ export default function Footer() {
               className="fa fa-github"
             />
           </a>
-          <a href="mailto:harshprogrammer782@gmail.com">
+          <a href="mailto:contact@semikolan.co">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -38,12 +38,22 @@ export default function Footer() {
               className="far fa-envelope"
             />
           </a>
-          <a href="https://hackerrank.com/harshprogrammer">
+          
+          <a href="https://facebook.com/semikolan">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
-              className="fab fa-hackerrank"
+              className="fa fa-facebook"
+            />
+          </a>
+
+          <a href="https://twitter.com/semikolandev">
+            <i
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration={500}
+              className="fa fa-twitter"
             />
           </a>
           <a href="https:// /meinhoonharsh">
@@ -58,7 +68,7 @@ export default function Footer() {
         <div className="line"></div>
       </div>
       <span>
-        Designed with <Link to="#">♥</Link> by <a href="https://semikolan.co/harsh">Harsh Vishwakarma</a>
+        Designed with <Link to="#">♥</Link> by <a href="https://github.com/semikolan-dev">Team Semikolan</a>
       </span>
     </footer>
   );

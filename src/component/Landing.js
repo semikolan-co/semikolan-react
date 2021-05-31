@@ -39,9 +39,10 @@ function Landing(props) {
 <>
     <Typed
                 strings={[
-                    'Search for products',
-                    'Search for categories',
-                    'Search for brands']}
+                    'Web Developers',
+                    'App Developers',
+                    'Graphic Designers',
+                    'UI/UX Designers']}
                     typeSpeed={40}
                     backSpeed={50}
                     loop />
@@ -61,7 +62,7 @@ function Landing(props) {
           data-aos="fade-right"
           data-aos-duration={500}
           data-aos-anchor-placement="top-bottom"
-          href="contact.html"
+          href="contact"
         >
           {props.buttontext}
         </a>
