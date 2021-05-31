@@ -9,7 +9,7 @@ import Footer from "./component/Footer";
 import Technologies from "./component/Technologies";
 import Map from "./component/Map";
 import ContactForm from "./component/ContactForm";
-import Loader from "./component/Loader";
+import Profile from "./component/userprofile/Profile";
 import {
   BrowserRouter as Router,
   Switch,
@@ -132,9 +132,7 @@ export default function App() {
             />
 
             <Helmet>
-              <title>
-                Achievements | SemiKolan | Pseudo Web Developer
-              </title>
+              <title>Achievements | SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
 
@@ -153,6 +151,13 @@ export default function App() {
               <title>Contact | SemiKolan | Pseudo Web Developer</title>
             </Helmet>
           </Route>
+
+          <Route path="/harsh">
+            <Profile user="harsh" />
+            <Helmet>
+              <title>Harsh Vishwakarma | Pseudo Web Developer</title>
+            </Helmet>
+          </Route>
           <Route path="/">
             <Landing
               lottiename="home"
@@ -160,6 +165,7 @@ export default function App() {
               p2="Harsh Vishwakarma"
               p3="I Build Things for the Web"
               buttontext="Get in Touch"
+              IndexPage
             />
             <About num="01." />
             <Skills num="01.1" />

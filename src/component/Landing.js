@@ -5,6 +5,7 @@ import achievements from '../lottie/achievements';
 import git from '../lottie/git';
 import contact from "../lottie/contact";
 import work from "../lottie/work";
+import Typed from "react-typed";
 
 const lotties = {
   home: home,
@@ -32,9 +33,27 @@ function Landing(props) {
         <span data-aos="fade-right" data-aos-duration={500}>
           {props["p1"]}
         </span>
+        
         <span data-aos="fade-right" data-aos-duration={500}>
+    {props.IndexPage ? 
+<>
+    <Typed
+                strings={[
+                    'Search for products',
+                    'Search for categories',
+                    'Search for brands']}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    loop />
+                
+                </>
+    :
+    <>
          {props.p2}
+         </>
+}
         </span>
+
         <span data-aos="fade-right" data-aos-duration={500}>
           {props.p3}
         </span>
