@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import React, { useEffect, useState } from "react";
+import logo from '../images/logo.png'
 
 import { render } from "@testing-library/react";
 
@@ -35,7 +36,10 @@ class Header extends React.Component {
           data-aos-duration={500}
           onclick="location.replace('/')"
         >
-          <Link to="/">SemiKolan</Link>
+          <Link to="/">
+            <img src={logo} style={{ height: "40px" }} />
+            <span style={{position:"relative",left:5,top:3}}>&nbsp;SemiKolan</span>
+          </Link>
         </span>
         <i
           onClick={() => {
