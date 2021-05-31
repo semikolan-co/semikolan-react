@@ -59,7 +59,7 @@ class About extends React.Component {
      <div id="about" className="about container">
        <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
          <span>
-           <em>{this.props.num}</em>&nbsp;Skills I have
+           <em>{this.props.num}</em>&nbsp;Our Creations
          </span>
          <div className="line-horizontal" />
        </div>
@@ -102,7 +102,7 @@ class About extends React.Component {
                          x="16.91549431"
                          y={22}
                        >
-                         HTML5
+                         BLOG
                        </text>{" "}
                      </g>
                    </svg>
@@ -143,7 +143,7 @@ class About extends React.Component {
                          x="16.91549431"
                          y={22}
                        >
-                         CSS3
+                         TEMPLATES
                        </text>{" "}
                      </g>
                    </svg>
@@ -184,7 +184,7 @@ class About extends React.Component {
                          x="16.91549431"
                          y={22}
                        >
-                         PHP
+                         EXPLORE
                        </text>{" "}
                      </g>
                    </svg>
@@ -225,7 +225,7 @@ class About extends React.Component {
                          x="16.91549431"
                          y={22}
                        >
-                         JavaScript
+                         TOOLS
                        </text>{" "}
                      </g>
                    </svg>
@@ -266,7 +266,7 @@ class About extends React.Component {
                          x="16.91549431"
                          y={22}
                        >
-                         jQuery
+                         CERTIFY
                        </text>{" "}
                      </g>
                    </svg>

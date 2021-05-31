@@ -22,57 +22,27 @@ import { Helmet } from "react-helmet";
 const achievements = [
   {
     icon: "baby-carriage",
-    title: "2002",
+    title: "Web Development",
     description:
       "On 7th of August 2002, I was Born and came into this world by winning the sperm race.",
   },
   {
     icon: "school",
-    title: "2005",
+    title: "App Development",
     description:
       "Got Admission in School (D.M. Co. Ed Higher Secondary School) in Nursery Class, where I started learning things in a Structured manner",
   },
   {
     icon: "trophy",
-    title: "2014",
+    title: "Graphic Designing",
     description: "Got First Prize in a School Level Science Exhibition.",
   },
   {
     icon: "laptop-code",
-    title: "2016",
+    title: "UI/UX Designing",
     description:
       "Completed my First Course on Programming i.e. HTML. and few months after completing this course I purchased a Laptop which is going to change the route of my life.",
-  },
-  {
-    icon: "robot",
-    title: "2015",
-    description:
-      "Got the Certficae for participating in a Workshop of Electronics, which started my interest in Electronics and Robotics. This is the beginning of me in the World of Robots.",
-  },
-  {
-    icon: "book-open",
-    title: "2018",
-    description:
-      "Somehow Succesfully Completed my X with 87.4% through an MP Board Affliated School and while Studying for X, I stopped Programming which was one of the worst decision i took.",
-  },
-  {
-    icon: "award",
-    title: "2019",
-    description:
-      "Got Preeti Bhandari Award for Creative Excellence as a Scholarship by Preet ki Asha for having keen Interest Robotics and making some Innovative Project",
-  },
-  {
-    icon: "book-open",
-    title: "2020",
-    description:
-      "Completed XII and Cracked JEE MAINS with a good Score and get Admission in University Institute of Technology, Rajeev Gandhi Produgiki VishwaVidhyalaya",
-  },
-  {
-    icon: "medal",
-    title: "2021",
-    description:
-      "Got Second Prize in Devoluthon a Digital Hackathon organized by Entreprenuership Cell, Rajiv Gandhi Proudyogiki Vishwavidhyalaya.",
-  },
+  }
 ];
 
 
@@ -98,7 +68,7 @@ export default function App() {
             <Technologies num="03." />
 
             <Helmet>
-              <title>About | SemiKolan | Pseudo Web Developer</title>
+              <title>About | SemiKolan</title>
             </Helmet>
           </Route>
 
@@ -113,7 +83,7 @@ export default function App() {
             <Work num="01." removeViewMore />
 
             <Helmet>
-              <title>Work | SemiKolan | Pseudo Web Developer</title>
+              <title>Work | SemiKolan</title>
             </Helmet>
           </Route>
 
@@ -132,7 +102,7 @@ export default function App() {
             />
 
             <Helmet>
-              <title>Achievements | SemiKolan | Pseudo Web Developer</title>
+              <title>Achievements | SemiKolan</title>
             </Helmet>
           </Route>
 
@@ -161,9 +131,9 @@ export default function App() {
           <Route path="/">
             <Landing
               lottiename="home"
-              p1="Hii, My Name is "
+              p1="Hii, We are the team of "
               p2="Harsh Vishwakarma"
-              p3="I Build Things for the Web"
+              p3="We Build Things"
               buttontext="Get in Touch"
               IndexPage
             />
