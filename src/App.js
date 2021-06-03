@@ -10,6 +10,7 @@ import Technologies from "./component/Technologies";
 import Map from "./component/Map";
 import ContactForm from "./component/ContactForm";
 import Join from "./component/Join";
+import Error404 from "./component/Error404";
 import Profile from "./component/userprofile/Profile";
 import semikolan from './semikolan.json'
 import {
@@ -31,7 +32,7 @@ export default function App() {
 
       <div class="container-80">
         <Switch>
-          <Route path="/about">
+          <Route exact path="/about">
             <Landing
               lottiename="about"
               p1="This is all you need to know "
@@ -48,7 +49,7 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route path="/showcase">
+          <Route exact path="/showcase">
             <Landing
               lottiename="work"
               p1="I know you want to know, What are"
@@ -63,7 +64,7 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route path="/achievements">
+          <Route exact path="/achievements">
             <Landing
               lottiename="achievements"
               p1="All I can show you is"
@@ -82,7 +83,7 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route path="/contact">
+          <Route exact path="/contact">
             <Landing
               lottiename="contact"
               p1="Now You Would like to"
@@ -98,14 +99,14 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route path="/harsh">
+          <Route exact path="/harsh">
             <Profile user="harsh" />
             <Helmet>
               <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
-          <Route path="/join">
+          <Route exact path="/join">
             <Landing
               lottiename="join"
               p1="Currently, We are Building"
@@ -113,14 +114,14 @@ export default function App() {
               p3="Till then Join us through"
               buttontext="Scroll Down"
             />
-            <Join num="01."/>
+            <Join num="01." />
             <Helmet>
               <title>Join | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
           {/* ======================================= */}
           {/* ======================================= */}
-          <Route path="/">
+          <Route exact path="/">
             <Landing
               lottiename="home"
               p1="Hii, We are the team of "
@@ -148,6 +149,14 @@ export default function App() {
             </Helmet>
           </Route>
         </Switch>
+
+        <Route exact path="*">
+          
+          <Error404 />
+          <Helmet>
+            <title>404 | SemiKolan | Never Stop Building</title>
+          </Helmet>
+        </Route>
       </div>
       <Footer social={semikolan.social} />
     </Router>

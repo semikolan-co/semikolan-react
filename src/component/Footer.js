@@ -85,8 +85,8 @@ export default function Footer(props) {
         <div className="line"></div>
       </div>
       <span>
-        Designed with <Link to="#">&hearts;</Link> by
-        <a href="https://github.com/semikolan-dev">Semikolan</a>
+        Designed with <Link to="#">&hearts;</Link> by 
+        <a href="https://github.com/semikolan-dev"> Semikolan</a>
       </span>
     </footer>
   );
