@@ -9,7 +9,9 @@ import Footer from "./component/Footer";
 import Technologies from "./component/Technologies";
 import Map from "./component/Map";
 import ContactForm from "./component/ContactForm";
+import Join from "./component/Join";
 import Profile from "./component/userprofile/Profile";
+import semikolan from './semikolan.json'
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,32 +20,6 @@ import {
 } from "react-router-dom";
 import React from 'react';
 import { Helmet } from "react-helmet";
-
-const achievements = [
-  {
-    icon: "baby-carriage",
-    title: "Web Development",
-    description:
-      "On 7th of August 2002, I was Born and came into this world by winning the sperm race.",
-  },
-  {
-    icon: "school",
-    title: "App Development",
-    description:
-      "Got Admission in School (D.M. Co. Ed Higher Secondary School) in Nursery Class, where I started learning things in a Structured manner",
-  },
-  {
-    icon: "trophy",
-    title: "Graphic Designing",
-    description: "Got First Prize in a School Level Science Exhibition.",
-  },
-  {
-    icon: "laptop-code",
-    title: "UI/UX Designing",
-    description:
-      "Completed my First Course on Programming i.e. HTML. and few months after completing this course I purchased a Laptop which is going to change the route of my life.",
-  }
-];
 
 
 
@@ -68,11 +44,11 @@ export default function App() {
             <Technologies num="03." />
 
             <Helmet>
-              <title>About | SemiKolan</title>
+              <title>About | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
-          <Route path="/work">
+          <Route path="/showcase">
             <Landing
               lottiename="work"
               p1="I know you want to know, What are"
@@ -83,7 +59,7 @@ export default function App() {
             <Work num="01." removeViewMore />
 
             <Helmet>
-              <title>Work | SemiKolan</title>
+              <title>Work | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
@@ -97,12 +73,12 @@ export default function App() {
             />
             <Achievements
               num="01."
-              achievements={achievements}
+              achievements={semikolan.achievements}
               removeViewMore
             />
 
             <Helmet>
-              <title>Achievements | SemiKolan</title>
+              <title>Achievements | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
@@ -118,16 +94,32 @@ export default function App() {
             <ContactForm />
 
             <Helmet>
-              <title>Contact | SemiKolan | Pseudo Web Developer</title>
+              <title>Contact | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route path="/harsh">
             <Profile user="harsh" />
             <Helmet>
-              <title>Harsh Vishwakarma | Pseudo Web Developer</title>
+              <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
+
+          <Route path="/join">
+            <Landing
+              lottiename="join"
+              p1="Currently, We are Building"
+              p2="Our Own Ecosystem"
+              p3="Till then Join us through"
+              buttontext="Scroll Down"
+            />
+            <Join num="01."/>
+            <Helmet>
+              <title>Join | SemiKolan | Never Stop Building</title>
+            </Helmet>
+          </Route>
+          {/* ======================================= */}
+          {/* ======================================= */}
           <Route path="/">
             <Landing
               lottiename="home"
@@ -137,19 +129,27 @@ export default function App() {
               buttontext="Get in Touch"
               IndexPage
             />
-            <About num="01." />
-            <Skills num="01.1" />
-            <Work num="02." />
-            <Achievements num="03." achievements={achievements.slice(0, 6)} />
-            <Contact num="04." />
+            <About
+              num="01."
+              titleline="What is SemiKolan?&#129300;&#129300;"
+              content={semikolan.about.content}
+            />
+            <Skills num="02." elements={semikolan.skills} />
+
+            <Work num="03." />
+            <Achievements
+              num="04."
+              achievements={semikolan.achievements.slice(0, 6)}
+            />
+            <Contact num="5." />
 
             <Helmet>
-              <title>SemiKolan | Pseudo Web Developer</title>
+              <title>SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
         </Switch>
       </div>
-      <Footer />
+      <Footer social={semikolan.social} />
     </Router>
   );
 }

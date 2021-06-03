@@ -37,13 +37,14 @@
 .circle-chart__percent {
     alignment-baseline: central;
     text-anchor: middle;
-    font-size: 8px;
+    /* font-size: 8px; */
 }
 
 .circle-chart__subline {
     alignment-baseline: central;
     text-anchor: middle;
-    font-size: 3px;
+    font-weight:bold;
+    /* font-size: 3px; */
 }
 
 .success-stroke {

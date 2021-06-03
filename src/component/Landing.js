@@ -5,6 +5,7 @@ import achievements from '../lottie/achievements';
 import git from '../lottie/git';
 import contact from "../lottie/contact";
 import work from "../lottie/work";
+import join from "../lottie/join";
 import Typed from "react-typed";
 
 const lotties = {
@@ -14,6 +15,7 @@ const lotties = {
   git: git,
   contact: contact,
   work: work,
+  join:join
 };
 function Landing(props) {
    const clock2 = {
@@ -39,10 +41,10 @@ function Landing(props) {
 <>
     <Typed
                 strings={[
-                    'Web Developers',
-                    'App Developers',
-                    'Graphic Designers',
-                    'UI/UX Designers']}
+                    'Web Developer',
+                    'App Developer',
+                    'Graphic Designer',
+                    'UI/UX Designer']}
                     typeSpeed={40}
                     backSpeed={50}
                     loop />

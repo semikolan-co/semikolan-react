@@ -19,7 +19,7 @@ class About extends React.Component {
 
       if (percentage < 0) {
         classes = "danger-stroke circle-chart__circle--negative";
-      } else if (percentage > 0 && percentage <= 30) {
+      } else if (percentage > 0 && percentage < 30) {
         classes = "warning-stroke";
       } else {
         classes = "success-stroke";
@@ -35,15 +35,15 @@ class About extends React.Component {
         abs_percentage +
         ',100"    cx="16.9" cy="16.9" r="15.9" />' +
         '<g class="circle-chart__info">' +
-        '   <text class="circle-chart__percent" x="17.9" y="15.5" fill="#ccd6f6">' +
-        percentage_str +
-        "%</text>";
+        '<text class="circle-chart__percent" x="50%" y="15.5" font-size="0.3em" fill="#ccd6f6">'+
+        inner_text +
+        "</text>";
 
       if (inner_text) {
         svg +=
-          '<text class="circle-chart__subline" x="16.91549431" y="22" fill="#ccd6f6">' +
-          inner_text +
-          "</text>";
+          '<text class="circle-chart__subline" x="50%" y="22" font-size="0.25em" fill="#ccd6f6">' +
+          percentage_str +
+          "%</text>";
       }
 
       svg += " </g></svg>";
@@ -59,7 +59,7 @@ class About extends React.Component {
      <div id="about" className="about container">
        <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
          <span>
-           <em>{this.props.num}</em>&nbsp;Our Creations
+           <em>{this.props.num}</em>&nbsp;What we Actually do
          </span>
          <div className="line-horizontal" />
        </div>
@@ -67,252 +67,18 @@ class About extends React.Component {
          <section className="section skills">
            <div className="skills_section text-center">
              <div className="skills-area row">
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={85}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
+               {this.props.elements.map((elem, i) => {
+                 return (
+                   <div
+                     data-aos="fade-up"
+                     className="single-skill col-lg-4 col-md-4 col-sm-6"
                    >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="2,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         BLOG
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={75}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="90,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         TEMPLATES
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={45}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="85,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         EXPLORE
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={60}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="82,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         TOOLS
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={60}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="82,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         CERTIFY
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
-               <div
-                 data-aos="fade-up"
-                 className="single-skill col-lg-4 col-md-4 col-sm-6"
-               >
-                 <div className="circlechart" data-percentage={35}>
-                   <svg
-                     className="circle-chart"
-                     viewBox="0 0 33.83098862 33.83098862"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <circle
-                       className="circle-chart__background"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <circle
-                       className="circle-chart__circle success-stroke"
-                       strokeDasharray="82,100"
-                       cx="16.9"
-                       cy="16.9"
-                       r="15.9"
-                     ></circle>
-                     <g className="circle-chart__info">
-                       {" "}
-                       <text
-                         className="circle-chart__percent"
-                         x="17.9"
-                         y="15.5"
-                       />
-                       <text
-                         className="circle-chart__subline"
-                         x="16.91549431"
-                         y={22}
-                       >
-                         MySQL
-                       </text>{" "}
-                     </g>
-                   </svg>
-                 </div>
-               </div>
+                     <div className="circlechart" data-percentage={elem[1]}>
+                             {elem[0]}
+                     </div>
+                   </div>
+                 );
+               })}
              </div>
            </div>
          </section>

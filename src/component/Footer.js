@@ -1,12 +1,17 @@
 import harsh from '../images/harsh.jpg';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-export default function Footer() {
+export default function Footer(props) {
   return (
     <footer className="footer01">
-      
       <div className="socialicons">
         <div className="iconsdiv">
-          <a href="https://instagram.com/instakolan">
+          <a
+            href={
+              props.social.instagram
+                ? props.social.instagram
+                : "https://instagram.com/instakolan"
+            }
+          >
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -14,7 +19,13 @@ export default function Footer() {
               className="fa fa-instagram"
             />
           </a>
-          <a href="https://linkedin.com/company/semikolan">
+          <a
+            href={
+              props.social.linkedin
+                ? props.social.linkedin
+                : "https://linkedin.com/company/semikolan"
+            }
+          >
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -22,7 +33,13 @@ export default function Footer() {
               className="fa fa-linkedin"
             />
           </a>
-          <a href="https://github.com/semikolan-dev">
+          <a
+            href={
+              props.social.github
+                ? props.social.github
+                : "https://github.com/semikolan-dev"
+            }
+          >
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -30,7 +47,7 @@ export default function Footer() {
               className="fa fa-github"
             />
           </a>
-          <a href="mailto:contact@semikolan.co">
+          <a href={"mailto:"+  (props.social.mail ? props.social.mail : 'contact@semikolan.co')}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -38,24 +55,24 @@ export default function Footer() {
               className="far fa-envelope"
             />
           </a>
-          
-          <a href="https://facebook.com/semikolan">
+
+          <a href={props.social.youtube ? props.social.youtube : "https://youtube.com/semikolan"}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
-              className="fa fa-facebook"
+              className="fa fa-youtube"
             />
           </a>
 
-          <a href="https://twitter.com/semikolandev">
+          {/* <a href="https://twitter.com/semikolandev">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
               className="fa fa-twitter"
             />
-          </a>
+          </a> */}
           <a href="https:// /meinhoonharsh">
             <i
               data-aos-anchor-placement="top-bottom"
@@ -68,7 +85,8 @@ export default function Footer() {
         <div className="line"></div>
       </div>
       <span>
-        Designed with <Link to="#">♥</Link> by <a href="https://github.com/semikolan-dev">Team Semikolan</a>
+        Designed with <Link to="#">&hearts;</Link> by
+        <a href="https://github.com/semikolan-dev">Semikolan</a>
       </span>
     </footer>
   );

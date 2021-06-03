@@ -55,13 +55,19 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="/work">
-                <em>02.</em>&nbsp;Work
+              <Link to="/showcase
+              ">
+                <em>02.</em>&nbsp;Showcase
               </Link>
             </li>
             <li>
               <Link to="/achievements">
-                <em>03.</em>&nbsp;Achievements
+                <em>03.</em>&nbsp;Initiatives
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact">
+                <em>04.</em>&nbsp;Join
               </Link>
             </li>
             <li>

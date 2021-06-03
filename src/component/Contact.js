@@ -35,11 +35,11 @@ function Contact(props) {
         >
           <span>Get in Touch</span>
           <span>
-            Currently I am looking for any new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I'll try
-            my best to get back to you!
+            Currently we are looking for the place where the Magic Happens. And waiting for someone to send their Boat for us to reach that place.
+            <br />If you didn't get it have a Look at <a href="hijij">TVF Pitchers</a><br />
+            In short, We are always ready for new Opportunities
           </span>
-          <Link to="/contact">Contact Me</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>

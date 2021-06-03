@@ -1,0 +1,60 @@
+{
+  "about": {
+    "content": "",
+    "img": "harsh"
+  },
+  "skills": [
+    ["Think", "30"],
+    ["Design", "35"],
+    ["Code", "55"],
+    ["Debug", "45"],
+    ["Debug Again", "200"],
+    ["Hate Code", "90"],
+    ["Have Tea", "100"],
+    ["Deploy", "45"]
+  ],
+  "achievements": [
+    {
+      "icon": "baby-carriage",
+      "title": "Web Development",
+      "description": "On 7th of August 2002, I was Born and came into this world by winning the sperm race."
+    },
+    {
+      "icon": "school",
+      "title": "App Development",
+      "description": "Got Admission in School (D.M. Co. Ed Higher Secondary School) in Nursery Class, where I started learning things in a Structured manner"
+    },
+    {
+      "icon": "trophy",
+      "title": "Graphic Designing",
+      "description": "Got First Prize in a School Level Science Exhibition."
+    },
+    {
+      "icon": "laptop-code",
+      "title": "UI/UX Designing",
+      "description": "Completed my First Course on Programming i.e. HTML. and few months after completing this course I purchased a Laptop which is going to change the route of my life."
+    }
+  ],
+  "technologies": [
+    "ajax",
+    "bootstrap",
+    "jquery",
+    "python",
+    "sass",
+    "json",
+    "flask",
+    "git",
+    "github",
+    "heroku",
+    "photoshop",
+    "fontawesome"
+  ],
+  "social": {
+    "instagram": "https://instagram.com/instakolan",
+    "github": "https://github.com/semikolan-dev",
+    "linkedin": "https://linkedin.com/in/meinhoonharsh",
+    "mail": "semikolandev@gmail.com",
+    "whatsapp": "6264295091",
+    "youtube": "https://instagram.com/meinhoonharsh"
+  }
+}

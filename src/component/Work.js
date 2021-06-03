@@ -38,7 +38,7 @@ function Work(props) {
   </div>
   
   {props.removeViewMore ? "" : 
-  <center><Link to="/work" className="button" data-aos="fade-up" data-aos-duration={500}>View More</Link>
+  <center><Link to="/showcase" className="button" data-aos="fade-up" data-aos-duration={500}>View More</Link>
   </center>
 }
 </div>

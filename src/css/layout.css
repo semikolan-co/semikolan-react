@@ -582,7 +582,7 @@
     }
     
     .gitdiv>div:nth-child(2)>span:nth-child(2) {
-        font-size: 1.1em;
+        font-size: 1.2em;
         color: var(--Slate);
         margin: 10px 0;
     }
@@ -597,6 +597,12 @@
         font-weight: bold;
         border: 3px solid var(--Green);
         transition: 0.5s ease;
+    }
+
+    
+    .gitdiv>div>span>a {
+        color: var(--Green);
+        text-decoration: none;
     }
     
     .gitdiv>div:nth-child(2)>a:hover {
