@@ -11,6 +11,8 @@ import Map from "./component/Map";
 import ContactForm from "./component/ContactForm";
 import Join from "./component/Join";
 import Error404 from "./component/Error404";
+import Whatwedo from "./component/Whatwedo";
+import BongoCat from "./component/BongoCat";
 import Profile from "./component/userprofile/Profile";
 import semikolan from './semikolan.json'
 import {
@@ -40,8 +42,16 @@ export default function App() {
               p3="What I am & What I do"
               buttontext="See my Skills"
             />
-            <About num="01." removeViewMore />
-            <Skills num="02." />
+            <About
+              num="01."
+              titleline="What is SemiKolan?&#129300;&#129300;"
+              content={semikolan.about.content}
+              removeViewMore
+            />
+            <Whatwedo
+              num="03."
+              titleline="What we do"
+            />
             <Technologies num="03." />
 
             <Helmet>
@@ -49,7 +59,7 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route exact path="/showcase">
+          <Route path="/showcase">
             <Landing
               lottiename="work"
               p1="I know you want to know, What are"
@@ -64,22 +74,18 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route exact path="/achievements">
+          <Route exact path="/initiatives">
             <Landing
               lottiename="achievements"
-              p1="All I can show you is"
-              p2="My Achievements"
-              p3="Not the Best, but still Good"
+              p1="The one you might Love to use is"
+              p2="Our Initiatives"
+              p3="That are usefull to all"
               buttontext="Have a Look"
             />
-            <Achievements
-              num="01."
-              achievements={semikolan.achievements}
-              removeViewMore
-            />
+            <BongoCat />
 
             <Helmet>
-              <title>Achievements | SemiKolan | Never Stop Building</title>
+              <title>Initiatives | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
@@ -148,15 +154,14 @@ export default function App() {
               <title>SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
-        </Switch>
 
-        <Route exact path="*">
-          
-          <Error404 />
-          <Helmet>
-            <title>404 | SemiKolan | Never Stop Building</title>
-          </Helmet>
-        </Route>
+          <Route exact path="">
+            <Error404 />
+            <Helmet>
+              <title>404 | SemiKolan | Never Stop Building</title>
+            </Helmet>
+          </Route>
+        </Switch>
       </div>
       <Footer social={semikolan.social} />
     </Router>

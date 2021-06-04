@@ -45,7 +45,7 @@ function Join(props) {
                 <br />
                 In short, We are always ready for new Opportunities
               </span>
-              <Link to="/contact">Join Server</Link>
+              <Link to="https://discord.gg/4ucwSCgkse">Join Server</Link>
             </div>
           </div>
         </div>
@@ -80,7 +80,9 @@ function Join(props) {
                 <br />
                 In short, We are always ready for new Opportunities
               </span>
-              <Link to="/contact">Join Group</Link>
+              <Link to="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
+                Join Group
+              </Link>
             </div>
           </div>
         </div>
