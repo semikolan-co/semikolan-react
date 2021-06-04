@@ -5,7 +5,7 @@ function About(props) {
         <div id="achievement" className="container">
           
   <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
-    <span><em>{props.num}</em>&nbsp;Services we offer</span>
+    <span><em>{props.num}</em>&nbsp;Where we can Help you</span>
     <div className="line-horizontal" />
   </div>
   <div className="achievementdiv">

@@ -11,12 +11,12 @@
       "img": "harsh"
    },
    "skills": [
-     ["HTML", "85%"],
-     ["CSS", "85%"],
-     ["JavaScript", "85%"],
-     ["PHP", "85%"],
-     ["Python", "85%"],
-     ["jQuery", "85%"]
+     ["HTML", "85"],
+     ["CSS", "85"],
+     ["JavaScript", "85"],
+     ["PHP", "85"],
+     ["Python", "85"],
+     ["jQuery", "85"]
    ],
    "achievements": [
       {

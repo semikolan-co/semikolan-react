@@ -55,13 +55,18 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="/work">
-                <em>02.</em>&nbsp;Work
+              <Link to="/showcase">
+                <em>02.</em>&nbsp;Showcase
               </Link>
             </li>
             <li>
-              <Link to="/achievements">
-                <em>03.</em>&nbsp;Achievements
+              <Link to="/initiatives">
+                <em>03.</em>&nbsp;Initiatives
+              </Link>
+            </li>
+            <li>
+              <Link to="/join">
+                <em>04.</em>&nbsp;Join
               </Link>
             </li>
             <li>
@@ -70,7 +75,7 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <a href="/explore">Explore</a>
+              <a href="" onClick={()=> {alert("Explore Section is Under Construction");return false} }>Explore</a>
             </li>
           </ul>
         </nav>

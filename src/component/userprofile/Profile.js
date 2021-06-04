@@ -26,7 +26,7 @@ export default function App(props) {
         content={user.about.content}
         img={user.about.img}
       />
-      <Skills num="01.1" />
+      <Skills num="01.1" elements={user.skills}/>
       <Achievements num="03." achievements={user.achievements} removeViewMore />
     </>
   );
