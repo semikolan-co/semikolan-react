@@ -356,7 +356,7 @@ useEffect(() => {
     marginTop:20,
     fontWeight: 500,
     wordSpacing: "8px" }} >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta ex sit iusto sunt vel. Iure esse pariatur velit, quos ratione quis voluptatem accusamus quaerat doloremque porro error fuga commodi.
+      While we're in a hurry to put up things here, they're still in the above phase and hence we would like you to wait a while to see much more here :)
     </p>
     </div>
         </div>

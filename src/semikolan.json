@@ -15,24 +15,24 @@
   ],
   "achievements": [
     {
-      "icon": "baby-carriage",
-      "title": "Web Development",
-      "description": "On 7th of August 2002, I was Born and came into this world by winning the sperm race."
-    },
-    {
-      "icon": "school",
-      "title": "App Development",
-      "description": "Got Admission in School (D.M. Co. Ed Higher Secondary School) in Nursery Class, where I started learning things in a Structured manner"
-    },
-    {
-      "icon": "trophy",
-      "title": "Graphic Designing",
-      "description": "Got First Prize in a School Level Science Exhibition."
-    },
-    {
       "icon": "laptop-code",
+      "title": "Web Development",
+      "description": "Need an eye catching full-stack website to"
+    },
+    {
+      "icon": "mobile",
+      "title": "Android Development",
+      "description": "Our team includes native and cross platform developers to build out a mobile application you can share with the world."
+    },
+    {
+      "icon": "pen-nib",
+      "title": "Graphic Designing",
+      "description": ""
+    },
+    {
+      "icon": "pencil-ruler",
       "title": "UI/UX Designing",
-      "description": "Completed my First Course on Programming i.e. HTML. and few months after completing this course I purchased a Laptop which is going to change the route of my life."
+      "description": ""
     }
   ],
   "technologies": [
@@ -50,11 +50,11 @@
     "fontawesome"
   ],
   "social": {
-    "instagram": "https://instagram.com/instakolan",
+    "instagram": "https://instagram.com/semikolan.co",
     "github": "https://github.com/semikolan-dev",
-    "linkedin": "https://linkedin.com/in/meinhoonharsh",
-    "mail": "semikolandev@gmail.com",
-    "whatsapp": "6264295091",
+    "linkedin": "https://linkedin.com/company/semikolan",
+    "mail": "contact@semikolan.co",
+    "whatsapp": "",
     "youtube": "https://instagram.com/meinhoonharsh"
   }
 }

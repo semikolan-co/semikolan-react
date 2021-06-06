@@ -37,10 +37,10 @@ export default function App() {
           <Route exact path="/about">
             <Landing
               lottiename="about"
-              p1="This is all you need to know "
-              p2="About Me"
-              p3="What I am & What I do"
-              buttontext="See my Skills"
+              p1=""
+              p2="About Us"
+              p3="Who we are & What we do"
+              buttontext="Know more"
             />
             <About
               num="01."
@@ -62,24 +62,24 @@ export default function App() {
           <Route path="/showcase">
             <Landing
               lottiename="work"
-              p1="I know you want to know, What are"
-              p2="My Projects"
-              p3="on which I have worked on"
+              p1="Ding Ding! Presenting"
+              p2="Semikolan Showcase"
+              p3="Collection of our projects"
               buttontext="View Projects"
             />
             <Work num="01." removeViewMore />
 
             <Helmet>
-              <title>Work | SemiKolan | Never Stop Building</title>
+              <title>Showcase | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route exact path="/initiatives">
             <Landing
               lottiename="achievements"
-              p1="The one you might Love to use is"
+              p1=""
               p2="Our Initiatives"
-              p3="That are usefull to all"
+              p3="Things we're building for the world!"
               buttontext="Have a Look"
             />
             <BongoCat />
