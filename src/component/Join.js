@@ -36,14 +36,8 @@ function Join(props) {
             >
               <span>Discord Server</span>
               <span>
-                Currently we are looking for the place where the Magic Happens.
-                And waiting for someone to send their Boat for us to reach that
-                place.
+                We're building a developer's ecosystem currently through Discord where we can discuss, code, collaboration and have fun.
                 <br />
-                If you didn't get it have a Look at{" "}
-                <a href="hijij">TVF Pitchers</a>
-                <br />
-                In short, We are always ready for new Opportunities
               </span>
               <Link to="https://discord.gg/4ucwSCgkse">Join Server</Link>
             </div>
@@ -71,14 +65,8 @@ function Join(props) {
             >
               <span className="text-align-end">WhatsApp Group</span>
               <span className="text-align-end">
-                Currently we are looking for the place where the Magic Happens.
-                And waiting for someone to send their Boat for us to reach that
-                place.
+                Join us on whatsapp where we can connect.  
                 <br />
-                If you didn't get it have a Look at{" "}
-                <a href="hijij">TVF Pitchers</a>
-                <br />
-                In short, We are always ready for new Opportunities
               </span>
               <Link to="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
                 Join Group
