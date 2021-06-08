@@ -52,7 +52,7 @@ export default function App() {
               num="03."
               titleline="What we do"
             />
-            <Technologies num="03." />
+            <Technologies num="03." technologies={semikolan.technologies}/>
 
             <Helmet>
               <title>About | SemiKolan | Never Stop Building</title>

@@ -1,4 +1,4 @@
-import harsh from '../images/harsh.jpg';
+import harsh from '../images/about.png';
 import { Link } from "react-router-dom";
 function About(props) {
   return (
