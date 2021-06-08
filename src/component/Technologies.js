@@ -13,22 +13,21 @@ import fontawesome from "../images/technologies/fontawesome.png";
 import Flutter from "../images/technologies/flutter.png";
 import Kotlin from "../images/technologies/kotlin.png";
 import Java from "../images/technologies/java.png";
-import Django from "../images/technologies/django.png";
+import Django from "../images/technologies/dj.png";
 import Reactlogo from "../images/technologies/react.png";
-import ReactNative from "../images/technologies/react_native.png";
+import ReactNative from "../images/technologies/reactive_native.png";
 import Figma from "../images/technologies/figma.png";
-import Adobexd from "../images/technologies/adobe.png";
+import Adobexd from "../images/technologies/adobe_xd.png";
 import Replit from "../images/technologies/replit.png";
 import Azure from "../images/technologies/azure.png";
-import Photoshop from "../images/technologies/photoshop.png";
 import Illustrator from "../images/technologies/illustrator.png";
-import Netlify from "../images/technologies/netlify.png";
+import Netlify from "../images/technologies/netify.png";
 import Firebase from "../images/technologies/firebase.png";
-import Mongodb from "../images/technologies/mongodb.png";
+import Mongodb from "../images/technologies/mongo_db.png";
 import Csharp from "../images/technologies/csharp.png";
 import C from "../images/technologies/c.png";
-import Cpp from "../images/technologies/cpp.png";
-import Blender from "../images/technologies/blender.png";
+import Cpp from "../images/technologies/c++.png";
+import Blender from "../images/technologies/blender-.png";
 
 
 import React from 'react'
@@ -57,7 +56,6 @@ export default class extends React.Component {
     adobexd:Adobexd,
     replit:Replit,
     azure:Azure,
-    photoshop:Photoshop,
     illustrator:Illustrator,
     netlify:Netlify,
     firebase:Firebase,
