@@ -16,23 +16,33 @@
   "achievements": [
     {
       "icon": "laptop-code",
-      "title": "Web Development",
-      "description": "Need an eye catching full-stack website to"
+      "title": "Build",
+      "description": "We can help you in Building your Websites, Mobile Applications, Graphical Designs, User Interfaces and much more."
     },
     {
       "icon": "mobile",
-      "title": "Android Development",
-      "description": "Our team includes native and cross platform developers to build out a mobile application you can share with the world."
+      "title": "Debug",
+      "description": "Experiencing any Issues while Building??? Reach out to us and we'll help you to figure out things."
     },
     {
       "icon": "pen-nib",
-      "title": "Graphic Designing",
-      "description": ""
+      "title": "Deploy",
+      "description": "We can help you in turning your Ideas into Reality by bringing Code into Action"
     },
     {
       "icon": "pencil-ruler",
-      "title": "UI/UX Designing",
-      "description": ""
+      "title": "Support",
+      "description": "Facing Trouble while setting things Right or accessing any Product or Services, we'll help you to get things done. "
+    },
+    {
+      "icon": "pencil-ruler",
+      "title": "Maintain",
+      "description": "We can help you in keep things maintained right on track so that they will run smoothly."
+    },
+    {
+      "icon": "pencil-ruler",
+      "title": "Explore",
+      "description": "We can help you to gain Exposure, connect with a community where we can Discuss, Code, Collaborate and have fun at Explore."
     }
   ],
   "technologies": [

@@ -265,6 +265,7 @@
     .homebox01 {
         padding: 150px 0;
         display: flex;
+        width: 100%;
         flex-direction: column;
     }
     
@@ -284,6 +285,7 @@
         color: var(--Slate);
         font-weight: bolder;
         font-size: 4em;
+        width: calc(100% - 200px);
     }
     
     .homebox01>a {
@@ -587,10 +589,11 @@
         margin: 10px 0;
     }
     
-    .gitdiv>div:nth-child(2)>a {
+    .gitdiv>div:nth-child(2)>button {
         font-size: 1.1em;
         color: var(--Green);
         padding: 10px 20px;
+        background: transparent;
         border-radius: 10px;
         margin: 10px 0;
         text-decoration: none;
@@ -605,7 +608,7 @@
         text-decoration: none;
     }
     
-    .gitdiv>div:nth-child(2)>a:hover {
+    .gitdiv>div:nth-child(2)>button:hover {
         color: var(--Green);
         text-decoration: none;
         border: 3px dashed var(--Green);

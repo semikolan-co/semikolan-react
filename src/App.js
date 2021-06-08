@@ -37,7 +37,7 @@ export default function App() {
           <Route exact path="/about">
             <Landing
               lottiename="about"
-              p1=""
+              p1="This is all you need to know"
               p2="About Us"
               p3="Who we are & What we do"
               buttontext="Know more"

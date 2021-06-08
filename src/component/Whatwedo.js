@@ -130,7 +130,7 @@ useEffect(() => {
           </svg>
           <p
             style={{ 
-    fontSize: "1.1em",
+    fontSize: "1.5em",
     maxWidth:600,
     textAlign:"center",
     margin:"auto",
@@ -138,9 +138,9 @@ useEffect(() => {
     fontWeight: 500,
     wordSpacing: "8px"}}
           >
-            Tell us a rhyme
-            More bitter and sweet
-            We're developers
+            Tell us a rhyme<br />
+            More bitter and sweet<br />
+            We're developers<br />
             We only Eat, Build, Sleep and Repeat
           </p>
         </div>
