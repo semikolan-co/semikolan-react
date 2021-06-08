@@ -21,10 +21,6 @@ function About(props) {
            ); 
         })}
   </div>
-  {props.removeViewMore ? "" : 
-  <center><Link to="/achievements" className="button" data-aos="fade-up" data-aos-duration={500}>View
-      More</Link></center>
-}
 </div>
 
   );

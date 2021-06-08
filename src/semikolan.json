@@ -20,27 +20,27 @@
       "description": "We can help you in Building your Websites, Mobile Applications, Graphical Designs, User Interfaces and much more."
     },
     {
-      "icon": "mobile",
+      "icon": "bug",
       "title": "Debug",
       "description": "Experiencing any Issues while Building??? Reach out to us and we'll help you to figure out things."
     },
     {
-      "icon": "pen-nib",
+      "icon": "cloud",
       "title": "Deploy",
       "description": "We can help you in turning your Ideas into Reality by bringing Code into Action"
     },
     {
-      "icon": "pencil-ruler",
+      "icon": "question",
       "title": "Support",
       "description": "Facing Trouble while setting things Right or accessing any Product or Services, we'll help you to get things done. "
     },
     {
-      "icon": "pencil-ruler",
+      "icon": "sliders-h",
       "title": "Maintain",
       "description": "We can help you in keep things maintained right on track so that they will run smoothly."
     },
     {
-      "icon": "pencil-ruler",
+      "icon": "map-signs",
       "title": "Explore",
       "description": "We can help you to gain Exposure, connect with a community where we can Discuss, Code, Collaborate and have fun at Explore."
     }
