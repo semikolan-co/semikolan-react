@@ -70,7 +70,7 @@ function Landing(props) {
           data-aos="fade-right"
           data-aos-duration={500}
           data-aos-anchor-placement="top-bottom"
-          href="contact"
+          href={props.redirect}
         >
           {props.buttontext}
         </a>

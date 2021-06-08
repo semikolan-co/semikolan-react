@@ -37,6 +37,7 @@ export default function App() {
           <Route exact path="/about">
             <Landing
               lottiename="about"
+              redirect="#about"
               p1="This is all you need to know"
               p2="About Us"
               p3="Who we are & What we do"
@@ -62,6 +63,7 @@ export default function App() {
           <Route path="/showcase">
             <Landing
               lottiename="work"
+              redirect="#work"
               p1="Ding Ding! Presenting"
               p2="Semikolan Showcase"
               p3="Collection of our projects"
@@ -77,6 +79,7 @@ export default function App() {
           <Route exact path="/initiatives">
             <Landing
               lottiename="achievements"
+              redirect="#billi"
               p1=""
               p2="Our Initiatives"
               p3="Things we're building for the world!"
@@ -92,6 +95,7 @@ export default function App() {
           <Route exact path="/contact">
             <Landing
               lottiename="contact"
+              redirect="#contact"
               p1="Now You Would like to"
               p2="Contact Us"
               p3="Send your Query"
@@ -115,6 +119,7 @@ export default function App() {
           <Route exact path="/join">
             <Landing
               lottiename="join"
+              redirect="#work"
               p1="Currently, We are Building"
               p2="Our Own Ecosystem"
               p3="Till then Join us through"
@@ -130,6 +135,7 @@ export default function App() {
           <Route exact path="/">
             <Landing
               lottiename="home"
+              redirect="contact"
               p1="Hii, We are the team of "
               p2="Harsh Vishwakarma"
               p3="We Build Things"
