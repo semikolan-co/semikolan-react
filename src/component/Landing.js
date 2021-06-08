@@ -7,6 +7,9 @@ import contact from "../lottie/contact";
 import work from "../lottie/work";
 import join from "../lottie/join";
 import Typed from "react-typed";
+import AOS from 'aos';
+import React, { useEffect, useState } from "react";
+
 
 const lotties = {
   home: home,
@@ -18,6 +21,9 @@ const lotties = {
   join:join
 };
 function Landing(props) {
+  useEffect(() => {
+    AOS.init()
+  } );
    const clock2 = {
      loop: true,
      autoplay: true,
