@@ -25,7 +25,7 @@ function About(props) {
               and Tech Enthusiasts passionate about building <Link to="/initiatives">Technical Stuffs</Link>.
             </p>
             <p>
-              We encourage anyone with an aptitute for learning to join our community and join our mission to code for the better.
+              We encourage anyone with an aptitute for learning to <a href="/join" >join</a> our community and join our mission to code for the better.
             </p>
             </>
           )}
