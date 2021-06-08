@@ -1,8 +1,9 @@
 import Lottie from "react-lottie";
 import discord from "../lottie/discord";
 import whatsapp from "../lottie/whatsapp";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function Join(props) {
+
   const gitdiscord = {
     loop: true,
     autoplay: true,
@@ -36,10 +37,10 @@ function Join(props) {
             >
               <span>Discord Server</span>
               <span>
-                We're building a developer's ecosystem currently through Discord where we can discuss, code, collaboration and have fun.
+                We're building a Developer's Ecosystem currently through Discord where we can Discuss, Code, Collaborate and have fun.
                 <br />
               </span>
-              <Link to="https://discord.gg/4ucwSCgkse">Join Server</Link>
+              <a href="https://discord.gg/4ucwSCgkse">Join Server</a>
             </div>
           </div>
         </div>
@@ -65,12 +66,13 @@ function Join(props) {
             >
               <span className="text-align-end">WhatsApp Group</span>
               <span className="text-align-end">
-                Join us on whatsapp where we can connect.  
+                Be a part of SemiKolan, Get Connected with us Personally.
+                Join our Developers Group on Whatsapp.  
                 <br />
               </span>
-              <Link to="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
+              <a href="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
                 Join Group
-              </Link>
+              </a>
             </div>
           </div>
         </div>
