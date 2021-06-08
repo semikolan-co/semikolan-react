@@ -5,7 +5,7 @@ function Work(props) {
   return (
         <div id="work" className="about container">
   <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
-    <span><em>{props.num}</em>&nbsp;Some Things I've Built</span>
+    <span><em>{props.num}</em>&nbsp;Things We've Built</span>
     <div className="line-horizontal" />
   </div>
   <div className="workdiv">
@@ -15,11 +15,11 @@ function Work(props) {
         <div className="projectheight" />
       </div>
       <div className="projectheight" data-aos="fade-right" data-aos-duration={500}>
-        <span>Shopping Website</span>
-        <span>Urbn Farm</span>
-        <span>It is a Website used Lorem ipsum dolor sit amet consectetur adipi</span>
-        <span>PHP&nbsp;JS&nbsp;HTML</span>
-        <span><a href><i className="fa fa-github" /></a>&nbsp;&nbsp;<a href><i className="fa fa-external-link-alt" /></a></span>
+        <span>Healthcare</span>
+        <span>Care 4 Covid</span>
+        <span>Care4Covid is a Realtime Statistical Website for Analysis of Covid-19 (Sars-Cov-2). It is an attempt to help people stay updated with the Covid-19 Analytics.</span>
+        <span>Flask&nbsp;JS&nbsp;HTML</span>
+        <span><a target="_blank" href="https://github.com/semikolan-dev/care4covid"><i className="fa fa-github" /></a>&nbsp;&nbsp;<a target="_blank" href="https://care4covid.co"><i className="fa fa-external-link-alt" /></a></span>
       </div>
     </div>
     <div className="projectdiv projectheight">
@@ -28,11 +28,11 @@ function Work(props) {
         <div className="projectheight" />
       </div>
       <div className="projectheight" data-aos="fade-left" data-aos-duration={500}>
-        <span>Blog Website</span>
-        <span>Circuit Reboot</span>
-        <span>It is a Website used Lorem ipsum dolor sit amet consectetur adipi</span>
+        <span>Shopping Website</span>
+        <span>Urbnfarm</span>
+        <span>It is an e-commerce Website where you can order fresh vegetables  Bhopal.</span>
         <span>PHP&nbsp;JS&nbsp;HTML</span>
-        <span><a href><i className="fa fa-github" /></a>&nbsp;&nbsp;<a href><i className="fa fa-external-link-alt" /></a></span>
+        <span><a target="_blank" href="https://urbfarm.in"><i className="fa fa-external-link-alt" /></a></span>
       </div>
     </div>
   </div>

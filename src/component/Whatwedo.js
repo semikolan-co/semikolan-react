@@ -138,10 +138,10 @@ useEffect(() => {
     fontWeight: 500,
     wordSpacing: "8px"}}
           >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            aliquid nobis porro nisi sint aspernatur minima, consequuntur
-            temporibus molestias aliquam, animi hic dignissimos ipsum laboriosam
-            sit, eligendi sed quas laborum.
+            Tell us a rhyme
+            More bitter and sweet
+            We're developers
+            We only Eat, Build, Sleep and Repeat
           </p>
         </div>
       </>
