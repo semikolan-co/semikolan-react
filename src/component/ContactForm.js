@@ -47,7 +47,7 @@ function Contact(props) {
     <div className="col-lg-6 col-md-6 col-sm-12 form-group" data-aos="fade-left" data-aos-duration={500}>
       <span>Contact Us</span>
       <input type="text" name="name" className="form-control mt-3" placeholder="Your Name" required />
-      <input type="text" name="email" className="form-control mt-3" placeholder="Your Name" required />
+      <input type="email" name="email" className="form-control mt-3" placeholder="Your Email" required />
       <textarea name="message" className="form-control mt-3" rows={3} placeholder="Your Message" defaultValue={""} required />
       <button href="#" type="submit" className="mt-3">Send Query</button>
     </div>

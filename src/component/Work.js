@@ -32,7 +32,7 @@ function Work(props) {
         <span>Urbnfarm</span>
         <span>It is an e-commerce Website where you can order fresh vegetables  Bhopal.</span>
         <span>PHP&nbsp;JS&nbsp;HTML</span>
-        <span><a target="_blank" href="https://urbfarm.in"><i className="fa fa-external-link-alt" /></a></span>
+        <span><a target="_blank" href="https://urbnfarm.in"><i className="fa fa-external-link-alt" /></a></span>
       </div>
     </div>
   </div>

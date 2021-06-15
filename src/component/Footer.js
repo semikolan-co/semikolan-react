@@ -1,6 +1,28 @@
-import harsh from '../images/harsh.jpg';
+import API from "./API";
+import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function Footer(props) {
+  
+  function subscribeUser  (event)  {
+    event.preventDefault();
+    const email = document.querySelector("input[name=subscriberemail]").value;
+    API.post(`subscribeuser`, { email })
+      .then((res) => {
+        alert(
+          "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
+        );
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert(
+          `We're Sorry, Currently we are unable to subscribe you \n
+        It is happened due to -- ` + error
+        );
+      })
+      .then(function () {
+        // always executed
+      });
+  };
   return (
     <footer className="footer01">
       <div className="socialicons">
@@ -47,7 +69,12 @@ export default function Footer(props) {
               className="fa fa-github"
             />
           </a>
-          <a href={"mailto:"+  (props.social.mail ? props.social.mail : 'contact@semikolan.co')}>
+          <a
+            href={
+              "mailto:" +
+              (props.social.mail ? props.social.mail : "contact@semikolan.co")
+            }
+          >
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -55,16 +82,48 @@ export default function Footer(props) {
               className="far fa-envelope"
             />
           </a>
-
-          <a href={props.social.youtube ? props.social.youtube : "https://youtube.com/semikolan"}>
+          <a
+            href={
+              props.social.youtube
+                ? props.social.youtube
+                : "https://youtube.com/semikolan"
+            }
+          >
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
               className="fa fa-youtube"
             />
+          </a>{" "}
+          <a
+            href={
+              props.social.discord
+                ? props.social.discord
+                : "https://discord.gg/4ucwSCgkse"
+            }
+          >
+            <i
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration={500}
+              className="fab fa-discord"
+            />
+          </a>{" "}
+          <a
+            href={
+              props.social.twitter
+                ? props.social.twitter
+                : "https://twitter.com/semikolanco"
+            }
+          >
+            <i
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration={500}
+              className="fa fa-twitter"
+            />
           </a>
-
           {/* <a href="https://twitter.com/semikolandev">
             <i
               data-aos-anchor-placement="top-bottom"
@@ -73,22 +132,34 @@ export default function Footer(props) {
               className="fa fa-twitter"
             />
           </a> */}
-          <a href="https:// /meinhoonharsh">
+          {/* <a href="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
               className="fa fa-whatsapp"
             />
-          </a>
+          </a> */}
         </div>
         <div className="line"></div>
       </div>
+
+
+          
       <span>
-        Designed with <Link to="#">&hearts;</Link> by 
+      <form onSubmit={subscribeUser}>
+        <div className="newsletterdiv">
+
+          <input name="subscriberemail" type="email" placeholder="Your Email" /><div className="buttonn" >Subscribe</div>
+        </div>
+       </form>
+        <div>
+        Designed with <Link to="#">&hearts;</Link> by
         <a href="https://github.com/semikolan-dev"> Semikolan</a>
+        </div>
       </span>
     </footer>
   );
 }
+
 
