@@ -2,8 +2,7 @@ import API from "./API";
 import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function Footer(props) {
-  
-  function subscribeUser  (event)  {
+  function subscribeUser(event) {
     event.preventDefault();
     const email = document.querySelector("input[name=subscriberemail]").value;
     API.post(`subscribeuser`, { email })
@@ -22,9 +21,9 @@ export default function Footer(props) {
       .then(function () {
         // always executed
       });
-  };
+  }
   return (
-    <footer className="footer01">
+    <footer className="footer01" id="footer">
       <div className="socialicons">
         <div className="iconsdiv">
           <a
@@ -144,22 +143,30 @@ export default function Footer(props) {
         <div className="line"></div>
       </div>
 
-
-          
       <span>
-      <form onSubmit={subscribeUser}>
-        <div className="newsletterdiv">
-
-          <input name="subscriberemail" type="email" placeholder="Your Email" /><div className="buttonn" >Subscribe</div>
+        <div className="subscribediv  container-80">
+          <span>
+            Subscribe to the Semikolan Weekly NewsLetter for Developers
+          </span>
+          <form id="subscriberform" onSubmit={subscribeUser}>
+            <div className="newsletterdiv">
+              <input
+                name="subscriberemail"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <button className="buttonn" type="submit">
+                Subscribe
+              </button>
+            </div>
+          </form>
         </div>
-       </form>
         <div>
-        Designed with <Link to="#">&hearts;</Link> by
-        <a href="https://github.com/semikolan-dev"> Semikolan</a>
+          Designed with <Link to="#">&hearts;</Link> by
+          <a href="https://github.com/semikolan-dev"> Semikolan</a>
         </div>
       </span>
     </footer>
   );
 }
-
-

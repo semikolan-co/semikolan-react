@@ -681,7 +681,6 @@
         transition: 0.5s ease;
         justify-content:center;
         position:relative;
-        margin-bottom:30px;
     }
     .footer01>span a {
         color: var(--Green);
@@ -700,6 +699,7 @@
     .newsletterdiv input::placeholder{
         color:var(--LightestSlate)
     }
+
     
     .newsletterdiv .buttonn {
         padding: 10px 20px;
@@ -726,7 +726,18 @@
         border: 3px dashed var(--Green);
     }
     
-    
+    .subscribediv{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+
+        margin-bottom:40px;
+    }
+    .subscribediv>span{
+        font-size:1.38em;
+        padding-right:10%;
+        text-align:left
+    }
     /* ------------------------------------------------- ----------------------------*/
     /* ------------------------------------------------- ----------------------------*/
     /* ------------------------------------------------- ----------------------------*/
