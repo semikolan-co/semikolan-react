@@ -77,7 +77,7 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <a href="" onClick={()=> {alert("Explore Section is Under Construction");return false} }>Explore</a>
+              <a href="https://explore.semikolan.co">Explore</a>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,6 @@
 
-import '../css/404.css'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "../css/404.css";
 
 export default function Error404(){
 
@@ -16,13 +17,13 @@ export default function Error404(){
                 src="http://salehriaz.com/404Page/img/404.svg"
                 width="300px"
               />
-              <a
-                href="http://salehriaz.com/404Page/404.html"
+              <Link
+                to="/"
                 className="btn-go-home"
                 target="_blank"
               >
                 GO BACK HOME
-              </a>
+              </Link>
             </div>
             <div className="objects">
               <img
