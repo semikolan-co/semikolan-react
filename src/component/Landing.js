@@ -21,9 +21,31 @@ const lotties = {
   join:join
 };
 function Landing(props) {
+  // const [typedController,setTypedController] = useState();
+  var typedController;
   useEffect(() => {
+
+    if(props.IndexPage){
+    console.log('jhjhjhkjkj')
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 300){
+        console.log(window.scrollY)
+        typedController.stop();
+        }else{
+        typedController.start();
+        console.log("00000");
+        }
+    }, true);
+  }
+
+
     AOS.init()
-  } );
+
+
+
+
+
+  } ,[]);
    const clock2 = {
      loop: true,
      autoplay: true,
@@ -41,26 +63,29 @@ function Landing(props) {
         <span data-aos="fade-right" data-aos-duration={500}>
           {props["p1"]}
         </span>
-        
+
         <span data-aos="fade-right" data-aos-duration={500}>
-    {props.IndexPage ? 
-<>
-    <Typed
+          {props.IndexPage ? (
+            <>
+              <Typed
                 strings={[
-                    'Web Developer',
-                    'App Developer',
-                    'Graphic Designer',
-                    'UI/UX Designer']}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop />
-                
-                </>
-    :
-    <>
-         {props.p2}
-         </>
-}
+                  "Web Developer",
+                  "App Developer",
+                  "Graphic Designer",
+                  "UI/UX Designer",
+                ]}
+                typeSpeed={40}
+                backSpeed={50}
+                typedRef={(typed) => {
+                  // setTypedController(typed);
+                  typedController = typed;
+                }}
+                loop
+              />
+            </>
+          ) : (
+            <>{props.p2}</>
+          )}
         </span>
 
         <span data-aos="fade-right" data-aos-duration={500}>
