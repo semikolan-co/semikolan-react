@@ -730,13 +730,15 @@
         display:flex;
         justify-content:space-around;
         align-items:center;
-        flex-wrap:wrap;
         margin-bottom:40px;
+        max-width:95%;
     }
     .subscribediv>span{
-        font-size:1.38em;
+        color:var(--LightestSlate);
+        font-size:1.28em;
         padding-right:10%;
         text-align:left
+        
     }
     /* ------------------------------------------------- ----------------------------*/
     /* ------------------------------------------------- ----------------------------*/
