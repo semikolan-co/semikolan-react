@@ -13,6 +13,7 @@ import Join from "./component/Join";
 import Error404 from "./component/Error404";
 import Whatwedo from "./component/Whatwedo";
 import BongoCat from "./component/BongoCat";
+import Introduce from "./component/Introduce";
 import Profile from "./component/userprofile/Profile";
 import semikolan from './semikolan.json'
 import {
@@ -30,11 +31,10 @@ export default function App() {
  
   return (
     <Router>
-      <Header />
-
       <div class="container-80">
         <Switch>
           <Route exact path="/about">
+            <Header />
             <Landing
               lottiename="about"
               redirect="#about"
@@ -49,18 +49,17 @@ export default function App() {
               content={semikolan.about.content}
               removeViewMore
             />
-            <Whatwedo
-              num="03."
-              titleline="What we do"
-            />
-            <Technologies num="03." technologies={semikolan.technologies}/>
+            <Whatwedo num="03." titleline="What we do" />
+            <Technologies num="03." technologies={semikolan.technologies} />
 
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>About | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route path="/showcase">
+            <Header />
             <Landing
               lottiename="work"
               redirect="#work"
@@ -71,12 +70,14 @@ export default function App() {
             />
             <Work num="01." removeViewMore />
 
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>Showcase | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route exact path="/initiatives">
+            <Header />
             <Landing
               lottiename="achievements"
               redirect="#billi"
@@ -87,12 +88,14 @@ export default function App() {
             />
             <BongoCat />
 
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>Initiatives | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route exact path="/contact">
+            <Header />
             <Landing
               lottiename="contact"
               redirect="#contact"
@@ -104,6 +107,7 @@ export default function App() {
             <Map />
             <ContactForm />
 
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>Contact | SemiKolan | Never Stop Building</title>
             </Helmet>
@@ -111,12 +115,14 @@ export default function App() {
 
           <Route exact path="/harsh">
             <Profile user="harsh" />
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
           <Route exact path="/join">
+            <Header />
             <Landing
               lottiename="join"
               redirect="#work"
@@ -126,6 +132,13 @@ export default function App() {
               buttontext="Scroll Down"
             />
             <Join num="01." />
+            <Footer social={semikolan.social} />
+            <Helmet>
+              <title>Join | SemiKolan | Never Stop Building</title>
+            </Helmet>
+          </Route>
+          <Route exact path="/introduce">
+            <Introduce />
             <Helmet>
               <title>Join | SemiKolan | Never Stop Building</title>
             </Helmet>
@@ -133,6 +146,7 @@ export default function App() {
           {/* ======================================= */}
           {/* ======================================= */}
           <Route exact path="/">
+            <Header />
             <Landing
               lottiename="home"
               redirect="contact"
@@ -156,6 +170,7 @@ export default function App() {
             />
             <Contact num="5." />
 
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>SemiKolan | Never Stop Building</title>
             </Helmet>
@@ -163,13 +178,14 @@ export default function App() {
 
           <Route exact path="">
             <Error404 />
+
+            <Footer social={semikolan.social} />
             <Helmet>
               <title>404 | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
         </Switch>
       </div>
-      <Footer social={semikolan.social} />
     </Router>
   );
 }
