@@ -16,8 +16,32 @@ import {
   CRow
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
+import API from "./API";
+
 
 const Register = () => {
+   
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const name = document.querySelector("input[name=name]").value;
+    const email = document.querySelector("input[name=email]").value;
+    API.post(`introduce`, { name, email})
+      .then((res) => {
+        alert(
+          "Your Query has been registered success. Our Team will contact you soon"
+        );
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert(
+          `We're Sorry, Your query has not been Registered \n
+        It is happened due to -- ` + error
+        );
+      })
+      .then(function () {
+        // always executed
+      });
+  };
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
       <CContainer>
@@ -25,7 +49,7 @@ const Register = () => {
           <CCol md="10" lg="8" xl="8">
             <CCard className="mx-4">
               <CCardBody className="p-4">
-                <CForm>
+                <CForm onSubmit={handleSubmit}>
                   <center>
                     <h1>Introduce Yourself</h1>
                   </center>
@@ -37,7 +61,7 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Name" />
+                    <Input name="name" placeholder="Name" required />
                   </InputGroup>
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
@@ -45,7 +69,7 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Email" />
+                    <Input name="email" type="email" placeholder="Email"  required />
                   </InputGroup>
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
@@ -53,16 +77,7 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="College" />
-                  </InputGroup>
-
-                  <InputGroup className="mb-2 mt-1">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="fa fa-user p-1" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Branch" />
+                    <Input name="college" placeholder="College"  required />
                   </InputGroup>
 
                   <InputGroup className="mb-2 mt-1">
@@ -71,7 +86,16 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Year" />
+                    <Input name="branch" placeholder="Branch"  required />
+                  </InputGroup>
+
+                  <InputGroup className="mb-2 mt-1">
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
+                        <i className="fa fa-user p-1" />
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input name="year" placeholder="Year"  required />
                   </InputGroup>
 
                   <p className="text-muted mt-4 mb-0">Social Info</p>
@@ -82,7 +106,7 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Branch" />
+                    <Input name="linkedin" placeholder="Branch"  required />
                   </InputGroup>
 
                   <InputGroup className="mb-2 mt-1">
@@ -91,7 +115,7 @@ const Register = () => {
                         <i className="fa fa-user p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Year" />
+                    <Input name="github" placeholder="Year"  required />
                   </InputGroup>
 
                   <FormGroup>
@@ -100,10 +124,10 @@ const Register = () => {
                     </Label>
                     <Input
                       type="textarea"
-                      name="text"
+                      name="about"
                       id="exampleText"
                       placeholder="What I Am & What I do"
-                    />
+                     required />
                   </FormGroup>
                   <FormGroup>
                     <Label for="exampleText" className="text-muted mt-2">
@@ -111,7 +135,7 @@ const Register = () => {
                     </Label>
                     <Input
                       type="textarea"
-                      name="text"
+                      name="other"
                       id="exampleText"
                       placeholder="What I Am & What I do"
                     />
@@ -119,13 +143,15 @@ const Register = () => {
 
                   <FormGroup check>
                     <Label check>
-                      <Input type="checkbox" className="mt-1" /> Check me out
+                      <Input name="newsletter" type="checkbox" className="mt-1" />{" "}
+                      Check me out
                     </Label>
                   </FormGroup>
 
                   <center>
-                    <CButton
-                      className="mt-3"
+                    <button
+                    type="submit"
+                      className=" btn btn-lg mt-3"
                       style={{
                         background: "var(--Navy)",
                         color: "var(--LightestSlate)",
@@ -133,7 +159,7 @@ const Register = () => {
                       block
                     >
                       Create Account
-                    </CButton>
+                    </button>
                   </center>
                 </CForm>
               </CCardBody>
