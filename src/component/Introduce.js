@@ -28,13 +28,14 @@ const Register = () => {
     API.post(`introduce`, { name, email})
       .then((res) => {
         alert(
-          "Your Query has been registered success. Our Team will contact you soon"
+          "You have sucessfully submitted your details."
         );
+        window.location.replace('/')
       })
       .catch(function (error) {
         console.log(error);
         alert(
-          `We're Sorry, Your query has not been Registered \n
+          `We're Sorry, Your details have not been submitted yet. \n
         It is happened due to -- ` + error
         );
       })
@@ -66,7 +67,7 @@ const Register = () => {
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-envelope p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input name="email" type="email" placeholder="Email"  required />
@@ -74,7 +75,7 @@ const Register = () => {
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-university p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input name="college" placeholder="College"  required />
@@ -83,7 +84,7 @@ const Register = () => {
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-graduation-cap p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input name="branch" placeholder="Branch"  required />
@@ -92,7 +93,7 @@ const Register = () => {
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-calendar-week p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input name="year" placeholder="Year"  required />
@@ -103,48 +104,48 @@ const Register = () => {
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-linkedin p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input name="linkedin" placeholder="Branch"  required />
+                    <Input name="linkedin" placeholder="Linkedin Profile URL"  required />
                   </InputGroup>
 
                   <InputGroup className="mb-2 mt-1">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="fa fa-user p-1" />
+                        <i className="fa fa-github p-1" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input name="github" placeholder="Year"  required />
+                    <Input name="github" placeholder="Github Account Username/URL"  required />
                   </InputGroup>
 
                   <FormGroup>
                     <Label for="exampleText" className="text-muted mt-2">
-                      About You
+                      Tell us about your technological interests (For ex. Web Dev, App Dev, Machine Learning, Graphic Design etc.):
                     </Label>
                     <Input
                       type="textarea"
                       name="about"
                       id="exampleText"
-                      placeholder="What I Am & What I do"
+                      placeholder="Blockchain, Graphic Design"
                      required />
                   </FormGroup>
                   <FormGroup>
                     <Label for="exampleText" className="text-muted mt-2">
-                      About You
+                      Tell us about the tools and languages you're currently using or want to learn:
                     </Label>
                     <Input
                       type="textarea"
                       name="other"
                       id="exampleText"
-                      placeholder="What I Am & What I do"
+                      placeholder="HTML, CSS, JavaScript, React.js and c++"
                     />
                   </FormGroup>
 
                   <FormGroup check>
                     <Label check>
                       <Input name="newsletter" type="checkbox" className="mt-1" />{" "}
-                      Check me out
+                      Subscribe to the Semikolan weekly Newsletter
                     </Label>
                   </FormGroup>
 
@@ -158,7 +159,7 @@ const Register = () => {
                       }}
                       block
                     >
-                      Create Account
+                      Submit
                     </button>
                   </center>
                 </CForm>
