@@ -25,7 +25,26 @@ const Register = () => {
     event.preventDefault();
     const name = document.querySelector("input[name=name]").value;
     const email = document.querySelector("input[name=email]").value;
-    API.post(`introduce`, { name, email})
+    const college = document.querySelector("input[name=college]").value;
+    const branch = document.querySelector("input[name=branch]").value;
+    const year = document.querySelector("input[name=year]").value;
+    const linkedin = document.querySelector("input[name=linkedin]").value;
+    const github = document.querySelector("input[name=github]").value;
+    const about = document.querySelector("textarea[name=about]").value;
+    const other = document.querySelector("textarea[name=other]").value;
+    const newsletter = document.querySelector("input[name=newsletter]").value;
+    API.post(`introduce`, {
+    name,
+    email,
+    college,
+    branch,
+    year,
+    linkedin,
+    github,
+    about,
+    other,
+    newsletter
+   })
       .then((res) => {
         alert(
           "You have sucessfully submitted your details."
@@ -126,12 +145,12 @@ const Register = () => {
                     <Input
                       type="textarea"
                       name="about"
-                      id="exampleText"
+                      id="example"
                       placeholder="Blockchain, Graphic Design"
                      required />
                   </FormGroup>
                   <FormGroup>
-                    <Label for="exampleText" className="text-muted mt-2">
+                    <Label for="example" className="text-muted mt-2">
                       Tell us about the tools and languages you're currently using or want to learn:
                     </Label>
                     <Input
