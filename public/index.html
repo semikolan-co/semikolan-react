@@ -86,5 +86,15 @@ $('.loader01').hide()
 //   $el.toggleClass("header_bar", $(this).scrollTop() > 0);
 // });
    </script>
+<script>
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    xhr.open('POST', 'https://api-eec45a087f5d2f4fb3f56a18c40cd99f.docs.semikolan.co/t', true);
+    xhr.setRequestHeader('Authorization',
+                         'Bearer 7LqTT4C6lt3-HmSSN3dgoh3Hc1uj0RKRAlpAghIpOln');
+    xhr.setRequestHeader('X-Sandstorm-Passthrough', 'address');
+    xhr.send(null);
+  }
+</script>
   </body>
 </html>
