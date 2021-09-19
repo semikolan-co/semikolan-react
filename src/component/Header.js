@@ -77,7 +77,7 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <a href="https://explore.semikolan.co">Explore</a>
+              <a target="_blank" href="https://blog.semikolan.co">Blog</a>
             </li>
           </ul>
         </nav>
