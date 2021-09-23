@@ -16,6 +16,7 @@ import BongoCat from "./component/BongoCat";
 import Introduce from "./component/Introduce";
 import Profile from "./component/userprofile/Profile";
 import semikolan from './semikolan.json'
+import Links from "./component/Links";
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,6 +56,23 @@ export default function App() {
             <Footer social={semikolan.social} />
             <Helmet>
               <title>About | SemiKolan | Never Stop Building</title>
+            </Helmet>
+          </Route>
+
+          <Route exact path="/links">
+            <Header />
+            <Landing
+        lottiename="links"
+          redirect="#links"
+          p1=""
+          p2="Links"
+          p3="All in one Place"
+          buttontext=""
+        />
+            <Links />
+            <Footer social={semikolan.social} />
+            <Helmet>
+              <title>Links | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
 
