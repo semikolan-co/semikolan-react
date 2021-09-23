@@ -91,14 +91,14 @@ function Landing(props) {
         <span data-aos="fade-right" data-aos-duration={500}>
           {props.p3}
         </span>
-        <a
+        {props.buttontext && <a
           data-aos="fade-right"
           data-aos-duration={500}
           data-aos-anchor-placement="top-bottom"
           href={props.redirect}
         >
           {props.buttontext}
-        </a>
+        </a>}
       </div>
       <div
         className="lottie"
