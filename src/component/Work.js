@@ -19,7 +19,7 @@ function Work(props) {
         <span>Care 4 Covid</span>
         <span>Care4Covid is a Realtime Statistical Website for Analysis of Covid-19 (Sars-Cov-2). It is an attempt to help people stay updated with the Covid-19 Analytics.</span>
         <span>Flask&nbsp;JS&nbsp;HTML</span>
-        <span><a target="_blank" href="https://github.com/semikolan-dev/care4covid"><i className="fa fa-github" /></a>&nbsp;&nbsp;<a target="_blank" href="https://care4covid.co"><i className="fa fa-external-link-alt" /></a></span>
+        <span><a target="_blank" href="https://github.com/semikolan-co/care4covid"><i className="fa fa-github" /></a>&nbsp;&nbsp;<a target="_blank" href="https://care4covid.co"><i className="fa fa-external-link-alt" /></a></span>
       </div>
     </div>
     <div className="projectdiv projectheight">
