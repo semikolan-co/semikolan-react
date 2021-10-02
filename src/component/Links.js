@@ -3,7 +3,7 @@ import linksjson from './../links.json'
 
 export default function Links() {
     // Pase JSON into array
-    const links = linksjson.map((link, index) => {
+    const links = linksjson.links.map((link, index) => {
         return (
             <div key={index} className="col-md-4 p-1 p-md-3">
                 <div onClick={() => window.open(link[2], '_blank').focus()} className="text-center  py-3 p-1" style={{
@@ -26,7 +26,28 @@ export default function Links() {
             marginTop:-50,
             marginBottom: 70
         }}>
-        {links}
+
+            {/* Create an Iframe in div for youtube video */}
+            <div 
+            style={{
+                margin: 'auto',
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginBottom: 50
+            }}>
+                <iframe title="youtube"  src={'https://www.youtube.com/embed/'+linksjson.video} frameBorder="0"
+                style={{
+                    width: '95%',
+                    maxWidth: '600px',
+                    aspectRatio: '16/9',
+                    margin: 'auto',
+                }}
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+    
+            {links}
         </div>
     )
 }
