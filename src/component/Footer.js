@@ -77,7 +77,7 @@ export default function Footer(props) {
             href={
               props.social.github
                 ? props.social.github
-                : "https://github.com/semikolan-dev"
+                : "https://github.com/semikolan-co"
             }
           >
             <i
@@ -165,7 +165,7 @@ export default function Footer(props) {
       <span>
         <div>
           Designed with <Link to="#">&hearts;</Link> by
-          <a href="https://github.com/semikolan-dev"> Semikolan</a>
+          <a href="https://github.com/semikolan-co"> Semikolan</a>
         </div>
       </span>
     </footer>
