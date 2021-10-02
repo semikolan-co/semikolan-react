@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import '../css/404.css'
 import astronaut from '../images/astronaut.png'
 
-export default function Error404() {
+const Error404 = () => {
   return (
     <>
       <div className="div404">
@@ -24,4 +24,6 @@ export default function Error404() {
     </>
   )
 }
+
+export default Error404
 
