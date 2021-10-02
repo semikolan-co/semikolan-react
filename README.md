@@ -79,6 +79,6 @@ We encourage anyone with an aptitute for learning to [join](https://semikolan.co
 
 ### Discord Server
 
-We're building a Developer's Ecosystem currently through Discord where we can Discuss, Code, Collaborate and have fun. [Join Now.](discord.semikolan.co)
+We're building a Developer's Ecosystem currently through Discord where we can Discuss, Code, Collaborate and have fun. [Join Now.](https://discord.semikolan.co)
 
 ![](https://img.shields.io/discord/849036512045039637?color=5865F2&logo=Discord&style=for-the-badge)
