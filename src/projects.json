@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "type": "Healthcare",
+      "image_pathname": "p01.jpg",
+      "title": "Care 4 Covid",
+      "description": "Care4Covid is a Realtime Statistical Website for Analysis of Covid-19 (Sars-Cov-2). It is an attempt to help people stay updated with the Covid-19 Analytics.",
+      "technologies": "Flask JS HTML",
+      "github_repo_link": "https://github.com/semikolan-co/care4covid",
+      "external_link": "https://care4covid.co"
+    },
+    {
+      "type": "Shopping Website",
+      "image_pathname": "p02.jpg",
+      "title": "Urbnfarm",
+
+      "description": "It is an e-commerce Website where you can order fresh vegetables  Bhopal.",
+      "technologies": "PHP JS HTML",
+      "github_repo_link": "",
+      "external_link": "https://urbnfarm.in"
+    }
+  ]
+}

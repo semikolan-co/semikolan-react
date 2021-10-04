@@ -190,3 +190,7 @@
                 left: 3px;
             }
         }
+        .reverse{
+            display: flex;
+            flex-direction: row-reverse;
+        }
