@@ -1,6 +1,7 @@
 import API from "./API";
 import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+//import "../css/layout.css";
 export default function Footer(props) {
   function subscribeUser(event) {
     event.preventDefault();

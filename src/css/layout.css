@@ -659,7 +659,7 @@
     .footer01 {
         display: flex;
         flex-direction: column;
-           }
+    }
 
       .footer01>span {
         color: var(--LightSlate); 
