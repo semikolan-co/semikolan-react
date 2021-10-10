@@ -7,15 +7,13 @@ export default function Footer(props) {
     const email = document.querySelector("input[name=subscriberemail]").value;
     API.post(`subscribeuser`, { email })
       .then((res) => {
-        alert(
-          "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
-        );
+        alert("Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!");
       })
       .catch(function (error) {
         console.log(error);
         alert(
           `We're Sorry, Currently we are unable to subscribe you \n
-        It is happened due to -- ` + error
+        It is happened due to -- ` + error,
         );
       })
       .then(function () {
@@ -25,15 +23,12 @@ export default function Footer(props) {
   return (
     <footer className="footer01" id="footer">
       <div className="subscribediv  container-80">
-        <span>Subscribe to the SemiKolan's Weekly NewsLetter for Developers</span>
+        <span>
+          <b>Subscribe to the SemiKolan\'s Weekly NewsLetter \For Developers</b>
+        </span>
         <form id="subscriberform" onSubmit={subscribeUser}>
           <div className="newsletterdiv">
-            <input
-              name="subscriberemail"
-              type="email"
-              placeholder="Your Email"
-              required
-            />
+            <input name="subscriberemail" type="email" placeholder="Your Email" required />
             <button className="buttonn" type="submit">
               Subscribe
             </button>
@@ -41,15 +36,11 @@ export default function Footer(props) {
         </form>
       </div>
 
-
-
       <div className="socialicons">
         <div className="iconsdiv">
           <a
             href={
-              props.social.instagram
-                ? props.social.instagram
-                : "https://instagram.com/instakolan"
+              props.social.instagram ? props.social.instagram : "https://instagram.com/instakolan"
             }
           >
             <i
@@ -73,13 +64,7 @@ export default function Footer(props) {
               className="fa fa-linkedin"
             />
           </a>
-          <a
-            href={
-              props.social.github
-                ? props.social.github
-                : "https://github.com/semikolan-co"
-            }
-          >
+          <a href={props.social.github ? props.social.github : "https://github.com/semikolan-co"}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -87,12 +72,7 @@ export default function Footer(props) {
               className="fa fa-github"
             />
           </a>
-          <a
-            href={
-              "mailto:" +
-              (props.social.mail ? props.social.mail : "contact@semikolan.co")
-            }
-          >
+          <a href={"mailto:" + (props.social.mail ? props.social.mail : "contact@semikolan.co")}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -100,13 +80,7 @@ export default function Footer(props) {
               className="far fa-envelope"
             />
           </a>
-          <a
-            href={
-              props.social.youtube
-                ? props.social.youtube
-                : "https://youtube.com/semikolan"
-            }
-          >
+          <a href={props.social.youtube ? props.social.youtube : "https://youtube.com/semikolan"}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -114,13 +88,7 @@ export default function Footer(props) {
               className="fa fa-youtube"
             />
           </a>{" "}
-          <a
-            href={
-              props.social.discord
-                ? props.social.discord
-                : "https://discord.gg/4ucwSCgkse"
-            }
-          >
+          <a href={props.social.discord ? props.social.discord : "https://discord.gg/4ucwSCgkse"}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -128,13 +96,7 @@ export default function Footer(props) {
               className="fab fa-discord"
             />
           </a>{" "}
-          <a
-            href={
-              props.social.twitter
-                ? props.social.twitter
-                : "https://twitter.com/semikolanco"
-            }
-          >
+          <a href={props.social.twitter ? props.social.twitter : "https://twitter.com/semikolanco"}>
             <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
@@ -164,8 +126,10 @@ export default function Footer(props) {
 
       <span>
         <div>
-          Designed with <Link to="#">&hearts;</Link> by
-          <a href="https://github.com/semikolan-co"> Semikolan</a>
+          <b>
+            Designed \With <Link to="#">&hearts;</Link> by
+            <a href="https://github.com/semikolan-co"> Semikolan</a>
+          </b>
         </div>
       </span>
     </footer>
