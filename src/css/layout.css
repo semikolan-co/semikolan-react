@@ -18,8 +18,13 @@
         --Green: #64ffda;
         --consolas: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
+<<<<<<< HEAD
 
     a:hover,
+=======
+    
+#    a:hover,
+>>>>>>> 135a303e34276aeec24ab8567df3fbad1d370db3
     a:active,
     a:focus {
         text-decoration: none;
@@ -224,8 +229,13 @@
     .container-80 {
         width: 75vw;
         margin: auto;
+<<<<<<< HEAD
     }
 
+=======
+     }
+    
+>>>>>>> 135a303e34276aeec24ab8567df3fbad1d370db3
     .container {
         padding: 100px 0;
     }
@@ -655,16 +665,24 @@
     /* -------------------------------------------------------------------------------------- */
     /* -------------------------------------------------------------------------------------- */
     /* -------------------------------------------------------------------------------------- */
+<<<<<<< HEAD
 
     .footer01 {
         display: flex;
         flex-direction: column;
         background-color: var(--Navy);
         padding: 3px;
+=======
+    
+    footer01 {
+        display: flex;
+        flex-direction: column;
+        background: var(--Navy);
+>>>>>>> 135a303e34276aeec24ab8567df3fbad1d370db3
     }
 
     .footer01>span {
-        color: var(--LightSlate);
+        color: var(--LightSlate); 
         display:flex;
         width: 100%;
         align-items:center;
@@ -674,6 +692,7 @@
         font-size: 1.2em;
         /*background-color: var(--Navy);*/
     }
+    
     .footer01 .newsletterdiv{
 
         color: var(--Green);
@@ -685,6 +704,7 @@
         justify-content:center;
         position:relative;
     }
+    
     .footer01>span a {
         color: var(--Green);
         text-decoration: none;
