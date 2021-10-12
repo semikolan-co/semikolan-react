@@ -19,7 +19,7 @@
         --consolas: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
     
-    a:hover,
+#    a:hover,
     a:active,
     a:focus {
         text-decoration: none;
@@ -659,6 +659,7 @@
     footer01 {
         display: flex;
         flex-direction: column;
+        background: var(--Navy);
     }
 
     .footer01>span {
