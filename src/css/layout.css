@@ -703,7 +703,7 @@
     }
 
     .newsletterdiv input::placeholder{
-        color:var(--LightestSlate)
+        color:var(--Green)
     }
 
 
@@ -738,7 +738,7 @@
         align-items:center;
         margin-bottom:40px;
         max-width:95%;
-                                          }
+        }
 
     .subscribediv>span{
         color:var(--LightestSlate);
