@@ -665,7 +665,7 @@
                           }
 
     .footer01>span {
-        color: var(--LightestSlate);
+        color: var(--LightSlate);
         display:flex;
         width: 100%;
         align-items:center;
@@ -741,7 +741,7 @@
         }
 
     .subscribediv>span{
-        color:var(--LightSlate);
+        color:var(--LightestSlate);
         font-size:1.28em;
         padding-right:10%;
         text-align:left;
