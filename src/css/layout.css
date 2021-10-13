@@ -665,7 +665,7 @@
                           }
 
     .footer01>span {
-        color: var(--LightSlate);
+        color: var(--LightestSlate);
         display:flex;
         width: 100%;
         align-items:center;
