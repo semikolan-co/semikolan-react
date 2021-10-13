@@ -23,8 +23,7 @@ export default function Footer(props) {
   }
   return (
     <footer className="footer01" id="footer">
-      <div className="subscribediv  container-80">
-        <span>
+          <div className="subscribediv container-80">          <span>
           <b>Subscribe to the SemiKolan\'s Weekly NewsLetter \For Developers</b>
         </span>
         <form id="subscriberform" onSubmit={subscribeUser}>
