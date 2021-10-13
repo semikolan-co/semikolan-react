@@ -2,6 +2,7 @@ import API from "./API";
 import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../css/layout.css";
+import Card from "./Card";
 export default function Footer(props) {
   function subscribeUser(event) {
     event.preventDefault();
@@ -23,10 +24,12 @@ export default function Footer(props) {
   }
   return (
     <footer className="footer01" id="footer">
-          <div className="subscribediv container-80">          <span>
+          <div className="subscribediv container-80">
+          <Card className="card">
+          <div><span>
           <b>Subscribe to the SemiKolan\'s Weekly NewsLetter \For Developers</b>
-        </span>
-        <form id="subscriberform" onSubmit={subscribeUser}>
+          </span></div></Card>
+                  <form id="subscriberform" onSubmit={subscribeUser}>
           <div className="newsletterdiv">
             <input name="subscriberemail" type="email" placeholder="Your Email" required />
             <button className="buttonn" type="submit">
