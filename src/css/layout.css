@@ -653,13 +653,12 @@
     }
     /* -------------------------------------------------------------------------------------- */
     /* ------------------- */
-    .footer-container {
-        /*height: 1em !important;*/
-    }
+
     .footer01 {
         display: flex;
         flex-direction: column;
         background-color: var(--Navy);
+        height: 10em;
         /*align-items: flex-start;*/
                 }
 

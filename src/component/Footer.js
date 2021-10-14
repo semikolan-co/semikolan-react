@@ -23,9 +23,9 @@ export default function Footer(props) {
       });
   }
     return (
-            <div className="footer-container">
-          <footer className="footer01" id="footer">
-          <div className="subscribediv container-80">
+           
+            <footer className="footer01" id="footer">
+                     <div className="subscribediv container-80">
           <Card className="card">
           <div><span>
           <b>Subscribe to the SemiKolan\'s Weekly NewsLetter \For Developers</b>
@@ -136,7 +136,6 @@ export default function Footer(props) {
           </b>
         </div>
       </span>
-            </footer>
-            </div>
+            </footer>  
            );
 }
