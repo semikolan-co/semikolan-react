@@ -659,6 +659,8 @@
         flex-direction: column;
         background-color: var(--Navy);
         height: 10em;
+        border: 3px solid;
+        border-color: var(--Green);
         /*align-items: flex-start;*/
                 }
 
@@ -684,7 +686,7 @@
         transition: 0.5s ease;
         justify-content:center;
         position:relative;
-    }
+                    }
 
     .footer01>span a {
         color: var(--Green);
@@ -697,7 +699,7 @@
         border:none;
         outline:none;
         text-align:center;
-        color:var(--LightestSlate)
+        /*color:var(--LightestSlate)*/
     }
 
     .newsletterdiv input::placeholder{
@@ -736,6 +738,7 @@
         align-items:center;
         margin-bottom:40px;
         max-width:95%;
+        /*height:10em;*/
         }
 
    /* .subscribediv>span{
