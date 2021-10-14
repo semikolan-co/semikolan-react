@@ -7,6 +7,5 @@
     font-size: 1.28em;
     /*padding-right:10%;*/
     text-align:center;
-    border: 2px solid;
-    border-color: var(--LightestSlate);
-    }
+    border: 2px solid var(--LightestSlate);
+        }

@@ -28,7 +28,7 @@ export default function Footer(props) {
                      <div className="subscribediv container-80">
           <Card className="card">
           <div><span>
-          <b>Subscribe to the SemiKolan\'s Weekly NewsLetter \For Developers</b>
+          <b>Subscribe to the SemiKolan's Weekly NewsLetter for Developers</b>
           </span></div></Card>
                   <form id="subscriberform" onSubmit={subscribeUser}>
           <div className="newsletterdiv">
@@ -37,7 +37,8 @@ export default function Footer(props) {
               Subscribe
             </button>
           </div>
-        </form>
+            </form>
+                    
       </div>
 
       <div className="socialicons">
@@ -128,10 +129,10 @@ export default function Footer(props) {
         <div className="line"></div>
       </div>
 
-      <span>
+         <span>
         <div>
           <b>
-            Designed \With <Link to="#">&hearts;</Link> by
+            Designed with <Link to="#">&hearts;</Link> by
             <a href="https://github.com/semikolan-co"> Semikolan</a>
           </b>
         </div>
