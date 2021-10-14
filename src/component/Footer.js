@@ -22,8 +22,9 @@ export default function Footer(props) {
         // always executed
       });
   }
-  return (
-   <footer className="footer01" id="footer">
+    return (
+            <div className="footer-container">
+          <footer className="footer01" id="footer">
           <div className="subscribediv container-80">
           <Card className="card">
           <div><span>
@@ -135,6 +136,7 @@ export default function Footer(props) {
           </b>
         </div>
       </span>
-          </footer>
+            </footer>
+            </div>
            );
 }

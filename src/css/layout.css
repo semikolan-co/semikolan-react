@@ -1,11 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-    * {
+   /** {
         margin: 0;
         padding: 0;
         /* font-size: 16px; */
-        box-sizing: border-box;
-    }
+        /*box-sizing: border-box;
+    }*/
 
      :root {
         --Navy: #0a192f;
@@ -225,7 +225,7 @@
     .container-80 {
         width: 75vw;
         margin: auto;
-                          }
+                                  }
 
 
     .container {
@@ -652,18 +652,16 @@
         transition: top 0.5s ease;
     }
     /* -------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------------------- */
-
+    /* ------------------- */
+    .footer-container {
+        /*height: 1em !important;*/
+    }
     .footer01 {
         display: flex;
         flex-direction: column;
         background-color: var(--Navy);
         /*align-items: flex-start;*/
-        }
+                }
 
     .footer01>span {
         color: var(--LightSlate);
@@ -675,7 +673,7 @@
         padding: 0 0 30px 0;
         font-size: 1.2em;
         /*align-self: center;*/
-                    }
+                            }
 
     .footer01 .newsletterdiv{
 
