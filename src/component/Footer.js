@@ -30,15 +30,15 @@ export default function Footer(props) {
           <div><span>
           <b>Subscribe to the SemiKolan's Weekly NewsLetter for Developers</b>
           </span></div></Card>
-                  <form id="subscriberform" onSubmit={subscribeUser}>
+
+ <form id="subscriberform" onSubmit={subscribeUser}>                 
           <div className="newsletterdiv">
             <input name="subscriberemail" type="email" placeholder="Your Email" required />
             <button className="buttonn" type="submit">
               Subscribe
             </button>
-          </div>
-            </form>
-                    
+</div>
+       </form>                    
       </div>
 
       <div className="socialicons">

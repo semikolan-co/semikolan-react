@@ -692,14 +692,14 @@
         text-decoration: none;
     }
 
-
-    .newsletterdiv input{
+        .newsletterdiv input{
         background:transparent;
         border:none;
         outline:none;
         text-align:center;
         /*color:var(--LightestSlate)*/
-    }
+        /*align-items:center !important;*/
+           }
 
     .newsletterdiv input::placeholder{
         color:var(--Green)
@@ -727,7 +727,6 @@
         background: transparent;
         cursor:pointer;
         color: var(--Green) !important;
-
         border: 3px dashed var(--Green);
     }
 
@@ -741,6 +740,7 @@
 border: 3px solid;
 border-color: var(--Green);
 background-color: var(--Navy);
+padding-right:3%;
         }
 
    /* .subscribediv>span{
