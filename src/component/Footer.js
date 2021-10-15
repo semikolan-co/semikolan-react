@@ -38,7 +38,7 @@ export default function Footer(props) {
               Subscribe
             </button>
 </div>
-       </form>                    
+       </form>
       </div>
 
       <div className="socialicons">
