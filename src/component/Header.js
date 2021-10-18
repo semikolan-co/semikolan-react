@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import React, { useEffect, useState } from "react";
-import logo from '../images/logo.png'
-import AOS from 'aos';
+import logo from "../images/logo.png";
+import AOS from "aos";
 
 import { render } from "@testing-library/react";
 
@@ -11,7 +11,6 @@ class Header extends React.Component {
     super(props);
     this.state = { small: 0 };
     this._toggleDiv = this._show;
-    
   }
 
   _show() {
@@ -40,7 +39,9 @@ class Header extends React.Component {
         >
           <Link to="/">
             <img src={logo} style={{ height: "40px" }} />
-            <span style={{position:"relative",left:5,top:3}}>&nbsp;SemiKolan</span>
+            <span style={{ position: "relative", left: 5, top: 3 }}>
+              &nbsp;SemiKolan
+            </span>
           </Link>
         </span>
         <i
@@ -52,32 +53,65 @@ class Header extends React.Component {
         <nav className="nav01" data-aos="fade-down" data-aos-duration={500}>
           <ul>
             <li>
-              <Link to="/about">
+              <Link
+                to="/about"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+              >
                 <em>01.</em>&nbsp;About
               </Link>
             </li>
             <li>
-              <Link to="/showcase">
+              <Link
+                to="/showcase"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+              >
                 <em>02.</em>&nbsp;Showcase
               </Link>
             </li>
             <li>
-              <Link to="/initiatives">
+              <Link
+                to="/initiatives"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+              >
                 <em>03.</em>&nbsp;Initiatives
               </Link>
             </li>
             <li>
-              <Link to="/join">
+              <Link
+                to="/join"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+              >
                 <em>04.</em>&nbsp;Join
               </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link
+                to="/contact"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+              >
                 <em>05.</em>&nbsp;Contact
               </Link>
             </li>
             <li>
-              <a target="_blank" href="https://blog.semikolan.co">Blog</a>
+              <a
+                target="_blank"
+                onClick={() => {
+                  this._toggleDiv();
+                }}
+                href="https://blog.semikolan.co"
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
