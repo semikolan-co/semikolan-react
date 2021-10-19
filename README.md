@@ -31,33 +31,6 @@ npm start
 ```
 Congratulations! You have successfully installed SemiKolan Website. Your server is running on localhost:3000
 
-
-
-## Installation
-<!-- Stting Up Local Enviroment for React Project -->
-Before Any of the following steps, make sure you have installed the Nodejs and Git in your system. You can simply install Nodejs from [here](https://nodejs.org/en/) and Git from [here](https://git-scm.com/downloads)
-Now you can follow the steps below to install Instalyzer.
-Fork the [Github Repository](https://github.com/semikolan-co/Instalyzer) and clone it to your local machine. You can clone using a simple command like this:
-```shell
-git clone https://github.com/<your_username>/Instalyzer.git 
-``` 
-
-Then move to the root directory of the cloned repository. You can do this by typing the following command:
-```shell
-cd Instalyzer
-```
-
-Now run the following command to install the dependencies:
-```shell
-npm install
-```
-Now you can run the following command to start the server:
-```shell
-npm start
-```
-Congratulations! You have successfully installed Instalyzer. Your server is running on localhost:3000
-
-
 ### Discord Server
 
 We're building a Developer's Ecosystem currently through Discord where we can Discuss, Code, Collaborate and have fun. [Join Now.](https://discord.semikolan.co)
