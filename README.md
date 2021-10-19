@@ -1,5 +1,3 @@
-
-
 ## About SemiKolan
 
 SemiKolan, as a starter, is a group of friends, who love to build things and help others.
