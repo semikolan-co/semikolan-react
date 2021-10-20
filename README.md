@@ -1,3 +1,5 @@
+![Cover Image](.github/images/cover.png)
+
 ## About SemiKolan
 
 SemiKolan, as a starter, is a group of friends, who love to build things and help others.
