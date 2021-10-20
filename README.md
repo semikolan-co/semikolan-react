@@ -1,12 +1,24 @@
 ![Cover Image](.github/images/cover.png)
 
-## About SemiKolan
 
-SemiKolan, as a starter, is a group of friends, who love to build things and help others.
+<div align="center">
 
-Semikolan is also a platform for like minded learners, developers and Enthusiasts to learn, connect, create great connections and work on great projects among themselves and for the community. The Semikolan team is a group of Self Learners, Innovative Minds and Tech Enthusiasts passionate about building [Technical Stuffs](https://semikolan.co/initiatives).
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-orange?style=flat-square&labelColor=0a192f&color=e6f1ff)
+![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=flat-square&labelColor=0a192f&color=e6f1ff)
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&labelColor=0a192f&color=e6f1ff)
+[![GitHub issues](https://img.shields.io/github/issues/semikolan-co/semikolan-react?style=social&labelColor=0a192f&color=a8b2d1)](https://github.com/semikolan-co/semikolan-react/issues)
+[![GitHub forks](https://img.shields.io/github/forks/semikolan-co/semikolan-react?style=social&labelColor=0a192f&color=a8b2d1)](https://github.com/semikolan-co/semikolan-react/network)
+[![GitHub stars](https://img.shields.io/github/stars/semikolan-co/semikolan-react?style=social&labelColor=0a192f&color=a8b2d1)](https://github.com/semikolan-co/semikolan-react/stargazers)
+  
+![Hactoberfest](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
+![DWoC](https://img.shields.io/badge/DWoC-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
+</div>
 
-We encourage anyone with an aptitute for learning to [join](https://semikolan.co/join) our community and join our mission to code for the better.
+
+# SemiKolan
+
+Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to Learn, Connect, create great connections and work on various Open-Source projects. SemiKolan is a Community `For the Developers, By the Developers, To the Developers`.
+
 
 ### Table of Contents
 - [Installation Guide](#installation-guide)
@@ -45,7 +57,7 @@ Congratulations! You have successfully installed SemiKolan Website. Your server 
 
 Be a part of the SemiKolan Developer's Community by joining our [Discord Server](https://discord.semikolan.co). Here you can discuss about the project or ask any other queries and there will be a lot of folks to help
 
-[![](https://img.shields.io/discord/849036512045039637?color=5865F2&logo=Discord&style=for-the-badge)](https://discord.semikolan.co)
+[![](https://img.shields.io/discord/849036512045039637?color=5865F2&logo=Discord&style=social)](https://discord.semikolan.co)
 
 
 ## Color Reference
@@ -59,7 +71,7 @@ Be a part of the SemiKolan Developer's Community by joining our [Discord Server]
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Green          | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 
 
 
