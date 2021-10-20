@@ -64,6 +64,7 @@ Be a part of the SemiKolan Developer's Community by joining our [Discord Server]
 ## Code Contributers
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+
 <a href="https://github.com/semikolan-co/semikolan-react/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=semikolan-co/semikolan-react" />
 </a>
