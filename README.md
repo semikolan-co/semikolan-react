@@ -22,7 +22,7 @@ Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to 
 
 ### Table of Contents
 - [Installation Guide](#installation-guide)
-- [File Structure](#file-structures) (will be added soon)
+- [File Structure](#file-structure)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Join Us](#join-us)
 - [Color Reference](#color-reference)
@@ -53,11 +53,62 @@ npm start
 ```
 Congratulations! You have successfully installed SemiKolan Website. Your server is running on localhost:3000
 
+## File Structure
+Within the download you'll find the following directories and files:
+
+```
+semikolan-react
+├── README.md
+├── package.json
+├── package-lock.json
+├── staticwebapp.config.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── favicon.png
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── index.js
+    ├── App.js
+    ├── projects.json
+    ├── links.json
+    ├── semikolan.json
+    ├── images
+    │   └── .....Contains Images 
+    ├── lottie
+    │   └── .....Contains Lottie 
+    └── components
+        ├── userprofile
+        │   ├── harsh.json
+        │   └── Profile.js
+        ├── About.js
+        ├── Achievements.js
+        ├── API.js
+        ├── BongoCat.js
+        ├── Contact.js
+        ├── ContactForm.js
+        ├── Error404.js
+        ├── Footer.js
+        ├── Header.js
+        ├── Introduce.js
+        ├── Join.js
+        ├── Landing.js
+        ├── Links.js
+        ├── Loader.js
+        ├── Map.js
+        ├── Quiz.js
+        ├── Skills.js
+        ├── Technologies.js
+        ├── Whatwedo.js
+        └── Work .js
+```
+
 ## Join Us
 
 Be a part of the SemiKolan Developer's Community by joining our [Discord Server](https://discord.semikolan.co). Here you can discuss about the project or ask any other queries and there will be a lot of folks to help
 
-[![](https://img.shields.io/discord/849036512045039637?color=5865F2&logo=Discord&style=social)](https://discord.semikolan.co)
+[![](https://img.shields.io/discord/849036512045039637?color=5865F2&logo=Discord&style=flat-square)](https://discord.semikolan.co)
 
 
 ## Color Reference
