@@ -59,6 +59,7 @@ Within the download you'll find the following directories and files:
 ```
 semikolan-react
 ├── README.md
+├── CONTRIBUTING.md
 ├── package.json
 ├── package-lock.json
 ├── staticwebapp.config.json
