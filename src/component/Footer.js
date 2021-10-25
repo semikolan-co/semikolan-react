@@ -1,11 +1,16 @@
 import API from "./API";
 import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useState } from "react";
 export default function Footer(props) {
+  const [name, setName] = useState("");
   function subscribeUser(event) {
     event.preventDefault();
-    const email = document.querySelector("input[name=subscriberemail]").value;
-    API.post(`subscribeuser`, { email })
+
+    {
+      /*const email = document.querySelector("input[name=subscriberemail]").value;*/
+    }
+    API.post(`subscribeuser`, { name })
       .then((res) => {
         alert(
           "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
@@ -21,27 +26,30 @@ export default function Footer(props) {
       .then(function () {
         // always executed
       });
+    setName("");
   }
   return (
     <footer className="footer01" id="footer">
       <div className="subscribediv  container-80">
-        <span>Subscribe to the SemiKolan's Weekly NewsLetter for Developers</span>
-        <form id="subscriberform" onSubmit={subscribeUser}>
+        <span>
+          Subscribe to the SemiKolan's Weekly NewsLetter for Developers
+        </span>
+        <form id="subscriberform">
           <div className="newsletterdiv">
             <input
               name="subscriberemail"
               type="email"
               placeholder="Your Email"
               required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
-            <button className="buttonn" type="submit">
+            <button className="buttonn" type="submit" onClick={subscribeUser}>
               Subscribe
             </button>
           </div>
         </form>
       </div>
-
-
 
       <div className="socialicons">
         <div className="iconsdiv">
