@@ -2,14 +2,58 @@ import API from "./API";
 import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
+import Recaptcha from "react-recaptcha";
 export default function Footer(props) {
+  const [name, setName] = useState("");
+  const [showCaptcha, setShowCaptcha] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [click, setClick] = useState(false);
+
+  var callback = function () {
+    console.log("Done!!!!");
+
+  };
+  var verifyCallback = function (response) {
+    console.log(response);
+    if (response) {
+      setShowCaptcha(true);
+      setClick(true);
+    }
+  };
+
+  function subscribeUser(event) {
+    event.preventDefault();
+    setOpen(true);
+
+export default function Footer(props) {
+  
+  
   const [name, setName] = useState("");
   function subscribeUser(event) {
     event.preventDefault();
-
-    {
-      /*const email = document.querySelector("input[name=subscriberemail]").value;*/
+    if (click) {
+      API.post(`subscribeuser`, { name })
+        .then((res) => {
+          alert(
+            "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
+          );
+        })
+        .catch(function (error) {
+          console.log(error);
+          alert(
+            `We're Sorry, Currently we are unable to subscribe you \n
+        It is happened due to -- ` + error
+          );
+        })
+        .then(function () {
+          // always executed
+        });
+      setName("");
+      setShowCaptcha(false);
+      setOpen(false);
+      setClick(false);
     }
+
     API.post(`subscribeuser`, { name })
       .then((res) => {
         alert(
@@ -27,6 +71,7 @@ export default function Footer(props) {
         // always executed
       });
     setName("");
+
   }
   return (
     <footer className="footer01" id="footer">
@@ -34,6 +79,7 @@ export default function Footer(props) {
         <span>
           Subscribe to the SemiKolan's Weekly NewsLetter for Developers
         </span>
+
         <form id="subscriberform">
           <div className="newsletterdiv">
             <input
@@ -45,11 +91,28 @@ export default function Footer(props) {
               onChange={(e) => setName(e.target.value)}
             />
             <button className="buttonn" type="submit" onClick={subscribeUser}>
+
+              {click ? <span>Subscribe</span> : <span>Verify</span>}
+
               Subscribe
+
             </button>
           </div>
         </form>
       </div>
+
+      <div className="capt">
+        {open && (
+          <Recaptcha
+            sitekey="6LcQvfQcAAAAAC3ImW3y037ZPinFREkWqX5z0Jew"
+            render="explicit"
+            verifyCallback={verifyCallback}
+            onloadCallback={callback}
+          />
+        )}
+      </div>
+
+
 
       <div className="socialicons">
         <div className="iconsdiv">

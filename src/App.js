@@ -1,9 +1,9 @@
 import Header from "./component/Header";
 import Landing from "./component/Landing";
 import About from "./component/About";
-import Skills from "./component/Skills"
-import Work from "./component/Work"
-import Achievements from "./component/Achievements"
+import Skills from "./component/Skills";
+import Work from "./component/Work";
+import Achievements from "./component/Achievements";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import Technologies from "./component/Technologies";
@@ -15,21 +15,14 @@ import Whatwedo from "./component/Whatwedo";
 import BongoCat from "./component/BongoCat";
 import Introduce from "./component/Introduce";
 import Profile from "./component/userprofile/Profile";
-import semikolan from './semikolan.json'
+import semikolan from "./semikolan.json";
 import Links from "./component/Links";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
 import { Helmet } from "react-helmet";
-
-
+import Captcha from "./component/Captcha";
 
 export default function App() {
- 
   return (
     <Router>
       <div class="container-80">
@@ -62,18 +55,21 @@ export default function App() {
           <Route exact path="/links">
             <Header />
             <Landing
-        lottiename="links"
-          redirect="#links"
-          p1=""
-          p2="Links"
-          p3="All in one Place"
-          buttontext=""
-        />
+              lottiename="links"
+              redirect="#links"
+              p1=""
+              p2="Links"
+              p3="All in one Place"
+              buttontext=""
+            />
             <Links />
             <Footer social={semikolan.social} />
             <Helmet>
               <title>Links | SemiKolan | Never Stop Building</title>
             </Helmet>
+          </Route>
+          <Route exact path="/captcha">
+            <Captcha />
           </Route>
 
           <Route path="/showcase">
