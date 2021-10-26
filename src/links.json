@@ -3,16 +3,17 @@
   "links":[
   ["globe","Website","https://semikolan.co"],
   ["youtube","Youtube","https://www.youtube.com/c/SemiKolan"],
-  ["","Script Winter Of Code","https://swoc.scriptindia.org"],
-  ["","Delta Winter Of Code","https://dwoc.io"],
-  ["","Hack This Fall","https://hackthisfall.tech"],
   ["","SemiKolan Blogs","https://blog.semikolan.co"],
   ["discord","Discord Server", "https://discord.semikolan.co","b"],
   ["telegram","Telegram","https://t.me/semikolan"],
+  ["whatsapp","Whatsapp","https://chat.whatsapp.com/I77fsLQe6BhDNpQjOn2jIA"],
   ["github","Github","https://github.com/semikolan-co"],
   ["twitter","Twitter","https://twitter.com/semikolanco"],
   ["linkedin","Linkedin","https://www.linkedin.com/company/semikolan"],
   ["instagram","Instagram","https://www.instagram.com/semikolan.co/"],
-  ["","Giveaway","https://forms.gle/xxbh94RyCTgC1Sc96"]
+  ["","Giveaway","https://forms.gle/xxbh94RyCTgC1Sc96"],
+  ["","Script Winter Of Code","https://swoc.scriptindia.org"],
+  ["","Delta Winter Of Code","https://dwoc.io"],
+  ["","Hack This Fall","https://hackthisfall.tech"]
   ]
 }

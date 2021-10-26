@@ -11,7 +11,7 @@ export default function Footer(props) {
 
   var callback = function () {
     console.log("Done!!!!");
-    //setShowCaptcha(true);
+
   };
   var verifyCallback = function (response) {
     console.log(response);
@@ -25,9 +25,12 @@ export default function Footer(props) {
     event.preventDefault();
     setOpen(true);
 
-    {
-      /*const email = document.querySelector("input[name=subscriberemail]").value;*/
-    }
+export default function Footer(props) {
+  
+  
+  const [name, setName] = useState("");
+  function subscribeUser(event) {
+    event.preventDefault();
     if (click) {
       API.post(`subscribeuser`, { name })
         .then((res) => {
@@ -50,6 +53,25 @@ export default function Footer(props) {
       setOpen(false);
       setClick(false);
     }
+
+    API.post(`subscribeuser`, { name })
+      .then((res) => {
+        alert(
+          "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
+        );
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert(
+          `We're Sorry, Currently we are unable to subscribe you \n
+        It is happened due to -- ` + error
+        );
+      })
+      .then(function () {
+        // always executed
+      });
+    setName("");
+
   }
   return (
     <footer className="footer01" id="footer">
@@ -69,11 +91,16 @@ export default function Footer(props) {
               onChange={(e) => setName(e.target.value)}
             />
             <button className="buttonn" type="submit" onClick={subscribeUser}>
+
               {click ? <span>Subscribe</span> : <span>Verify</span>}
+
+              Subscribe
+
             </button>
           </div>
         </form>
       </div>
+
       <div className="capt">
         {open && (
           <Recaptcha
@@ -84,6 +111,8 @@ export default function Footer(props) {
           />
         )}
       </div>
+
+
 
       <div className="socialicons">
         <div className="iconsdiv">
