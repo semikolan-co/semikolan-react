@@ -127,8 +127,8 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route exact path="/harsh">
-            <Profile user="harsh" />
+          <Route exact path="/dev/:name">
+            <Profile />
             <Footer social={semikolan.social} />
             <Helmet>
               <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>

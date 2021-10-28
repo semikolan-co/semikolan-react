@@ -3,7 +3,7 @@ import harsh from "../images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
 import Recaptcha from "react-recaptcha";
-export default function Footer(props) {
+function Footer(props) {
   const [name, setName] = useState("");
   const [showCaptcha, setShowCaptcha] = useState(false);
   const [open, setOpen] = useState(false);
@@ -11,7 +11,6 @@ export default function Footer(props) {
 
   var callback = function () {
     console.log("Done!!!!");
-
   };
   var verifyCallback = function (response) {
     console.log(response);
@@ -22,14 +21,7 @@ export default function Footer(props) {
   };
 
   function subscribeUser(event) {
-    event.preventDefault();
     setOpen(true);
-
-export default function Footer(props) {
-  
-  
-  const [name, setName] = useState("");
-  function subscribeUser(event) {
     event.preventDefault();
     if (click) {
       API.post(`subscribeuser`, { name })
@@ -53,26 +45,8 @@ export default function Footer(props) {
       setOpen(false);
       setClick(false);
     }
-
-    API.post(`subscribeuser`, { name })
-      .then((res) => {
-        alert(
-          "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
-        );
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert(
-          `We're Sorry, Currently we are unable to subscribe you \n
-        It is happened due to -- ` + error
-        );
-      })
-      .then(function () {
-        // always executed
-      });
-    setName("");
-
   }
+
   return (
     <footer className="footer01" id="footer">
       <div className="subscribediv  container-80">
@@ -91,11 +65,7 @@ export default function Footer(props) {
               onChange={(e) => setName(e.target.value)}
             />
             <button className="buttonn" type="submit" onClick={subscribeUser}>
-
               {click ? <span>Subscribe</span> : <span>Verify</span>}
-
-              Subscribe
-
             </button>
           </div>
         </form>
@@ -111,8 +81,6 @@ export default function Footer(props) {
           />
         )}
       </div>
-
-
 
       <div className="socialicons">
         <div className="iconsdiv">
@@ -242,3 +210,4 @@ export default function Footer(props) {
     </footer>
   );
 }
+export default Footer;
