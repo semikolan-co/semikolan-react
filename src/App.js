@@ -127,7 +127,7 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route exact path="/:name">
+          <Route exact path="/developer/:name">
             <Profile />
             <Footer social={semikolan.social} />
             <Helmet>
