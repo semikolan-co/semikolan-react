@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import { Helmet } from "react-helmet";
 import Captcha from "./component/Captcha";
+import Showcase from "./pages/Showcase";
 
 export default function App() {
   return (
@@ -32,24 +33,7 @@ export default function App() {
           
             <Route path="/about" render={(props) => <AboutPage {...props} />} />
             <Route path="/links" render={(props) => <LinksPage {...props} />} />
-
-          <Route path="/showcase">
-            <Header />
-            <Landing
-              lottiename="work"
-              redirect="#work"
-              p1="Ding Ding! Presenting"
-              p2="Semikolan Showcase"
-              p3="Collection of our projects"
-              buttontext="View Projects"
-            />
-            <Work num="01." removeViewMore />
-
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Showcase | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
+            <Route path="/links" render={(props) => <Showcase {...props} />} />
 
           <Route exact path="/initiatives">
             <Header />
