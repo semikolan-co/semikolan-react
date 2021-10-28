@@ -1,17 +1,15 @@
 import Header from "./component/Header";
 import Landing from "./component/Landing";
-import About from "./component/About";
+import AboutPage from "./pages/About";
 import Skills from "./component/Skills";
 import Work from "./component/Work";
 import Achievements from "./component/Achievements";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
-import Technologies from "./component/Technologies";
 import Map from "./component/Map";
 import ContactForm from "./component/ContactForm";
 import Join from "./component/Join";
 import Error404 from "./component/Error404";
-import Whatwedo from "./component/Whatwedo";
 import BongoCat from "./component/BongoCat";
 import Introduce from "./component/Introduce";
 import Profile from "./component/userprofile/Profile";
@@ -24,33 +22,17 @@ import Captcha from "./component/Captcha";
 
 export default function App() {
   return (
+    
     <Router>
+      
       <div class="container-80">
         <Switch>
-          <Route exact path="/about">
-            <Header />
-            <Landing
-              lottiename="about"
-              redirect="#about"
-              p1="This is all you need to know"
-              p2="About Us"
-              p3="Who we are & What we do"
-              buttontext="Know more"
-            />
-            <About
-              num="01."
-              titleline="What is SemiKolan?&#129300;&#129300;"
-              content={semikolan.about.content}
-              removeViewMore
-            />
-            <Whatwedo num="03." titleline="What we do" />
-            <Technologies num="03." technologies={semikolan.technologies} />
 
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>About | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
+          
+            <Route path="/about" render={(props) => <AboutPage {...props} />} />
+
+
+
 
           <Route exact path="/links">
             <Header />
