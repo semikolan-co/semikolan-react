@@ -1,6 +1,7 @@
 import Header from "./component/Header";
 import Landing from "./component/Landing";
 import AboutPage from "./pages/AboutPage";
+import LinksPage from "./pages/LinksPage";
 import About from "./component/About";
 import Skills from "./component/Skills";
 import Work from "./component/Work";
@@ -15,7 +16,6 @@ import BongoCat from "./component/BongoCat";
 import Introduce from "./component/Introduce";
 import Profile from "./component/Profile";
 import semikolan from "./json/semikolan.json";
-import Links from "./component/Links";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -31,26 +31,8 @@ export default function App() {
 
           
             <Route path="/about" render={(props) => <AboutPage {...props} />} />
+            <Route path="/links" render={(props) => <LinksPage {...props} />} />
 
-
-
-
-          <Route exact path="/links">
-            <Header />
-            <Landing
-              lottiename="links"
-              redirect="#links"
-              p1=""
-              p2="Links"
-              p3="All in one Place"
-              buttontext=""
-            />
-            <Links />
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Links | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
           <Route exact path="/captcha">
             <Captcha />
           </Route>
