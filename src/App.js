@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import { Helmet } from "react-helmet";
 import Showcase from "./pages/Showcase";
+import Initiatives from "./pages/Initiatives";
 
 export default function App() {
   return (
@@ -32,26 +33,9 @@ export default function App() {
             <Route path="/links" render={(props) => <LinksPage {...props} />} />
             <Route path="/showcase" render={(props) => <Showcase {...props} />} />
             <Route path="/initiatives" render={(props) => <Initiatives {...props} />} />
+            <Route path="/contact" render={(props) => <Contact {...props} />} />
 
-          <Route exact path="/contact">
-            <Header />
-            <Landing
-              lottiename="contact"
-              redirect="#contact"
-              p1="Now You Would like to"
-              p2="Contact Us"
-              p3="Send your Query"
-              buttontext="Send Query"
-            />
-            <Map />
-            <ContactForm />
-
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Contact | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
-
+            
           <Route exact path="/dev/:name">
             <Profile />
             <Footer social={semikolan.social} />
