@@ -1,6 +1,6 @@
 import Header from "./component/Header";
 import Landing from "./component/Landing";
-import AboutPage from "./pages/About";
+import AboutPage from "./pages/AboutPage";
 import About from "./component/About";
 import Skills from "./component/Skills";
 import Work from "./component/Work";
