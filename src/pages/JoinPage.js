@@ -6,7 +6,7 @@ import Join from '../component/Join'
 import { Helmet } from "react-helmet"
 import semikolan from '../json/semikolan.json'
 
-export default function Join() {
+export default function JoinPage() {
     return (
         <>
           <Header />

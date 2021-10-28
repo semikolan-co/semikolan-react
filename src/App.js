@@ -21,6 +21,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Showcase from "./pages/Showcase";
 import Initiatives from "./pages/Initiatives";
+import JoinPage from "./pages/JoinPage";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -34,7 +36,8 @@ export default function App() {
             <Route path="/showcase" render={(props) => <Showcase {...props} />} />
             <Route path="/initiatives" render={(props) => <Initiatives {...props} />} />
             <Route path="/contact" render={(props) => <Contact {...props} />} />
-            <Route path="/join" render={(props) => <Join {...props} />} />
+            <Route path="/join" render={(props) => <JoinPage {...props} />} />
+            <Route path="/" render={(props) => <Home {...props} />} />
 
             
           <Route exact path="/dev/:name">
@@ -51,46 +54,14 @@ export default function App() {
               <title>Join | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
-          {/* ======================================= */}
-          {/* ======================================= */}
-          <Route exact path="/">
-            <Header />
-            <Landing
-              lottiename="home"
-              redirect="contact"
-              p1="Hii, We are the team of "
-              p2="Harsh Vishwakarma"
-              p3="We Build Things"
-              buttontext="Get in Touch"
-              IndexPage
-            />
-            <About
-              num="01."
-              titleline="What is SemiKolan?&#129300;&#129300;"
-              content={semikolan.about.content}
-            />
-            <Skills num="02." elements={semikolan.skills} />
+          
+<Route exact path="">
+  <Error404 />
 
-            <Work num="03." />
-            <Achievements
-              num="04."
-              achievements={semikolan.achievements.slice(0, 6)}
-            />
-            <Contact num="5." />
-
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
-
-          <Route exact path="">
-            <Error404 />
-
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>404 | SemiKolan | Never Stop Building</title>
-            </Helmet>
+  <Footer social={semikolan.social} />
+  <Helmet>
+    <title>404 | SemiKolan | Never Stop Building</title>
+  </Helmet> 
           </Route>
         </Switch>
       </div>
