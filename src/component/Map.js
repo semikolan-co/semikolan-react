@@ -21,7 +21,7 @@ function About(props) {
     marginTop:20,
     fontWeight: 500,
     wordSpacing: "8px" }} >
-            You'll see our address here soon. Till then, we're everywhere in the
+            We're everywhere in the
             cloud :)
           </p>
         </div>
