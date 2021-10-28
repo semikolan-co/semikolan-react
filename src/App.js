@@ -23,6 +23,8 @@ import Showcase from "./pages/Showcase";
 import Initiatives from "./pages/Initiatives";
 import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
+import Error404Page from "./component/Whatwedo";
+import ProfilePage from "./pages/ProfilePage";
 
 export default function App() {
   return (
@@ -37,25 +39,9 @@ export default function App() {
             <Route path="/initiatives" render={(props) => <Initiatives {...props} />} />
             <Route path="/contact" render={(props) => <Contact {...props} />} />
             <Route path="/join" render={(props) => <JoinPage {...props} />} />
+            <Route path="/dev/:name" render={(props) => <ProfilePage {...props} />} />
             <Route path="/" render={(props) => <Home {...props} />} />
-
-            
-          <Route exact path="/dev/:name">
-            <Profile />
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
-          
-<Route exact path="">
-  <Error404 />
-
-  <Footer social={semikolan.social} />
-  <Helmet>
-    <title>404 | SemiKolan | Never Stop Building</title>
-  </Helmet> 
-          </Route>
+            <Route path="" render={(props) => <Error404Page {...props} />} />
         </Switch>
       </div>
     </Router>
