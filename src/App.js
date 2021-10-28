@@ -19,7 +19,6 @@ import semikolan from "./json/semikolan.json";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import { Helmet } from "react-helmet";
-import Captcha from "./component/Captcha";
 import Showcase from "./pages/Showcase";
 
 export default function App() {
@@ -28,30 +27,11 @@ export default function App() {
     <Router>
       
       <div class="container-80">
-        <Switch>
-
-          
+        <Switch>          
             <Route path="/about" render={(props) => <AboutPage {...props} />} />
             <Route path="/links" render={(props) => <LinksPage {...props} />} />
-            <Route path="/links" render={(props) => <Showcase {...props} />} />
-
-          <Route exact path="/initiatives">
-            <Header />
-            <Landing
-              lottiename="achievements"
-              redirect="#billi"
-              p1=""
-              p2="Our Initiatives"
-              p3="Things we're building for the world!"
-              buttontext="Have a Look"
-            />
-            <BongoCat />
-
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Initiatives | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
+            <Route path="/showcase" render={(props) => <Showcase {...props} />} />
+            <Route path="/initiatives" render={(props) => <Initiatives {...props} />} />
 
           <Route exact path="/contact">
             <Header />
