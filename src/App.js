@@ -34,6 +34,7 @@ export default function App() {
             <Route path="/showcase" render={(props) => <Showcase {...props} />} />
             <Route path="/initiatives" render={(props) => <Initiatives {...props} />} />
             <Route path="/contact" render={(props) => <Contact {...props} />} />
+            <Route path="/join" render={(props) => <Join {...props} />} />
 
             
           <Route exact path="/dev/:name">
@@ -44,22 +45,6 @@ export default function App() {
             </Helmet>
           </Route>
 
-          <Route exact path="/join">
-            <Header />
-            <Landing
-              lottiename="join"
-              redirect="#work"
-              p1="Currently, We are Building"
-              p2="Our Own Ecosystem"
-              p3="Till then Join us through"
-              buttontext="Scroll Down"
-            />
-            <Join num="01." />
-            <Footer social={semikolan.social} />
-            <Helmet>
-              <title>Join | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
           <Route exact path="/introduce">
             <Introduce />
             <Helmet>
