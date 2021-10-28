@@ -1,5 +1,5 @@
 import API from "./API";
-import harsh from "../images/harsh.jpg";
+import harsh from "../assets/images/harsh.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
 import Recaptcha from "react-recaptcha";
