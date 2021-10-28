@@ -47,13 +47,6 @@ export default function App() {
               <title>Harsh Vishwakarma | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
-
-          <Route exact path="/introduce">
-            <Introduce />
-            <Helmet>
-              <title>Join | SemiKolan | Never Stop Building</title>
-            </Helmet>
-          </Route>
           
 <Route exact path="">
   <Error404 />
