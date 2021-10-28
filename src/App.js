@@ -33,10 +33,6 @@ export default function App() {
             <Route path="/about" render={(props) => <AboutPage {...props} />} />
             <Route path="/links" render={(props) => <LinksPage {...props} />} />
 
-          <Route exact path="/captcha">
-            <Captcha />
-          </Route>
-
           <Route path="/showcase">
             <Header />
             <Landing
