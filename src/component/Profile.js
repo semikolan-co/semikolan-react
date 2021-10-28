@@ -1,13 +1,14 @@
-import Landing from "../../component/Landing";
-import About from "../../component/About";
-import Skills from "../../component/Skills";
-import Achievements from "../../component/Achievements";
-import Technologies from "../../component/Technologies";
+import Landing from "./Landing";
+import About from "./About";
+import Skills from "./Skills";
+import Achievements from "./Achievements";
+import Technologies from "./Technologies";
 import React, { useEffect } from "react";
-import DeveloperJSON from "./harsh.json";
+import DeveloperJSON from "../json/profiles/harsh.json";
 import { useParams } from "react-router-dom";
-import Error404 from "../Error404";
-import wilson from "./wilson.json";
+import Error404 from "./Error404";
+import wilson from "../json/profiles/wilson.json";
+
 export default function App() {
   let reqName = "";
   const { name } = useParams();

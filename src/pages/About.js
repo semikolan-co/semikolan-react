@@ -5,6 +5,8 @@ import Footer from '../component/Footer'
 import About from '../component/About'
 import Whatwedo from '../component/Whatwedo'
 import Technologies from '../component/Technologies'
+import semikolan from '../json/semikolan.json'
+import { Helmet } from "react-helmet";
 
 export default function AboutPage() {
     return (

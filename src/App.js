@@ -1,6 +1,7 @@
 import Header from "./component/Header";
 import Landing from "./component/Landing";
 import AboutPage from "./pages/About";
+import About from "./component/About";
 import Skills from "./component/Skills";
 import Work from "./component/Work";
 import Achievements from "./component/Achievements";
@@ -12,8 +13,8 @@ import Join from "./component/Join";
 import Error404 from "./component/Error404";
 import BongoCat from "./component/BongoCat";
 import Introduce from "./component/Introduce";
-import Profile from "./component/userprofile/Profile";
-import semikolan from "./semikolan.json";
+import Profile from "./component/Profile";
+import semikolan from "./json/semikolan.json";
 import Links from "./component/Links";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
