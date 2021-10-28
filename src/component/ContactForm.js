@@ -16,7 +16,6 @@ function Contact(props) {
 
   var callback = function () {
     console.log("Done!!!!");
-    //setShowCaptcha(true);
   };
   var verifyCallback = function (response) {
     console.log(response);
@@ -37,7 +36,7 @@ function Contact(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    console.log(click);
     setOpen(true);
     if (click) {
       API.post(`contact`, { name, email, message })
@@ -64,34 +63,8 @@ function Contact(props) {
       setOpen(false);
       setClick(false);
     }
-
-
-    {
-      /**const name2 = document.querySelector("input[name=name]").value;
- const email2 = document.querySelector("input[name=email]").value;
-    const message2 = document.querySelector("textarea[name=message]").value; */
-    }
-    API.post(`contact`, { name, email, message })
-      .then((res) => {
-        alert(
-          "Your Query has been registered success. Our Team will contact you soon"
-        );
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert(
-          `We're Sorry, Your query has not been Registered \n
-        It is happened due to -- ` + error
-        );
-      })
-      .then(function () {
-        // always executed
-      });
-    setEmail("");
-    setName("");
-    setMessage("");
-
   };
+
   return (
     <div id="contact" className="container">
       <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
@@ -102,9 +75,6 @@ function Contact(props) {
       </div>
 
       <form id="someForm">
-
-      <form>
-
         <div className="gitdiv row">
           <div
             className="col-lg-6 col-md-6 col-sm-12"
@@ -151,7 +121,6 @@ function Contact(props) {
               type="submit"
               className="mt-3"
               onClick={handleSubmit}
-
               style={{ marginBottom: "90px" }}
             >
               {click ? <span>Send Query</span> : <span>Verify</span>}
@@ -165,17 +134,11 @@ function Contact(props) {
                 onloadCallback={callback}
               />
             )}
-
-            >
-              Send Query
-            </button>
-
           </div>
         </div>
       </form>
     </div>
   );
 }
-{
-}
+
 export default Contact;
