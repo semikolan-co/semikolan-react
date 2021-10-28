@@ -1,4 +1,4 @@
-import harsh from '../images/harsh.jpg';
+import harsh from '../assets/images/harsh.jpg';
 function Loader() {
   return (
     <div className="loader01">

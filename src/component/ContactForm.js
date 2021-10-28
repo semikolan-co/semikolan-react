@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import git from "../lottie/git";
+import git from "../assets/lottie/git";
 import API from "./API";
 
 import Recaptcha from "react-recaptcha";
