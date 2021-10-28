@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import projectJson from "../projects.json";
+import projectJson from "../json/projects.json";
 
 const resolveImagepath = (imgName) => {
   return require(`../assets/images/${imgName}`).default;
