@@ -1,7 +1,7 @@
 import Lottie from "react-lottie";
-import discord from "../lottie/discord";
-import whatsapp from "../lottie/whatsapp";
-import telegram from "../lottie/telegram";
+import discord from "../assets/lottie/discord";
+import whatsapp from "../assets/lottie/whatsapp";
+import telegram from "../assets/lottie/telegram";
 
 function Join(props) {
 

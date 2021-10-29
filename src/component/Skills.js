@@ -1,4 +1,4 @@
-import harsh from '../images/harsh.jpg';
+import harsh from '../assets/images/harsh.jpg';
 import React,{Component} from 'react';
 import AOS from 'aos';
 class About extends React.Component {

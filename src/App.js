@@ -1,31 +1,27 @@
-import Header from "./component/Header";
-import Landing from "./component/Landing";
-import About from "./component/About";
-import Skills from "./component/Skills";
-import Work from "./component/Work";
-import Achievements from "./component/Achievements";
+import AboutPage from "./pages/AboutPage";
+import LinksPage from "./pages/LinksPage";
 import Contact from "./component/Contact";
-import Footer from "./component/Footer";
-import Technologies from "./component/Technologies";
-import Map from "./component/Map";
-import ContactForm from "./component/ContactForm";
-import Join from "./component/Join";
-import Error404 from "./component/Error404";
-import Whatwedo from "./component/Whatwedo";
-import BongoCat from "./component/BongoCat";
-import Introduce from "./component/Introduce";
-import Profile from "./component/userprofile/Profile";
-import semikolan from "./semikolan.json";
-import Links from "./component/Links";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
+
 import { Helmet } from "react-helmet";
 import Captcha from "./component/Captcha";
 import Projects from "./component/Projects";
+
+import Showcase from "./pages/Showcase";
+import Initiatives from "./pages/Initiatives";
+import JoinPage from "./pages/JoinPage";
+import Home from "./pages/Home";
+import Error404Page from "./component/Whatwedo";
+import ProfilePage from "./pages/ProfilePage";
+
+
 export default function App() {
   return (
-    <Router>
+    
+    <Router>      
       <div class="container-80">
+
         <Switch>
           <Route exact path="/about">
             <Header />
@@ -158,8 +154,7 @@ export default function App() {
               <title>Join | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
-          {/* ======================================= */}
-          {/* ======================================= */}
+
           <Route exact path="/">
             <Header />
             <Landing
@@ -199,6 +194,18 @@ export default function App() {
               <title>404 | SemiKolan | Never Stop Building</title>
             </Helmet>
           </Route>
+
+        <Switch>          
+            <Route exact path="/about" render={(props) => <AboutPage {...props} />} />
+            <Route exact path="/links" render={(props) => <LinksPage {...props} />} />
+            <Route exact path="/showcase" render={(props) => <Showcase {...props} />} />
+            <Route exact path="/initiatives" render={(props) => <Initiatives {...props} />} />
+            <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+            <Route exact path="/join" render={(props) => <JoinPage {...props} />} />
+            <Route exact path="/dev/:name" render={(props) => <ProfilePage {...props} />} />
+            <Route exact path="/" render={(props) => <Home {...props} />} />
+            <Route path="" render={(props) => <Error404Page {...props} />} />
+
         </Switch>
       </div>
     </Router>

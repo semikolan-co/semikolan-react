@@ -1,4 +1,4 @@
-import "../css/404.css";
+import "../assets/css/404.css";
 import { gsap } from "gsap";
 import React, { useState, useEffect } from "react";
 

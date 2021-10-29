@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import '../css/404.css'
-import astronaut from '../images/astronaut.png'
+import '../assets/css/404.css'
+import astronaut from '../assets/images/astronaut.png'
 
 const Error404 = () => {
   return (

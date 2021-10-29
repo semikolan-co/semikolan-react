@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import React, { useEffect, useState } from "react";
-import logo from "../images/logo.png";
+import logo from "../assets/images/logo.png";
 import AOS from "aos";
 
 import { render } from "@testing-library/react";

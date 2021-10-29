@@ -1,5 +1,5 @@
 import React from 'react'
-import linksjson from './../links.json'
+import linksjson from './../json/links.json'
 
 export default function Links() {
     // Pase JSON into array
