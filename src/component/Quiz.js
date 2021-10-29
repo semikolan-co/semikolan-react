@@ -1,20 +1,17 @@
 import React, { useContext } from "react";
 import { UserContext } from "../providers/UserProvider";
 import { navigate } from "@reach/router";
-import {auth} from "../firebase";
+import { auth } from "../firebase";
 import API from "./API";
 import Timer from "react-compound-timer";
-
-
-
 
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
       questions: [],
-      score:null,
-      timer:false
+      score: null,
+      timer: false,
       // isCorrect: [],
       // rightAnswers: 0,
     };
@@ -44,23 +41,22 @@ export default class App extends React.Component {
     });
   }
 
-  submitAnswer(){
+  submitAnswer() {
     // console.log(this.state)
-  
-    API.post(`submitanswer`,
-    {questions:this.state.questions}
-    )
+
+    API.post(`submitanswer`, { questions: this.state.questions })
       .then((res) => {
         console.log(res.data);
         const score = res.data.score;
-        this.setState({ score:score });
+        this.setState({ score: score });
       })
       .catch(function (error) {
         console.log(error);
       })
       .then(function () {
         // always executed
-      });}
+      });
+  }
 
   componentDidMount() {
     // const isCorrect = [];
@@ -70,20 +66,19 @@ export default class App extends React.Component {
     //   isCorrect,
     // });
 
-
     API.get(`questions`)
       .then((res) => {
         console.log(res.data);
         const questions = res.data;
-        this.setState({ questions:questions, timer: true });
-        console.log("Data Recieved",this.state.timer)
+        this.setState({ questions: questions, timer: true });
+        console.log("Data Recieved", this.state.timer);
       })
       .catch(function (error) {
         console.log(error);
       })
       .then(function () {
         // always executed
-      }); 
+      });
   }
 
   render() {
@@ -101,7 +96,7 @@ export default class App extends React.Component {
             {
               time: 1000,
               callback: () => {
-                this.submitAnswer()
+                this.submitAnswer();
               },
             },
           ]}
@@ -116,22 +111,22 @@ export default class App extends React.Component {
             </React.Fragment>
           )}
         </Timer>
-{this.state.score ? <>
-<p>Paper has been Submitted</p>
-</>:
-        <>
-        <Questions data={this.state.questions} logValue={this.logValue} />
-        <button onClick={this.submitAnswer} className="button">
-          Submit
-        </button>
-        </>
-  }
+        {this.state.score ? (
+          <>
+            <p>Paper has been Submitted</p>
+          </>
+        ) : (
+          <>
+            <Questions data={this.state.questions} logValue={this.logValue} />
+            <button onClick={this.submitAnswer} className="button">
+              Submit
+            </button>
+          </>
+        )}
       </div>
     );
   }
 }
-
-
 
 class Questions extends React.Component {
   render() {
@@ -141,7 +136,7 @@ class Questions extends React.Component {
           <p>
             Q{i + 1}: &nbsp;<span className="text-strong">{q.question}</span>
           </p>
-          {q.answers.map((a,i2) => (
+          {q.answers.map((a, i2) => (
             <div>
               <input
                 onChange={this.props.logValue}
@@ -149,9 +144,9 @@ class Questions extends React.Component {
                 defaultValue={a}
                 data-whichQuestionIndex={i}
                 name={q.name}
-                id={a+'-'+i2}
+                id={a + "-" + i2}
               />
-              <label htmlFor={a+'-'+i2} >&nbsp;{a}</label>
+              <label htmlFor={a + "-" + i2}>&nbsp;{a}</label>
             </div>
           ))}
         </div>

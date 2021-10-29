@@ -1,0 +1,44 @@
+{
+    "projects": [
+      {
+        "type": "Media",
+        "image_pathname": "Blogs.png",
+        "title": "SemiKolan Blogs",
+        "description": "Care4Covid is a Realtime Statistical Website for Analysis of Covid-19 (Sars-Cov-2). It is an attempt to help people stay updated with the Covid-19 Analytics.",
+        "technologies": "PHP Blade ",
+        "github_repo_link": "https://github.com/semikolan-co/blog.semikolan.co",
+        "external_link": "https://blog.semikolan.co/"
+      },
+      {
+        "type": "Media",
+        "image_pathname": "insta.png",
+        "title": "Instalyzer",
+        "description": "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities.",
+        "technologies": "CSS SCSS JS HTML",
+        "github_repo_link": "https://github.com/semikolan-co/Instalyzer",
+        "external_link": "https://instalyzer.netlify.app/"
+      },
+      {
+        "type": "Media",
+        "image_pathname": "semiKolon.png",
+        "title": "SemiKolan",
+  
+        "description": "Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to Learn, Connect, create great connections and work on various Open-Source projects. SemiKolan is a Community For the Developers, By the Developers, To the Developers",
+        "technologies": "CSS JS HTML",
+        "github_repo_link": "https://github.com/semikolan-co/semikolan-react",
+        "external_link": "https://semikolan.co/"
+      },
+      {
+        "type": "Media",
+        "image_pathname": "insta.png",
+        "title": "Instalyzer Back.",
+  
+        "description": "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities.",
+        "technologies": "Python HTML",
+        "github_repo_link": "https://github.com/semikolan-co/Instalyzer-Backend",
+        "external_link": ""
+      }
+     
+    ]
+  }
+  

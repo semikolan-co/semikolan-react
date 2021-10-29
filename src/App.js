@@ -21,7 +21,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import { Helmet } from "react-helmet";
 import Captcha from "./component/Captcha";
-
+import Projects from "./component/Projects";
 export default function App() {
   return (
     <Router>
@@ -100,6 +100,7 @@ export default function App() {
               p3="Things we're building for the world!"
               buttontext="Have a Look"
             />
+            <Projects num="01." removeViewMore />
             <BongoCat />
 
             <Footer social={semikolan.social} />
