@@ -1,0 +1,34 @@
+{
+    "projects": [
+      {
+        "type": "Media",
+        "image_pathname": "unknown.PNG",
+        "title": "SemiKolan Blogs",
+        "description": "SemiKolan Blog is a Platform for Learners  to Learn and Share thier Knowledge among others",
+        "technologies": "PHP Laravel HTML CSS ",
+        "github_repo_link": "https://github.com/semikolan-co/blog.semikolan.co",
+        "external_link": "https://blog.semikolan.co/"
+      },
+      {
+        "type": "Media",
+        "image_pathname": "insta.png",
+        "title": "Instalyzer",
+        "description": "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities.",
+        "technologies": "CSS SCSS JS HTML",
+        "github_repo_link": "https://github.com/semikolan-co/Instalyzer",
+        "external_link": "https://instalyzer.netlify.app/"
+      },
+      {
+        "type": "Media",
+        "image_pathname": "semiKolon.png",
+        "title": "SemiKolan",
+  
+        "description": "Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to Learn, Connect, create great connections and work on various Open-Source projects. SemiKolan is a Community For the Developers, By the Developers, To the Developers",
+        "technologies": "CSS JS HTML",
+        "github_repo_link": "https://github.com/semikolan-co/semikolan-react",
+        "external_link": "https://semikolan.co/"
+      }
+    
+     
+    ]
+  }
