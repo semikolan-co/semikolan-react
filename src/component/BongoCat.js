@@ -125,7 +125,6 @@ export default function Error404(props) {
         }}
       >
         <div className="container">
-          <Projects />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 783.55 354.91">
             <g id="bongo-cat">
               <g className="head">
