@@ -45,9 +45,9 @@ class Header extends React.Component {
           </Link>
         </span>
         <i
-          onClick={() => {
-            this._toggleDiv();
-          }}
+          // onClick={() => {
+          //   this._toggleDiv();
+          // }}
           className="fa fa-bars"
         />
         <nav className="nav01" data-aos="fade-down" data-aos-duration={500}>
@@ -55,9 +55,9 @@ class Header extends React.Component {
             <li>
               <Link
                 to="/about"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                //   onClick={() => {
+                //    this._toggleDiv();
+                //  }}
               >
                 <em>01.</em>&nbsp;About
               </Link>
@@ -65,9 +65,9 @@ class Header extends React.Component {
             <li>
               <Link
                 to="/showcase"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                //onClick={() => {
+                //   this._toggleDiv();
+                // }}
               >
                 <em>02.</em>&nbsp;Showcase
               </Link>
@@ -75,9 +75,9 @@ class Header extends React.Component {
             <li>
               <Link
                 to="/initiatives"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                // onClick={() => {
+                //   this._toggleDiv();
+                //  }}
               >
                 <em>03.</em>&nbsp;Initiatives
               </Link>
@@ -85,9 +85,9 @@ class Header extends React.Component {
             <li>
               <Link
                 to="/join"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                // onClick={() => {
+                //   this._toggleDiv();
+                // }}
               >
                 <em>04.</em>&nbsp;Join
               </Link>
@@ -95,9 +95,9 @@ class Header extends React.Component {
             <li>
               <Link
                 to="/contact"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                //  onClick={() => {
+                //    this._toggleDiv();
+                // }}
               >
                 <em>05.</em>&nbsp;Contact
               </Link>
@@ -105,9 +105,9 @@ class Header extends React.Component {
             <li>
               <a
                 target="_blank"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
+                // onClick={() => {
+                //   this._toggleDiv();
+                //  }}
                 href="https://blog.semikolan.co"
               >
                 Blog
