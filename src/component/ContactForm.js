@@ -128,7 +128,7 @@ function Contact(props) {
             {open && (
               <Recaptcha
                 className="captcha"
-                sitekey="6LdtoQMdAAAAAJAoo7a8yoWLWgxk9fB3CjAmRvp8"
+                sitekey="6LcHOQwdAAAAADwtFsFMCClqn-DL2-OjViqh5ec1"
                 render="explicit"
                 verifyCallback={verifyCallback}
                 onloadCallback={callback}
