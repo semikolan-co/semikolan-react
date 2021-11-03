@@ -1,9 +1,9 @@
 import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import API from "./API";
-
 import Recaptcha from "react-recaptcha";
-
+import { Button } from "reactstrap";
+import ContactJS from "./ContactForm";
 import React, { useState } from "react";
 function Contact(props) {
   const [name, setName] = useState("");
@@ -68,12 +68,9 @@ function Contact(props) {
   return (
     <div id="contact" className="container">
       <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
-        <span>
-          <em>02.</em>&nbsp;Get in Touch with Us
-        </span>
+        <span>&nbsp;Get in Touch with Us</span>
         <div className="line-horizontal" />
       </div>
-
       <form id="someForm">
         <div className="gitdiv row">
           <div

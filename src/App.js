@@ -1,6 +1,6 @@
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
-import Contact from "./component/Contact";
+import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import Showcase from "./pages/Showcase";
@@ -9,7 +9,6 @@ import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
 import Error404Page from "./component/Whatwedo";
 import ProfilePage from "./pages/ProfiePage";
-
 export default function App() {
   return (
     <Router>
@@ -40,6 +39,7 @@ export default function App() {
             path="/contact"
             render={(props) => <Contact {...props} />}
           />
+
           <Route
             exact
             path="/join"
