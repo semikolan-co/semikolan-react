@@ -1,6 +1,7 @@
 import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Contact2 from "../pages/Contact";
 function Contact(props) {
   const gitlottie = {
     loop: true,
@@ -8,7 +9,7 @@ function Contact(props) {
     animationData: git,
   };
   const style = {
-    width:"100%",
+    width: "100%",
   };
   return (
     <div id="work" className="container">
@@ -35,8 +36,11 @@ function Contact(props) {
         >
           <span>Get in Touch</span>
           <span>
-            Currently we are looking for the place where the Magic Happens. And waiting for someone to send their Boat for us to reach that place.
-            <br />If you didn't get it have a Look at <a href="hijij">TVF Pitchers</a><br />
+            Currently we are looking for the place where the Magic Happens. And
+            waiting for someone to send their Boat for us to reach that place.
+            <br />
+            If you didn't get it have a Look at <a href="hijij">TVF Pitchers</a>
+            <br />
             In short, We are always ready for new Opportunities
           </span>
           <Link to="/contact">Contact Us</Link>

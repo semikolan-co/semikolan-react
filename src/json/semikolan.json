@@ -45,6 +45,21 @@
       "description": "We can help you to gain Exposure, connect with a community where we can Discuss, Code, Collaborate and have fun at Explore."
     }
   ],
+  "community":[
+    {
+      "title":"Hack Odisha"
+    },
+    {
+      "title":"Hack this fall"
+    },
+    {
+      "title":"Script winter of code"
+    },
+    {
+      "title":"Infinite clone conspiracy"
+    }
+  ],
+
   "technologies": [
     "ajax",
     "bootstrap",
