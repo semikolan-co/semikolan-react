@@ -53,63 +53,32 @@ class Header extends React.Component {
         <nav className="nav01" data-aos="fade-down" data-aos-duration={500}>
           <ul>
             <li>
-              <Link
-                to="/about"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-              >
+              <Link to="/about">
                 <em>01.</em>&nbsp;About
               </Link>
             </li>
             <li>
-              <Link
-                to="/showcase"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-              >
+              <Link to="/showcase">
                 <em>02.</em>&nbsp;Showcase
               </Link>
             </li>
             <li>
-              <Link
-                to="/initiatives"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-              >
+              <Link to="/initiatives">
                 <em>03.</em>&nbsp;Initiatives
               </Link>
             </li>
             <li>
-              <Link
-                to="/join"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-              >
+              <Link to="/join">
                 <em>04.</em>&nbsp;Join
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-              >
+              <Link to="/contact">
                 <em>05.</em>&nbsp;Contact
               </Link>
             </li>
             <li>
-              <a
-                target="_blank"
-                onClick={() => {
-                  this._toggleDiv();
-                }}
-                href="https://blog.semikolan.co"
-              >
+              <a target="_blank" href="https://blog.semikolan.co">
                 Blog
               </a>
             </li>
