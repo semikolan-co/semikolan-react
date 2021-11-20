@@ -1,6 +1,6 @@
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
-import Contact from "./pages/Contact";
+import Contact from "./pages/ContactPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import Showcase from "./pages/Showcase";
@@ -8,10 +8,10 @@ import Initiatives from "./pages/Initiatives";
 import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage";
-import Contact from "./pages/ContactPage";
 import Error404Page from "./component/Whatwedo";
 
 export default function App() {
+  return (
     <Router>
       <div class="container-80">
         <Switch>
@@ -55,5 +55,6 @@ export default function App() {
         </Switch>
       </div>
     </Router>
+  );
   
 }

@@ -1,7 +1,6 @@
 import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Contact2 from "../pages/Contact";
 function Contact(props) {
   const gitlottie = {
     loop: true,
