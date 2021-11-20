@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: `https://dummybackend.meinhoonharsh.repl.co/`,
+  baseURL: `https://semikolan-backend.lordblackwood.repl.co/`,
 });
