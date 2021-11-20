@@ -29,6 +29,7 @@ function Footer(props) {
           alert(
             "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
           );
+          
         })
         .catch(function (error) {
           console.log(error);
@@ -39,11 +40,12 @@ function Footer(props) {
         })
         .then(function () {
           // always executed
-        });
+          
       setName("");
       setShowCaptcha(false);
       setOpen(false);
       setClick(false);
+        });
     }
   }
 
