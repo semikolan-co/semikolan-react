@@ -24,11 +24,13 @@ function Footer(props) {
     setOpen(true);
     event.preventDefault();
     if (click) {
-      API.post(`subscribeuser`, { name })
+      console.log("Email:", name);
+      API.post(`subscribeuser`, { email:name })
         .then((res) => {
           alert(
             "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
           );
+          
         })
         .catch(function (error) {
           console.log(error);
@@ -39,11 +41,12 @@ function Footer(props) {
         })
         .then(function () {
           // always executed
-        });
+          
       setName("");
       setShowCaptcha(false);
       setOpen(false);
       setClick(false);
+        });
     }
   }
 
