@@ -1,14 +1,14 @@
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
-import Contact from "./component/Contact";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import Showcase from "./pages/Showcase";
 import Initiatives from "./pages/Initiatives";
 import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
-import Error404Page from "./component/Whatwedo";
+import Error404Page from "./pages/Error404Page";
 import ProfilePage from "./pages/ProfilePage";
+import Contact from "./pages/ContactPage";
 
 export default function App() {
   return (
