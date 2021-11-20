@@ -1,14 +1,14 @@
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
-import Contact from "./pages/Contact";
+import Contact from "./pages/ContactPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import Showcase from "./pages/Showcase";
 import Initiatives from "./pages/Initiatives";
 import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
+import ProfilePage from "./pages/ProfilePage";
 import Error404Page from "./component/Whatwedo";
-import ProfilePage from "./pages/ProfiePage";
 
 export default function App() {
   return (
@@ -56,4 +56,5 @@ export default function App() {
       </div>
     </Router>
   );
+  
 }

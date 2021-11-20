@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
+import Error404 from '../component/Error404'
 import { Helmet } from "react-helmet"
 import semikolan from '../json/semikolan.json'
 
