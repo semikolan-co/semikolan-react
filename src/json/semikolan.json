@@ -4,14 +4,38 @@
     "img": "harsh"
   },
   "skills": [
-    ["Think", "30"],
-    ["Design", "35"],
-    ["Code", "55"],
-    ["Debug", "45"],
-    ["Debug Again", "200"],
-    ["Hate Code", "90"],
-    ["Have Tea", "100"],
-    ["Deploy", "45"]
+    [
+      "Think",
+      "30"
+    ],
+    [
+      "Design",
+      "35"
+    ],
+    [
+      "Code",
+      "55"
+    ],
+    [
+      "Debug",
+      "45"
+    ],
+    [
+      "Debug Again",
+      "200"
+    ],
+    [
+      "Hate Code",
+      "90"
+    ],
+    [
+      "Have Tea",
+      "100"
+    ],
+    [
+      "Deploy",
+      "45"
+    ]
   ],
   "achievements": [
     {
@@ -45,21 +69,24 @@
       "description": "We can help you to gain Exposure, connect with a community where we can Discuss, Code, Collaborate and have fun at Explore."
     }
   ],
-  "community":[
+  "community": [
     {
-      "title":"Hack Odisha"
+      "title": "Hack Odisha",
+      "icon": "hackodhisa"
     },
     {
-      "title":"Hack this fall"
+      "title": "Hack this fall",
+      "icon": "hackthisfall"
     },
     {
-      "title":"Script winter of code"
+      "title": "Script winter of code",
+      "icon": "swoc"
     },
     {
-      "title":"Infinite clone conspiracy"
+      "title": "Infinite clone conspiracy",
+      "icon": "ICC"
     }
   ],
-
   "technologies": [
     "ajax",
     "bootstrap",
@@ -73,30 +100,30 @@
     "heroku",
     "photoshop",
     "fontawesome",
-"flutter",
-"kotlin",
-"java",
-"django",
-"react",
-"reactnative",
-"figma",
-"adobexd",
-"replit",
-"azure",
-"illustrator",
-"netlify",
-"firebase",
-"mongodb",
-"c",
-"cpp",
-"csharp",
-"blender"
+    "flutter",
+    "kotlin",
+    "java",
+    "django",
+    "react",
+    "reactnative",
+    "figma",
+    "adobexd",
+    "replit",
+    "azure",
+    "illustrator",
+    "netlify",
+    "firebase",
+    "mongodb",
+    "c",
+    "cpp",
+    "csharp",
+    "blender"
   ],
   "social": {
     "instagram": "https://instagram.com/semikolan.co",
     "github": "https://github.com/semikolan-co",
     "linkedin": "https://linkedin.com/company/semikolan",
-    "twitter":"https://twitter.com/semikolanco",
+    "twitter": "https://twitter.com/semikolanco",
     "mail": "contact@semikolan.co",
     "youtube": "https://www.youtube.com/channel/UCH5teysfHgUZmROSQlxr7tA"
   }

@@ -21,12 +21,13 @@ Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to 
 
 
 ### Table of Contents
-- [Installation Guide](#installation-guide)
-- [File Structure](#file-structure)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Join Us](#join-us)
-- [Color Reference](#color-reference)
-- [Contributers](#code-contributers)
+- [SemiKolan](#semikolan)
+    - [Table of Contents](#table-of-contents)
+  - [Installation Guide](#installation-guide)
+  - [File Structure](#file-structure)
+  - [Join Us](#join-us)
+  - [Color Reference](#color-reference)
+  - [Code Contributers](#code-contributers)
 
 
 ## Installation Guide
@@ -87,6 +88,8 @@ semikolan-react
         ├── Achievements.js
         ├── API.js
         ├── BongoCat.js
+        ├── Captcha.js
+        ├── Community.js
         ├── Contact.js
         ├── ContactForm.js
         ├── Error404.js

@@ -35,9 +35,10 @@ export default function Home() {
         num="04."
         achievements={semikolan.achievements.slice(0, 6)}
       />
-      {/**  <Community num="5." Community={semikolan.community.slice(0, 4)} />  */}
 
-      <Contact num="6." />
+      <Community num="05." Community={semikolan.community.slice(0, 4)} />
+
+      <Contact num="06." />
 
       <Footer social={semikolan.social} />
       <Helmet>
