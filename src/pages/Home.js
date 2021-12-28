@@ -7,6 +7,7 @@ import Contact from "../component/Contact";
 import Work from "../component/Work";
 import Skills from "../component/Skills";
 import Achievements from "../component/Achievements";
+import Community from "../component/Community";
 import { Helmet } from "react-helmet";
 import semikolan from "../json/semikolan.json";
 export default function Home() {
