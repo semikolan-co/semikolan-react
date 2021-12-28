@@ -32,7 +32,7 @@ import Blender from "../assets/images/technologies/blender-.png";
 
 import React from 'react'
 
-export default class extends React.Component {
+export default class Technology extends React.Component {
   technologies = {
     ajax:ajax,
     bootstrap:bootstrap,
@@ -77,7 +77,7 @@ export default class extends React.Component {
     <div className="row w-100">
       {this.props.technologies.map((technology, i) => {    
            return (<div className="col-xl-2 col-lg-2 col-md-3 col-4 text-center">
-        <img src={this.technologies[technology]} alt className="techicon" />
+        <img src={this.technologies[technology]} alt="Technology Icon" className="techicon" />
       </div>) 
         })}
       </div>

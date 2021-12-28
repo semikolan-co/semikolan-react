@@ -8,7 +8,7 @@ import work from "../assets/lottie/work";
 import join from "../assets/lottie/join";
 import Typed from "react-typed";
 import AOS from 'aos';
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 
 const lotties = {
@@ -45,7 +45,7 @@ function Landing(props) {
 
 
 
-  } ,[]);
+  } );
    const clock2 = {
      loop: true,
      autoplay: true,
@@ -53,9 +53,6 @@ function Landing(props) {
      rendererSettings: {
        preserveAspectRatio: "xMidYMid slice",
      },
-   };
-   const style = {
-     width: "100%",
    };
   return (
     <div className="home01">

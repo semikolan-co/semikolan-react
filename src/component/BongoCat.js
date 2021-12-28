@@ -1,15 +1,12 @@
 import "../assets/css/404.css";
 import { gsap } from "gsap";
-import React, { useState, useEffect } from "react";
-import Projects from "./Projects";
+import React, { useEffect } from "react";
 
 export default function Error404(props) {
   useEffect(() => {
-    "use strict";
     // Inspired By
     // https://codepen.io/abeatrize/pen/LJqYey
     var _a, _b;
-    // Bongo Cat originally created by @StrayRogue and @DitzyFlama
     const ID = "bongo-cat";
     const s = (selector) => `#${ID} ${selector}`;
     const notes = document.querySelectorAll(".note");

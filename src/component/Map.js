@@ -1,8 +1,5 @@
-import harsh from '../assets/images/harsh.jpg';
 import React from 'react'
 import './../assets/css/home.css'
-import {TweenMax, Linear} from 'gsap'
-import $ from 'jquery'
 function About(props) {
   return (
     <div id="about" className="about container">
