@@ -1,5 +1,3 @@
-import harsh from '../assets/images/harsh.jpg';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function About(props) {
   return (
         <div id="achievement" className="container">

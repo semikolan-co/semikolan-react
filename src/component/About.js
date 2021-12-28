@@ -40,7 +40,7 @@ function About(props) {
         </div>
         <div data-aos="fade-left" data-aos-duration={500}>
           <div className="img filterdiv" />
-          <img src={harsh} alt="Profile Image" className="img profileimg" />
+          <img src={harsh} alt="Profile" className="img profileimg" />
           <div className="img profileimgdiv" />
         </div>
       </div>

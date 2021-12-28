@@ -9,7 +9,6 @@ import Skills from "../component/Skills";
 import Achievements from "../component/Achievements";
 import { Helmet } from "react-helmet";
 import semikolan from "../json/semikolan.json";
-import Community from "../component/Community";
 export default function Home() {
   return (
     <>

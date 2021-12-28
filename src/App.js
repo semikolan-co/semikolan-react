@@ -1,7 +1,7 @@
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
 import Contact from "./pages/ContactPage";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import React from "react";
 import Showcase from "./pages/Showcase";
 import Initiatives from "./pages/Initiatives";

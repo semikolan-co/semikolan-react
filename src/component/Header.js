@@ -1,10 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../assets/images/logo.png";
-import AOS from "aos";
-
-import { render } from "@testing-library/react";
 
 class Header extends React.Component {
   constructor(props) {
@@ -38,7 +35,7 @@ class Header extends React.Component {
           onclick="location.replace('/')"
         >
           <Link to="/">
-            <img src={logo} style={{ height: "40px" }} />
+            <img src={logo} alt="SemiKolan Logo" style={{ height: "40px" }} />
             <span style={{ position: "relative", left: 5, top: 3 }}>
               &nbsp;SemiKolan
             </span>
@@ -78,7 +75,7 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <a target="_blank" href="https://blog.semikolan.co">
+              <a target="blank" href="https://blog.semikolan.co">
                 Blog
               </a>
             </li>

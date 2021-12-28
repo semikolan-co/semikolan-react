@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import projectJson from "../json/projects.json";
 
 const resolveImagepath = (imgName) => {
@@ -45,7 +45,7 @@ function Work(props) {
                 <span>
                   {project.github_repo_link !== "" ? (
                     <>
-                      <a target="_blank" href={project.github_repo_link}>
+                      <a target="blank" href={project.github_repo_link}>
                         <i className="fa fa-github" />
                       </a>
                       &nbsp;&nbsp;
@@ -54,7 +54,7 @@ function Work(props) {
 
                   {project.external_link !== "" ? (
                     <>
-                      <a target="_blank" href={project.external_link}>
+                      <a target="blank" href={project.external_link}>
                         <i className="fa fa-external-link-alt" />
                       </a>
                       &nbsp;&nbsp;

@@ -10,7 +10,7 @@ function Contact(props) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [showCaptcha, setShowCaptcha] = useState(false);
+  // const [showCaptcha, setShowCaptcha] = useState(false);
   const [open, setOpen] = useState(false);
   const [click, setClick] = useState(false);
 
@@ -20,7 +20,7 @@ function Contact(props) {
   var verifyCallback = function (response) {
     console.log(response);
     if (response) {
-      setShowCaptcha(true);
+      // setShowCaptcha(true);
       setClick(true);
     }
   };
@@ -59,7 +59,7 @@ function Contact(props) {
       setEmail("");
       setName("");
       setMessage("");
-      setShowCaptcha(false);
+      // setShowCaptcha(false);
       setOpen(false);
       setClick(false);
     }

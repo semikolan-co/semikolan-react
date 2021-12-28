@@ -2,19 +2,17 @@ import Landing from "./Landing";
 import About from "./About";
 import Skills from "./Skills";
 import Achievements from "./Achievements";
-import Technologies from "./Technologies";
-import React, { useEffect } from "react";
+import React from "react";
 import DeveloperJSON from "../json/profiles/harsh.json";
 import { useParams } from "react-router-dom";
 import Error404 from "./Error404";
-import wilson from "../json/profiles/wilson.json";
 
 export default function App() {
   let reqName = "";
   const { name } = useParams();
   let found = false;
-  DeveloperJSON.Developers.map((Dname) => {
-    if (Dname.landing.name == name) {
+  DeveloperJSON.Developers.forEach((Dname) => {
+    if (Dname.landing.name === name) {
       reqName = Dname;
       found = true;
     }

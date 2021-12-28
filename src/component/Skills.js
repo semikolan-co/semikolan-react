@@ -1,6 +1,5 @@
-import harsh from '../assets/images/harsh.jpg';
-import React,{Component} from 'react';
-import AOS from 'aos';
+
+import React from 'react';
 class About extends React.Component {
   componentDidMount() {
    

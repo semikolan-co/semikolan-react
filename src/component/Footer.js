@@ -1,11 +1,10 @@
 import API from "./API";
-import harsh from "../assets/images/harsh.jpg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import React, { useState } from "react";
 import Recaptcha from "react-recaptcha";
 function Footer(props) {
   const [name, setName] = useState("");
-  const [showCaptcha, setShowCaptcha] = useState(false);
+  // const [showCaptcha, setShowCaptcha] = useState(false);
   const [open, setOpen] = useState(false);
   const [click, setClick] = useState(false);
 
@@ -15,7 +14,7 @@ function Footer(props) {
   var verifyCallback = function (response) {
     console.log(response);
     if (response) {
-      setShowCaptcha(true);
+      // setShowCaptcha(true);
       setClick(true);
     }
   };
@@ -43,7 +42,7 @@ function Footer(props) {
           // always executed
           
       setName("");
-      setShowCaptcha(false);
+      // setShowCaptcha(false);
       setOpen(false);
       setClick(false);
         });
