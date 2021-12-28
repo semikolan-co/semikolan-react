@@ -35,7 +35,7 @@ class Header extends React.Component {
           onclick="location.replace('/')"
         >
           <Link to="/">
-            <img src={logo}  style={{ height: "40px" }} />
+            <img src={logo} alt="SemiKolan Logo" style={{ height: "40px" }} />
             <span style={{ position: "relative", left: 5, top: 3 }}>
               &nbsp;SemiKolan
             </span>
