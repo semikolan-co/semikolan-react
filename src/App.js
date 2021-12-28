@@ -15,41 +15,13 @@ export default function App() {
     <Router>
       <div class="container-80">
         <Switch>
-          <Route
-            exact
-            path="/about"
-            render={(props) => <AboutPage {...props} />}
-          />
-          <Route
-            exact
-            path="/links"
-            render={(props) => <LinksPage {...props} />}
-          />
-          <Route
-            exact
-            path="/showcase"
-            render={(props) => <Showcase {...props} />}
-          />
-          <Route
-            exact
-            path="/initiatives"
-            render={(props) => <Initiatives {...props} />}
-          />
-          <Route
-            exact
-            path="/contact"
-            render={(props) => <Contact {...props} />}
-          />
-          <Route
-            exact
-            path="/join"
-            render={(props) => <JoinPage {...props} />}
-          />
-          <Route
-            exact
-            path="/dev/:name"
-            render={(props) => <ProfilePage {...props} />}
-          />
+          <Route exact path="/about" render={(props) => <AboutPage {...props} />} />
+          <Route exact path="/links" render={(props) => <LinksPage {...props} />} />
+          <Route exact path="/showcase" render={(props) => <Showcase {...props} />} />
+          <Route exact path="/initiatives" render={(props) => <Initiatives {...props} />} />
+          <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+          <Route exact path="/join" render={(props) => <JoinPage {...props} />} />
+          <Route exact path="/dev/:name" render={(props) => <ProfilePage {...props} />} />
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route path="" render={(props) => <Error404Page {...props} />} />
         </Switch>
