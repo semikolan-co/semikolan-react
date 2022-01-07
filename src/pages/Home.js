@@ -17,7 +17,7 @@ export default function Home() {
       <Landing
         lottiename="home"
         redirect="contact"
-        p1="Hii, We are the team of "
+        p1="A Dev Community "
         p2="Harsh Vishwakarma"
         p3="We Build Things"
         buttontext="Get in Touch"
