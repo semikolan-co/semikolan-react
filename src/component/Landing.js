@@ -66,10 +66,9 @@ function Landing(props) {
             <>
               <Typed
                 strings={[
-                  "Web Developer",
-                  "App Developer",
-                  "Graphic Designer",
-                  "UI/UX Designer",
+                  "For the Developer",
+                  "By the Developer",
+                  "To the Developer"
                 ]}
                 typeSpeed={40}
                 backSpeed={50}
