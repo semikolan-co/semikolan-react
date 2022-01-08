@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import React from "react";
+import AOS from 'aos';
 import logo from "../assets/images/logo.png";
 
 class Header extends React.Component {
@@ -19,7 +20,7 @@ class Header extends React.Component {
     this._toggleDiv = this._show;
   }
   componentDidMount() {
-    // AOS.init();
+    AOS.init();
     window.addEventListener("scroll", () => {
       this.setState({ small: window.pageYOffset > 50 });
       // alert(this.state.small)

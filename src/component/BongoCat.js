@@ -3,6 +3,16 @@ import { gsap } from "gsap";
 import React, { useEffect } from "react";
 
 export default function Error404(props) {
+  const bongoText = {
+    color: "var(--LightestSlate)",
+    fontSize: "1.5rem",
+    lineHeight: "1.5rem",
+    fontWeight: 650,
+    textAlign: "center",
+    margin: "2rem auto",
+    whiteSpace: "line-break",
+    fontFamily: "var(--consolas)",
+  };
   useEffect(() => {
     // Inspired By
     // https://codepen.io/abeatrize/pen/LJqYey
@@ -122,6 +132,7 @@ export default function Error404(props) {
         }}
       >
         <div className="container">
+          <div style={bongoText}>{props.bongoTopMessage}</div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 783.55 354.91">
             <g id="bongo-cat">
               <g className="head">
@@ -347,7 +358,9 @@ export default function Error404(props) {
               </g>
             </g>
           </svg>
-
+          <div style={bongoText}>
+            {props.bongoBottomMessage}
+          </div>
           {/**       <p style={{ fontSize: "1.1em",
     textAlign:"center",
     color: "var(--LightSlate)",
