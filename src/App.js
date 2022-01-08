@@ -9,6 +9,7 @@ import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage";
 import Error404Page from "./component/Whatwedo";
+import UnderConstruction from "./pages/UnderConstruction";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route exact path="/contact" render={(props) => <Contact {...props} />} />
           <Route exact path="/join" render={(props) => <JoinPage {...props} />} />
           <Route exact path="/dev/:name" render={(props) => <ProfilePage {...props} />} />
+          <Route exact path="/underconstruction" render={(props) => <UnderConstruction {...props} />} />
           <Route path="" render={(props) => <Error404Page {...props} />} />
         </Switch>
       </div>

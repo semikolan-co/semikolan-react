@@ -7,7 +7,6 @@ import contact from "../assets/lottie/contact";
 import work from "../assets/lottie/work";
 import join from "../assets/lottie/join";
 import Typed from "react-typed";
-import AOS from 'aos';
 import React, { useEffect } from "react";
 
 
@@ -39,7 +38,7 @@ function Landing(props) {
   }
 
 
-    AOS.init()
+    // AOS.init()
 
 
 
