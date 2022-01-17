@@ -10,6 +10,7 @@ import Typed from "react-typed";
 import React, { useEffect } from "react";
 
 
+
 const lotties = {
   home: home,
   about: about,
@@ -36,14 +37,6 @@ function Landing(props) {
         }
     }, true);
   }
-
-
-    // AOS.init()
-
-
-
-
-
   } );
    const clock2 = {
      loop: true,

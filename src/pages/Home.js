@@ -1,6 +1,7 @@
 import Landing from "../component/Landing";
 import About from "../component/About";
 import Contact from "../component/Contact";
+import StartupSupport from "../component/StartupSupport";
 import Work from "../component/Work";
 import Skills from "../component/Skills";
 import Achievements from "../component/Achievements";
@@ -36,6 +37,7 @@ export default function Home() {
         <Community num="05." Community={semikolan.community.slice(0, 4)} />
 
         <Contact num="06." />
+        <StartupSupport num="07." />
       </MainLayout>
     </>
   );

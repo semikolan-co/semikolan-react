@@ -1,7 +1,7 @@
 import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import { BrowserRouter as Link } from "react-router-dom";
-function Contact(props) {
+function StartupSupport(props) {
   const gitlottie = {
     loop: true,
     autoplay: true,
@@ -14,7 +14,7 @@ function Contact(props) {
     <div id="work" className="container">
       <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
         <span>
-          <em>{props.num}</em>&nbsp;What's Next
+          <em>{props.num}</em>&nbsp;Startup Support
         </span>
         <div className="line-horizontal" />
       </div>
@@ -49,4 +49,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default StartupSupport;

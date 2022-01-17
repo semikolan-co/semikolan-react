@@ -5,6 +5,8 @@ import Header from '../component/Header'
 import semikolan from "../json/semikolan.json";
 
 export default function MainLayout(props) {
+
+    
     return (
         <>
             <Header />
