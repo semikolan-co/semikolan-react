@@ -75,11 +75,11 @@ class Header extends React.Component {
                 <em>05.</em>&nbsp;Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/StartupSupport">
                 <em>06.</em>&nbsp;Startup Support
               </Link>
-            </li>
+            </li> */}
             <li>
               <a target="blank" href="https://blog.semikolan.co">
                 Blog
