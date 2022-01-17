@@ -71,12 +71,12 @@ class Header extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="/StartupSupport">
+              <Link to="/contact">
                 <em>05.</em>&nbsp;Contact
               </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link to="/StartupSupport">
                 <em>06.</em>&nbsp;Startup Support
               </Link>
             </li>

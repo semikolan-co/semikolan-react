@@ -42,7 +42,7 @@ function StartupSupport(props) {
             <br />
             In short, We are always ready for new Opportunities
           </span>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/StartupSupport">StartupSupport</Link>
         </div>
       </div>
     </div>

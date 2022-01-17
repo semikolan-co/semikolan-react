@@ -37,7 +37,7 @@ export default function Home() {
         <Community num="05." Community={semikolan.community.slice(0, 4)} />
 
         <Contact num="06." />
-        <StartupSupport num="07." />
+        {/* <StartupSupport num="07." /> */}
       </MainLayout>
     </>
   );
