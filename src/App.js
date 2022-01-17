@@ -10,25 +10,7 @@ import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage";
 import Error404Page from "./component/Whatwedo";
 import UnderConstruction from "./pages/UnderConstruction";
-// Community Partners
-// Events Ongoing/Previous
-// Resources
-// Roadmaps
-// Blogs
-// Join Community
-// Member Join - Role Select/ Introduction
-// Team Join
-// Display Projects
-// Will have Show Interest Button in all Projects
-// Projects will be categorized into
-// 		Major Projects
-// 		Minor Projects
-// 		Mini Projects
-// Youtube Videos Page + Video Suggestion Form
-// Member’s Badge
-// Ticketing System
-// Newsletter Page + Newsletter Suggestion Form
-// Upcoming OpenSource Events -> redirects to DevTalks/ DevCalender
+
 
 export default function App() {
   return (
