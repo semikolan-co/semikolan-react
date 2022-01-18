@@ -15,7 +15,7 @@
 </div>
 
 
-# SemiKolan (ReBuild)
+# SemiKolan
 
 Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to Learn, Connect, create great connections and work on various Open-Source projects. SemiKolan is a Community `For the Developers, By the Developers, To the Developers`.
 
