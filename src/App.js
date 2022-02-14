@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
@@ -9,11 +9,17 @@ import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage";
 import Error404Page from "./component/Whatwedo";
+import MovingCursor from "./component/MovingCursor";
 import UnderConstruction from "./pages/UnderConstruction";
 
 
 export default function App() {
+  const [cursorPosition, setCursorPosition] = useState([0,0]);
   return (
+    <div
+    onMouseMove={(ev) => setCursorPosition([ev.pageX, ev.pageY])}
+    >
+    <MovingCursor position={cursorPosition} />
     <Router>
       <div class="container-80">
         <Switch>
@@ -54,6 +60,7 @@ export default function App() {
         </Switch>
       </div>
     </Router>
+    </div>
   );
 
 }
