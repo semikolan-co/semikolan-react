@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import LinksPage from "./pages/LinksPage";
 import Contact from "./pages/ContactPage";
@@ -12,55 +12,150 @@ import Error404Page from "./component/Whatwedo";
 import MovingCursor from "./component/MovingCursor";
 import UnderConstruction from "./pages/UnderConstruction";
 
-
 export default function App() {
-  const [cursorPosition, setCursorPosition] = useState([0,0]);
   return (
-    <div
-    onMouseMove={(ev) => setCursorPosition([ev.pageX, ev.pageY])}
-    >
-    <MovingCursor position={cursorPosition} />
-    <Router>
-      <div class="container-80">
-        <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
-          <Route exact path="/about" render={(props) => <AboutPage {...props} />} />
-          <Route exact path="/links" render={(props) => <LinksPage {...props} />} />
-          <Route exact path="/showcase" render={(props) => <Showcase {...props} />} />
-          <Route exact path="/initiatives" render={(props) => <Initiatives {...props} />} />
-          <Route exact path="/contact" render={(props) => <Contact {...props} />} />
-          {/* <Route exact path="/join" render={(props) => <JoinPage {...props} />} /> */}
-          <Route exact path="/dev/:name" render={(props) => <ProfilePage {...props} />} />
-          <Route exact path="/underconstruction" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/partners" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/events" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/resources" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/roadmaps" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/blogs" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/join" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/join/member" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/join/team" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/join/mentor" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/projects" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/projects/major" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/projects/minor" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/projects/mini" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/videos" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/newsletter" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/devtalks" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/devcalender" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/badge" render={(props) => <UnderConstruction {...props} />} />
-          <Route exact path="/support" render={(props) => <UnderConstruction {...props} />} />
-          
+    <>
+      <MovingCursor />
+      <Router>
+        <div class="container-80">
+          <Switch>
+            <Route exact path="/" render={(props) => <Home {...props} />} />
+            <Route
+              exact
+              path="/about"
+              render={(props) => <AboutPage {...props} />}
+            />
+            <Route
+              exact
+              path="/links"
+              render={(props) => <LinksPage {...props} />}
+            />
+            <Route
+              exact
+              path="/showcase"
+              render={(props) => <Showcase {...props} />}
+            />
+            <Route
+              exact
+              path="/initiatives"
+              render={(props) => <Initiatives {...props} />}
+            />
+            <Route
+              exact
+              path="/contact"
+              render={(props) => <Contact {...props} />}
+            />
+            {/* <Route exact path="/join" render={(props) => <JoinPage {...props} />} /> */}
+            <Route
+              exact
+              path="/dev/:name"
+              render={(props) => <ProfilePage {...props} />}
+            />
+            <Route
+              exact
+              path="/underconstruction"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/partners"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/events"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/resources"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/roadmaps"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/blogs"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/join"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/join/member"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/join/team"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/join/mentor"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/projects"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/projects/major"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/projects/minor"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/projects/mini"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/videos"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/newsletter"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/devtalks"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/devcalender"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/badge"
+              render={(props) => <UnderConstruction {...props} />}
+            />
+            <Route
+              exact
+              path="/support"
+              render={(props) => <UnderConstruction {...props} />}
+            />
 
-
-
-
-          <Route path="" render={(props) => <Error404Page {...props} />} />
-        </Switch>
-      </div>
-    </Router>
-    </div>
+            <Route path="" render={(props) => <Error404Page {...props} />} />
+          </Switch>
+        </div>
+      </Router>
+    </>
   );
-
 }
