@@ -9,7 +9,8 @@ import JoinPage from "./pages/JoinPage";
 import Home from "./pages/Home";
 import ProfilePage from "./pages/ProfilePage";
 import Error404Page from "./component/Whatwedo";
-import MovingCursor from "./component/MovingCursor";
+// import MovingCursor from "./component/MovingCursor";
+import MovingCursor from 'movingcursor'
 import UnderConstruction from "./pages/UnderConstruction";
 
 export default function App() {
