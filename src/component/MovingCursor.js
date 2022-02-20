@@ -5,11 +5,12 @@ export default function MovingCursor(props) {
     const [cursorActive, setCursorActive] = useState(false); 
     const [cursorPosition, setCursorPosition] = useState([0,0]);
     useEffect(() => {
-
+        console.log("Moving cursor useEffect");
         document.addEventListener("mousemove", (e) => {
             setCursorPosition([e.pageX, e.pageY]);
+        
             const cursorElement = document.elementFromPoint(e.pageX, e.pageY);
-            if (cursorElement.tagName === 'A' || cursorElement.getAttribute("data-active")) {
+            if (cursorElement?.tagName === 'A' || cursorElement?.getAttribute("data-active")) {
                 setCursorActive(true);
             }
             else {

@@ -5,7 +5,7 @@
   width:35px;
   border-radius:50%;
   border:2px solid var(--Green);
-  transition: 0.5s;
+  transition: 0.25s;
 }
 .moving-cursor.active{
   background-color:var(--Green);
