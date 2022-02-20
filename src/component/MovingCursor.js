@@ -10,7 +10,7 @@ export default function MovingCursor(props) {
             setCursorPosition([e.pageX, e.pageY]);
         
             const cursorElement = document.elementFromPoint(e.pageX, e.pageY);
-            if (cursorElement.tagName === 'A' || cursorElement.getAttribute("data-active")) {
+            if (cursorElement?.tagName === 'A' || cursorElement?.getAttribute("data-active")) {
                 setCursorActive(true);
             }
             else {
