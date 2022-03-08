@@ -159,7 +159,7 @@ function Footer(props) {
             href={
               props.social.discord
                 ? props.social.discord
-                : "https://discord.gg/4ucwSCgkse"
+                : "https://discord.semikolan.co"
             }
           >
             <i
