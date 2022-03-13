@@ -18,6 +18,7 @@
     "gsap": "^3.6.1",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
+    "react-lottie": "^1.2.3",
     "react-recaptcha": "^2.3.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
