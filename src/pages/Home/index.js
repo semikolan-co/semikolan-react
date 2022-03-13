@@ -27,15 +27,15 @@ export default function Home() {
         />
         <Skills num="02." elements={semikolan.skills} />
 
-        <Work num="03." />
+        {/* <Work num="03." /> */}
         <Achievements
-          num="04."
+          num="03."
           achievements={semikolan.achievements.slice(0, 6)}
         />
 
-        <Community num="05." Community={semikolan.community.slice(0, 4)} />
+        <Community num="04." Community={semikolan.community.slice(0, 4)} />
 
-        <Contact num="06." />
+        <Contact num="05." />
       </MainLayout>
     </>
   );
