@@ -1,10 +1,14 @@
+import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import API from "./API";
-
 import Recaptcha from "react-recaptcha";
+import { createClient } from "@supabase/supabase-js";
 
-import React, { useState } from "react";
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const SUPABASE_KEY = process.env.REACT_APP_SUPABASE_KEY
+const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+
 function Contact(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,7 +20,7 @@ function Contact(props) {
 
   var callback = function () {
     console.log("Done!!!!");
-  };
+  }; 
   var verifyCallback = function (response) {
     console.log(response);
     if (response) {
@@ -28,33 +32,44 @@ function Contact(props) {
   const gitlottie = {
     loop: true,
     autoplay: true,
-    animationData: git,
+    animationData: git
   };
   const style = {
-    width: "100%",
+    width: "100%"
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(click);
     setOpen(true);
     if (click) {
-      API.post(`contact`, { name, email, message })
-        .then((res) => {
-          alert(
-            "Your Query has been registered success. Our Team will contact you soon"
-          );
-        })
-        .catch(function (error) {
-          console.log(error);
-          alert(
-            `We're Sorry, Your query has not been Registered \n
-      It is happened due to -- ` + error
-          );
-        })
-        .then(function () {
-          // always executed
-        });
+      // API.post(`contact`, { name, email, message })
+      //   .then((res) => {
+      //     alert(
+      //       "Your Query has been registered success. Our Team will contact you soon"
+      //     );
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error);
+      //     alert(
+      //       `We're Sorry, Your query has not been Registered \n
+      // It is happened due to -- ` + error
+      //     );
+      //   })
+      //   .then(function () {
+      //     // always executed
+      //   });
+
+      const { data, error } = await supabase
+        .from("messages")
+        .insert([{ name,email,message }]);
+
+      if (!error) {
+        console.log("Data: ", data);
+      } else {
+        console.log("Error: ", error);
+        console.log("Data :", data);
+      }
 
       setEmail("");
       setName("");
