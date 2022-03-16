@@ -32,8 +32,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
         env: # Add environment variables here
-          REACT_APP_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          REACT_APP_SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          REACT_APP_SUPABASE_URL: https://zkghhoyvaapvtgbubgcj.supabase.co
+          REACT_APP_SUPABASE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InprZ2hob3l2YWFwdnRnYnViZ2NqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ3NTgxMjksImV4cCI6MTk2MDMzNDEyOX0.qz0vXGmY_efFZk4zjQ5Y92I6c7AcJizLT3UMCZcoHOw
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
