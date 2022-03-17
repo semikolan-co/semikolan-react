@@ -1,7 +1,11 @@
 import React from "react";
-import COMMUNITY from '../json/communities.jsonc'
+import COMMUNITYJSONC from '../json/communities.jsonc'
+import COMMUNITY from '../json/communities.json'
+// import { safe as jsonc } from 'jsonc';
+// const COMMUNITY = jsonc.parse(COMMUNITYJSONC)
 
 function Community(props) {
+  console.log("JSONC: ",COMMUNITYJSONC)
   return (
     <div id="community" className="container">
       <div className="titleline" data-aos="fade-right" data-aos-duration={500}>

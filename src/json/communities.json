@@ -1,0 +1,24 @@
+
+[
+    {
+      "title": "Learn For Cause",
+      "icon": "logo_learnforcause.png",
+      "url": "https://www.learnforcause.com/"
+    },
+    {
+      "title": "Flutter Bhopal",
+      "icon": "logo_flutterbhopal.png",
+      "url": "https://gdsc.community.dev/university-institute-of-technology-rgpv-bhopal/"
+    },
+    {
+      "title": "GDSC UIT RGPV",
+      "icon": "logo_gdscuitrgpv.png",
+      "url": "https://gdsc.community.dev/university-institute-of-technology-rgpv-bhopal/"
+    },
+    {
+      "title": "CNCF Bhopal",
+      "icon": "logo_cncfbhopal.png",
+      "url": "https://community.cncf.io/bhopal"
+    }
+  ]
+  
