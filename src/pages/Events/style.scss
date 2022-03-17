@@ -55,14 +55,13 @@
           margin-bottom: 1%;
           margin-top: -1%;
         }
-        span{
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--Slate);
-            margin-bottom: 3%;
+        span {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: var(--Slate);
+          margin-bottom: 3%;
         }
         .button {
-            
           width: fit-content;
           margin-right: 10px;
         }
@@ -82,6 +81,41 @@
             width: fit-content;
             margin-left: 10px;
             margin-right: 0px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 10%;
+        .eventimage {
+          width: 100%;
+        }
+        .eventcontent {
+          margin-top: 5%;
+          padding: 0;
+          h2 {
+            &::after {
+              float: none;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          flex-direction: column;
+          .eventcontent {
+            align-items: flex-start;
+            h2 {
+              &::after {
+                float: left;
+              }
+            }
+
+            .button {
+              width: fit-content;
+              margin-left: 0px;
+              margin-right: 0px;
+            }
           }
         }
       }

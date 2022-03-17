@@ -19,12 +19,12 @@
       "title": "CNCF Bhopal",
       "icon": "logo_cncfbhopal.png",
       "url": "https://community.cncf.io/bhopal"
+    },
+    {
+      "title": "Script Foundation",
+      "icon": "logo_scriptfoundation.png",
+      "url": "https://www.scriptindia.org/"
     }
-    // {
-    //   "title": "Script Foundation",
-    //   "icon": "logo_scriptfoundation.png",
-    //   "url": "https://www.scriptindia.org/"
-    // },
     // {
     //   "title": "ECell IET DAVV",
     //   "icon": "logo_ecellietdavv.png",
