@@ -1,3 +1,21 @@
-.eventspage{
-    
+.pagetitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10% 2%;
+  h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--White);
+    padding: 0.3% 1%;
+    text-shadow: 0px 0px 100px var(--Slate);
+  }
+  span {
+    color: var(--White);
+    font-size: 2em;
+  }
+}
+.eventspage {
 }
