@@ -3,11 +3,7 @@ import Lottie from "react-lottie";
 import git from "../assets/lottie/git";
 import API from "./API";
 import Recaptcha from "react-recaptcha";
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-const SUPABASE_KEY = process.env.REACT_APP_SUPABASE_KEY
-const supabase = createClient(supabaseUrl, SUPABASE_KEY);
+import supabase from "./../supabase.js";
 
 function Contact(props) {
   const [name, setName] = useState("");
