@@ -18,4 +18,64 @@
   }
 }
 .eventspage {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .eventbody {
+      display: flex;
+      .eventimage {
+        width: 40%;
+        min-width: 300px;
+        img {
+          width: 100%;
+        }
+      }
+      .eventcontent {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        justify-content: center;
+        color: #fff;
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          &::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: var(--Green);
+            box-shadow: 0px 0px 50px var(--Green);
+            margin: 0.3em 0;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .button {
+          width: fit-content;
+          margin-right: 10px;
+        }
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        .eventcontent {
+          align-items: flex-end;
+          h2 {
+            &::after {
+              float: right;
+            }
+          }
+
+          .button {
+            width: fit-content;
+            margin-left: 10px;
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
 }
