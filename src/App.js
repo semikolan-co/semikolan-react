@@ -12,7 +12,7 @@ import Error404Page from "./component/Whatwedo";
 import MovingCursor from "./component/MovingCursor";
 // import MovingCursor from 'movingcursor'
 import UnderConstruction from "./pages/UnderConstruction";
-import EventsPage from "./pages/EventsPage";
+import EventsPage from "./pages/Events";
 
 export default function App() {
   return (
