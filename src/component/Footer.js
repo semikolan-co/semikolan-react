@@ -2,6 +2,7 @@ import API from "./API";
 import { BrowserRouter as Link } from "react-router-dom";
 import React, { useState } from "react";
 import Recaptcha from "react-recaptcha";
+import supabase from "../supabase.js";
 function Footer(props) {
   const [name, setName] = useState("");
   // const [showCaptcha, setShowCaptcha] = useState(false);
@@ -19,33 +20,50 @@ function Footer(props) {
     }
   };
 
-  function subscribeUser(event) {
+  async function subscribeUser(event) {
     setOpen(true);
     event.preventDefault();
     if (click) {
       console.log("Email:", name);
-      API.post(`subscribeuser`, { email:name })
-        .then((res) => {
-          alert(
-            "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
-          );
-          
-        })
-        .catch(function (error) {
-          console.log(error);
-          alert(
-            `We're Sorry, Currently we are unable to subscribe you \n
+      // API.post(`subscribeuser`, { email: name })
+      //   .then((res) => {
+      //     alert(
+      //       "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
+      //     );
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error);
+      //     alert(
+      //       `We're Sorry, Currently we are unable to subscribe you \n
+      //   It is happened due to -- ` + error
+      //     );
+      //   })
+      //   .then(function () {
+      //     // always executed
+
+      //     setName("");
+      //     // setShowCaptcha(false);
+      //     setOpen(false);
+      //     setClick(false);
+      //   });
+
+      const { data, error } = await supabase
+        .from("blog_subscribers")
+        .insert([{ email: name }]);
+
+      if (!error) {
+        alert(
+          "Thank you for subscribing to the Semikolan Newsletter! We hope to see you soon!"
+        );
+        setName("");
+        setOpen(false);
+        setClick(false);
+      } else {
+        alert(
+          `We're Sorry, Currently we are unable to subscribe you \n
         It is happened due to -- ` + error
-          );
-        })
-        .then(function () {
-          // always executed
-          
-      setName("");
-      // setShowCaptcha(false);
-      setOpen(false);
-      setClick(false);
-        });
+        );
+      }
     }
   }
 
