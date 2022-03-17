@@ -48,9 +48,12 @@ export default function EventsPage() {
                     />
                   </div>
                   <div className="eventcontent">
-                    <h2>{event.title}</h2>
+                    <h2>
+                      {event.title}
+                    </h2>
                     <p>{event.desc}</p>
                     <span>
+                      {event.type} | &nbsp;
                       {getDate(event.startdate)} - {getDate(event.enddate)}
                     </span>
                     <div>
