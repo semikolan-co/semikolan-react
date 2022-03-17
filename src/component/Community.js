@@ -1,5 +1,5 @@
 import React from "react";
-import COMMUNITY from '../json/communities.json'
+import COMMUNITY from '../json/communities.jsonc'
 
 function Community(props) {
   return (
