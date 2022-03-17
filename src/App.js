@@ -12,6 +12,7 @@ import Error404Page from "./component/Whatwedo";
 import MovingCursor from "./component/MovingCursor";
 // import MovingCursor from 'movingcursor'
 import UnderConstruction from "./pages/UnderConstruction";
+import EventsPage from "./pages/Events";
 
 export default function App() {
   return (
@@ -65,7 +66,7 @@ export default function App() {
             <Route
               exact
               path="/events"
-              render={(props) => <UnderConstruction {...props} />}
+              render={(props) => <EventsPage {...props} />}
             />
             <Route
               exact

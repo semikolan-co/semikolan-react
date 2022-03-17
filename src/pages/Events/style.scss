@@ -1,0 +1,90 @@
+.pagetitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10% 2%;
+  h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--White);
+    padding: 0.3% 1%;
+    text-shadow: 0px 0px 100px var(--Slate);
+  }
+  span {
+    color: var(--White);
+    font-size: 2em;
+  }
+}
+.eventspage {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .eventbody {
+      display: flex;
+      .eventimage {
+        width: 40%;
+        min-width: 300px;
+        img {
+          width: 100%;
+        }
+      }
+      .eventcontent {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        justify-content: center;
+        color: #fff;
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          &::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: var(--Green);
+            box-shadow: 0px 0px 50px var(--Green);
+            margin: 0.3em 0;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 1%;
+          margin-top: -1%;
+        }
+        span{
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--Slate);
+            margin-bottom: 3%;
+        }
+        .button {
+            
+          width: fit-content;
+          margin-right: 10px;
+        }
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        .eventcontent {
+          align-items: flex-end;
+          h2 {
+            &::after {
+              float: right;
+            }
+          }
+
+          .button {
+            width: fit-content;
+            margin-left: 10px;
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
