@@ -1,6 +1,7 @@
 [
     {
       "title": "30 Days of DSA",
+      "type": "Bootcamp",
       "event_link": "https://www.facebook.com/events/1709898410087876/",
       "registration_link": "https://goo.gl/forms/jQQQZQZQZQZQZQZQ2",
       "registration_open": true,
@@ -11,7 +12,8 @@
       "cover_image":"image.png"
     },
     {
-      "title": "Spark AR Workshop",
+      "title": "Spark AR Session",
+      "type": "Workshop",
       "event_link": "https://www.facebook.com/events/1709898410087876/",
       "registration_link": "https://goo.gl/forms/jQQQZQZQZQZQZQZQ2",
       "registration_open": false,
