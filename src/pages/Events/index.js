@@ -54,13 +54,13 @@ export default function EventsPage() {
                       {getDate(event.startdate)} - {getDate(event.enddate)}
                     </span>
                     <div>
-                      <a href={event.registration_link} className="button">
-                        {" "}
-                        {event.registration_text}
-                      </a>
+                      {event.registration_open && (
+                        <a href={event.registration_link} className="button">
+                          {event.registration_text}
+                        </a>
+                      )}
                       <a href={event.event_link} className="button">
-                        {" "}
-                        Join{" "}
+                        Join
                       </a>
                     </div>
                   </div>
