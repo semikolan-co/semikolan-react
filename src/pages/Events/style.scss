@@ -52,8 +52,17 @@
         }
         p {
           font-size: 1.2rem;
+          margin-bottom: 1%;
+          margin-top: -1%;
+        }
+        span{
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--Slate);
+            margin-bottom: 3%;
         }
         .button {
+            
           width: fit-content;
           margin-right: 10px;
         }
