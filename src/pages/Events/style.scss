@@ -15,11 +15,21 @@
   span {
     color: var(--White);
     font-size: 2em;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+    h1 {
+      font-size: 5rem;
+    }
   }
 }
+
 .eventspage {
   .container {
     display: flex;
+    padding: 0;
     flex-direction: column;
     gap: 30px;
     .eventbody {
