@@ -1,15 +1,20 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import "./style.scss";
 import events from "../../json/events.json";
+import supabase from "../../supabase";
 
 export default function EventsPage() {
-
   const [email, setEmail] = useState("");
   const [event_name, setEventName] = useState("");
   const [event_desc, setEventDesc] = useState("");
-  const [links,setLinks] = useState("");
+  const [links, setLinks] = useState("");
 
+  const submitResponse = async () => {
+    const { data, error } = await supabase
+      .from("event_suggestions")
+      .insert([{ email, event_name, event_desc, links }]);
+  };
 
   const getDate = (date) => {
     const dateObj = new Date(date);
@@ -55,9 +60,7 @@ export default function EventsPage() {
                     />
                   </div>
                   <div className="eventcontent">
-                    <h2>
-                      {event.title}
-                    </h2>
+                    <h2>{event.title}</h2>
                     <p>{event.desc}</p>
                     <span>
                       {event.type} | &nbsp;
@@ -79,15 +82,37 @@ export default function EventsPage() {
             })}
           </div>
 
-          <div className="suggestionform">
-            <input type="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-            <input type="text" placeholder="Event Name" value={event_name} onChange={(e)=>setEventName(e.target.value)}/>
-            <textarea rows="4" placeholder="Event Description" onChange={(e)=>setEventDesc(e.target.value)} >
+          <form onSubmit={submitResponse} className="suggestionform">
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              required
+              placeholder="Event Name"
+              value={event_name}
+              onChange={(e) => setEventName(e.target.value)}
+            />
+            <textarea
+              rows="4"
+              required
+              placeholder="Event Description"
+              onChange={(e) => setEventDesc(e.target.value)}
+            >
               {event_desc}
             </textarea>
-            <input type="text" placeholder="Useful Links" value={links} onChange={(e)=>setLinks(e.target.value)}/>
-            <button>Suggest Event</button>
-          </div>
+            <input
+              type="text"
+              placeholder="Useful Links"
+              value={links}
+              onChange={(e) => setLinks(e.target.value)}
+            />
+            <button type="submit">Suggest Event</button>
+          </form>
         </div>
       </MainLayout>
     </>
