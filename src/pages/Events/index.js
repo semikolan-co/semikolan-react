@@ -10,15 +10,21 @@ export default function EventsPage() {
   const [event_desc, setEventDesc] = useState("");
   const [links, setLinks] = useState("");
 
-  const submitResponse = async () => {
+  const submitResponse = async (e) => {
+    e.preventDefault();
     const { data, error } = await supabase
       .from("event_suggestions")
       .insert([{ email, event_name, event_desc, links }]);
 
     if (error) {
       alert("Error submitting response");
+      console.log(error);
     } else {
       alert("Response submitted");
+      setEmail("");
+      setEventName("");
+      setEventDesc("");
+      setLinks("");
     }
   };
 
