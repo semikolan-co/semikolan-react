@@ -15,11 +15,22 @@
   span {
     color: var(--White);
     font-size: 2em;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 80px;
+    h1 {
+      font-size: 5rem;
+    }
   }
 }
+
 .eventspage {
   .container {
     display: flex;
+    padding: 0;
+    margin-bottom: 10%;
     flex-direction: column;
     gap: 30px;
     .eventbody {
@@ -121,4 +132,48 @@
       }
     }
   }
+}
+
+
+.suggestionform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+    padding:5%;
+    background-color: #fff1;
+    border-radius: 10px;
+    gap:10px;
+
+    input,textarea,button{
+        width:100%;
+        max-width: 500px;
+        padding:10px 20px;
+        border-radius:10px;
+        border:none;
+        outline:none;
+        font-size:1.2rem;
+        margin-bottom:10px;
+        background-color:var(--Navy);
+        color:var(--White);
+        transition:0.3s;
+        &::placeholder{
+            color:var(--LightSlate);
+        }
+        &:hover{
+            background-color:var(--LightNavy);
+            color:#fff;
+        }
+        
+    }
+    button{
+        background-color:var(--Green);
+        font-size: 1.3rem;
+        color:var(--Navy);
+        font-weight:bold;
+        cursor:pointer;
+    }
+
+
 }

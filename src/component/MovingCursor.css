@@ -6,6 +6,7 @@
   border-radius:50%;
   border:2px solid var(--Green);
   transition: 0.25s;
+  pointer-events: none;
 }
 .moving-cursor.active{
   background-color:var(--Green);
