@@ -71,6 +71,14 @@ export default function EventsPage() {
               );
             })}
           </div>
+
+          <div className="suggestionform">
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Event Name" />
+            <textarea rows="4" placeholder="Event Description"></textarea>
+            <input type="text" placeholder="Useful Links" />
+            <button>Submit</button>
+          </div>
         </div>
       </MainLayout>
     </>
