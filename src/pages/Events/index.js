@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import MainLayout from "../../layouts/MainLayout";
 import "./style.scss";
 import events from "../../json/events.json";
 
 export default function EventsPage() {
+
+  const [email, setEmail] = useState("");
+  const [event_name, setEventName] = useState("");
+  const [event_desc, setEventDesc] = useState("");
+  const [links,setLinks] = useState("");
+
+
   const getDate = (date) => {
     const dateObj = new Date(date);
     const months = [
@@ -73,10 +80,12 @@ export default function EventsPage() {
           </div>
 
           <div className="suggestionform">
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Event Name" />
-            <textarea rows="4" placeholder="Event Description"></textarea>
-            <input type="text" placeholder="Useful Links" />
+            <input type="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="text" placeholder="Event Name" value={event_name} onChange={(e)=>setEventName(e.target.value)}/>
+            <textarea rows="4" placeholder="Event Description" onChange={(e)=>setEventDesc(e.target.value)} >
+              {event_desc}
+            </textarea>
+            <input type="text" placeholder="Useful Links" value={links} onChange={(e)=>setLinks(e.target.value)}/>
             <button>Suggest Event</button>
           </div>
         </div>
