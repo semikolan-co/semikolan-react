@@ -14,6 +14,12 @@ export default function EventsPage() {
     const { data, error } = await supabase
       .from("event_suggestions")
       .insert([{ email, event_name, event_desc, links }]);
+
+    if (error) {
+      alert("Error submitting response");
+    } else {
+      alert("Response submitted");
+    }
   };
 
   const getDate = (date) => {
