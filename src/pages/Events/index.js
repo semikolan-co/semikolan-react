@@ -77,7 +77,7 @@ export default function EventsPage() {
             <input type="text" placeholder="Event Name" />
             <textarea rows="4" placeholder="Event Description"></textarea>
             <input type="text" placeholder="Useful Links" />
-            <button>Submit</button>
+            <button>Suggest Event</button>
           </div>
         </div>
       </MainLayout>
