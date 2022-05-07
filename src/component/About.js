@@ -16,16 +16,18 @@ function About(props) {
           ) : (
             <>
             <p>
-              SemiKolan, as a starter, is a group of friends, who love to
-              build things and help others. 
+            Semikolan is an open source focused community where we share our learnings,
+promote hackathons, conduct workshops beneficial to others and an inclusive space
+where anyone can share and ask anything they like related to tech and fun.
             </p>
             <p>
-              Semikolan is also a platform for like minded learners, developers and Enthusiasts to learn, connect, create great connections 
-              and work on great projects among themselves and for the community. The Semikolan team is a group of Self Learners, Innovative Minds
-              and Tech Enthusiasts passionate about building <Link to="/initiatives">Technical Stuffs</Link>.
+            Semikolan is also a platform for like minded learners, developers and
+Enthusiasts to learn, connect, create great connections and work on great
+projects among themselves and for the community.  
             </p>
             <p>
-              We encourage anyone with an aptitute for learning to <a href="/join" >join</a> our community and join our mission to code for the better.
+            Anyone can join and become a part of the community and join our mission to
+build for the betterment.
             </p>
             </>
           )}

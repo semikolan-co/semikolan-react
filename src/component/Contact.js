@@ -35,12 +35,7 @@ function Contact(props) {
         >
           <span>Get in Touch</span>
           <span>
-            Currently we are looking for the place where the Magic Happens. And
-            waiting for someone to send their Boat for us to reach that place.
-            <br />
-            If you didn 't get it have a Look at <a href="https://tvfplay.com/video/series/tvf-pitchers-s01e01-tu/290">TVF Pitchers</a>
-            <br />
-            In short, We are always ready for new Opportunities
+          Join the community and ask out your queries at our community groups or reach out to us at contact@semikolan.co or subscribe to our newsletter below.
           </span>
           <Link to="/contact">Contact Us</Link>
         </div>

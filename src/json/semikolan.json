@@ -39,34 +39,34 @@
   ],
   "achievements": [
     {
-      "icon": "laptop-code",
-      "title": "Build",
-      "description": "We can help you in Building your Websites, Mobile Applications, Graphical Designs, User Interfaces and much more."
+      "icon": "link",
+      "title": "Connect",
+      "description": "Join our discord and connect with like minded tech enthusiasts and build better connections."
     },
     {
-      "icon": "bug",
-      "title": "Debug",
-      "description": "Experiencing any Issues while Building??? Reach out to us and we'll help you to figure out things."
+      "icon": "presentation",
+      "title": "Ask Out",
+      "description": "Get your doubts resolved within the community with others and help solve each others doubts as well."
     },
     {
-      "icon": "cloud",
-      "title": "Deploy",
-      "description": "We can help you in turning your Ideas into Reality by bringing Code into Action"
+      "icon": "graduation-cap",
+      "title": "Mentorship",
+      "description": "Learn from the experts from our events such as workshops, conferences and much more."
     },
     {
-      "icon": "question",
+      "icon": "graduation-cap",
+      "title": "Opportunities",
+      "description": "Learn about various upcoming opportunities in tech through the community and be a part of major events."
+    },
+    {
+      "icon": "books",
+      "title": "Resources",
+      "description": "Get access to various free resources through our videos, Newsletter and other sources that you can use to upskill yourself."
+    },
+    {
+      "icon": "support",
       "title": "Support",
-      "description": "Facing Trouble while setting things Right or accessing any Product or Services, we'll help you to get things done. "
-    },
-    {
-      "icon": "sliders-h",
-      "title": "Maintain",
-      "description": "We can help you in keep things maintained right on track so that they will run smoothly."
-    },
-    {
-      "icon": "map-signs",
-      "title": "Explore",
-      "description": "We can help you to gain Exposure, connect with a community where we can Discuss, Code, Collaborate and have fun at Explore."
+      "description": "Get free hosting and other support for your community projects that you can showcase with anyone."
     }
   ],
   "community": [
