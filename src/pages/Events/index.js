@@ -55,7 +55,7 @@ export default function EventsPage() {
         <div className="eventspage">
           <div className="pagetitle">
             <h1>Events</h1>
-            <span>Lorem ipsum dolor sit amet, consectetur adip</span>
+            <span>Events hosted by the SemiKolan community.</span>
           </div>
 
           <div className="container">

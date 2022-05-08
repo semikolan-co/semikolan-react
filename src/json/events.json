@@ -2,11 +2,11 @@
     {
       "title": "30 Days of DSA",
       "type": "Bootcamp",
-      "event_link": "https://www.facebook.com/events/1709898410087876/",
+      "event_link": "https://discord.semikolan.co",
       "registration_link": "https://goo.gl/forms/jQQQZQZQZQZQZQZQ2",
-      "registration_open": true,
+      "registration_open": false,
       "registration_text": "Registr Now",
-      "desc": "Lorem Ipsum some quick brown fox jumps over the lazy dog",
+      "desc": "The 30 Days of ML Challenge is a challenge where you can learn anything you want that will connect with machine learning, help resolve each other's doubt, learn with the community and share your daily learnings with each other. In this challenge, people will post daily updates about whatever they've learned, be it any videos lectures, blog, project or anything else.",
       "startdate": "2022-04-01",
       "enddate": "2022-04-30",
       "cover_image":"image.png"
@@ -14,11 +14,11 @@
     {
       "title": "Spark AR Session",
       "type": "Workshop",
-      "event_link": "https://www.facebook.com/events/1709898410087876/",
+      "event_link": "https://www.youtube.com/watch?v=2t02r_uMeQg",
       "registration_link": "https://goo.gl/forms/jQQQZQZQZQZQZQZQ2",
       "registration_open": false,
       "registration_text": "Registr Now",
-      "desc": "Lorem Ipsum some quick brown fox jumps over the lazy dog",
+      "desc": "The SemiKolan community is collaborating with Reskill, to conduct a Hands on training session on SparkAR by Meta (previously Facebook).",
       "startdate": "2022-04-01",
       "enddate": "2022-04-30",
       "cover_image":"image.png"
