@@ -13,6 +13,7 @@ import MovingCursor from "./component/MovingCursor";
 // import MovingCursor from 'movingcursor'
 import UnderConstruction from "./pages/UnderConstruction";
 import EventsPage from "./pages/Events";
+import Hacktober from "./pages/Hacktober";
 
 export default function App() {
   return (
@@ -152,6 +153,12 @@ export default function App() {
               exact
               path="/support"
               render={(props) => <UnderConstruction {...props} />}
+            />
+
+            <Route
+              exact
+              path="/hacktober"
+              render={(props) => <Hacktober {...props} />}
             />
 
             <Route path="" render={(props) => <Error404Page {...props} />} />
