@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/Hacktober.css";
+import register from "../assets/images/events/register.png"
 
 const Hacktober = () => {
+
+    useEffect(() => {
+
+        return () => {
+        }
+    }, [])
+
 
     // project card data
     const project_card = [
@@ -13,12 +21,25 @@ const Hacktober = () => {
         },
     ]
 
-    return (
-        <div>
-            <p>
-                Hacktober
-            </p>
+    const Benefits = [
+        {
+            id: 1,
+            title: 'T-shirts',
+        },
+        {
+            id: 2,
+            title: 'T-shirts',
+        }, {
+            id: 3,
+            title: 'T-shirts',
+        },
+    ]
 
+    return (
+        <div style={{ marginBottom: '10vh' }}>
+            <p class="heading">
+                Hacktober-Fest
+            </p>
 
 
             {/* about section */}
@@ -28,7 +49,6 @@ const Hacktober = () => {
                         <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
                             <div class="inner-column">
                                 <div class="sec-title">
-                                    <span class="title">About Css3transition</span>
                                     <h2 style={{ color: '#ffffff' }}>What is Hacktoberfest?</h2>
                                 </div>
                                 <div class="text">
@@ -68,7 +88,7 @@ const Hacktober = () => {
 
             {/* project section */}
 
-            <section class="section-services" style={{ backgroundColor: '#0B1B33' }}>
+            <section class="section-services" style={{ backgroundColor: '#0B1B3300' }}>
                 <div class="container">
                     <div class="row justify-content-center text-center">
                         <div class="col-md-10 col-lg-8">
@@ -81,7 +101,7 @@ const Hacktober = () => {
                     <div class="row">
                         {/* <!-- Start Single Service --> */}
                         <div class="col-md-6 col-lg-4">
-                            <div class="single-service" style={{background: "#233554"}}>
+                            <div class="single-service" style={{ background: "#233554" }}>
                                 <div class="part-1">
                                     <i class="fab fa-500px"></i>
                                     <h3 class="title">Express delivery innovative Design service</h3>
@@ -166,6 +186,51 @@ const Hacktober = () => {
                     </div>
                 </div>
             </section>
+
+            {/* benefits */}
+            <div class='benefits'>
+                <div>
+                    <h2 class="benefits-heading">
+                        BENEFITS
+                    </h2>
+                </div>
+                <div class='benefits-wrapper'>
+                    {Benefits.map((item, index) => (
+                        <article class="profile">
+
+                            <div class="profile-image">
+                                <img src="https://imgs.search.brave.com/yg4HSuKFXmosvSE8fIWiXNAXZfhrzM0jM57u7iGX4_g/rs:fit:467:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5N/cmIzdHlpajNfSXU1/Mm1IRVhWa0hBSGFI/aCZwaWQ9QXBp" />
+                            </div>
+                            <h2 class="profile-username">{item.title}</h2>
+                            <small class="profile-user-handle">Hacktober fest</small>
+
+                        </article>
+                    ))}
+
+                </div>
+            </div>
+
+            {/* register section */}
+            <div class="register-wrapper">
+                <div class="register-box">
+
+                    <h2 class="register-text">
+                        What are you waiting for? Register Now !
+                    </h2>
+
+                    <div class="button">
+                        <a href="#">
+                            Register Now!
+                            <span class="shift">›</span>
+                        </a>
+                        <div class="mask"></div>
+                    </div>
+
+                </div>
+
+                <img class='register-img' src={register} />
+            </div>
+
 
         </div>
     )

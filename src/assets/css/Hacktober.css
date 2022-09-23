@@ -1,3 +1,10 @@
+.heading {
+  color: #fff;
+  font-size: 10vh;
+  font-weight: 550;
+  text-align: center;
+}
+
 a,
 a:hover,
 a:focus,
@@ -395,5 +402,299 @@ ul {
   color: #3c998f;
 }
 
+/* benefits */
+
+.benefits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-heading {
+  font-size: 6vh;
+  color: #fff;
+}
+
+.benefits-wrapper {
+  width: 100%;
+  margin: 6vh 0vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile {
+  display: flex;
+  margin-right: 2vh;
+  margin-bottom: 10vh;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  width: 90%;
+  max-width: 300px;
+  background-color: #1b2028;
+  border-radius: 16px;
+  position: relative;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  text-align: center;
+  color: #f1f3f3;
+  background-image: linear-gradient(135deg, #516ea1, #3d598a 15%, #3d598a 20%, #1b2028 100%);
+}
+.profile:after {
+  content: "";
+  display: block;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 16px;
+  background-image: linear-gradient(135deg, #516ea1, #3d598a 15%, #3d598a 20%, #1b2028 100%);
+}
+
+.profile-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 175px;
+  height: 175px;
+  position: relative;
+}
+.profile-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.profile-user-handle {
+  color: #7d8396;
+}
+
+.profile-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-actions > * {
+  margin: 0 0.25rem;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.15s ease;
+}
+.btn--primary {
+  border-radius: 99em;
+  background-color: #3772ff;
+  background-image: linear-gradient(135deg, #5587ff, #3772ff);
+  color: #fff;
+  padding: 0 1.375em;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-size: 150%;
+}
+.btn--icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 3px solid #343945;
+  color: #7d8396;
+}
+.btn--icon i {
+  font-size: 1.25em;
+}
+.btn--icon:hover, .btn--icon:focus {
+  border-color: #7d8396;
+}
+
+.profile-links {
+  margin-top: 3.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #7d8396;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+}
+.link i {
+  font-size: 1.25em;
+}
+
+
+/* register section */
+
+.register-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff00;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+.register-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.register-img {
+  width: 40%;
+  margin-right: 5vh
+}
+
+/* register text */
+.register-text {
+  width: 100%;
+  color: #fff;
+  font-size: 7vh;
+  margin-right: 3vh;
+  text-align: center;
+}
+
+
+/* register btn */
+:root {
+	--bg-body: #3c998f;
+	--bg-body-image: radial-gradient(30% 90% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
+	--bg-body-hover: rgba(40, 40, 40, 1);
+	--bg-button: #3c998f;
+	--bg-button-hover: rgba(255, 255, 255, 0.05);
+	--bg-button-active: rgba(255, 255, 255, 1.0);
+	--bg-mask: rgba(255, 255, 255, 0.5);
+	--bg-mask-hover: rgba(255, 255, 255, 1.0);
+	--border-button: rgba(129, 194, 174, 0.557);
+	--border-button-hover: rgba(255, 255, 255, 1.0);
+	--color-button: rgba(255, 255, 255, 0.918);
+	--color-button-hover: rgba(255, 255, 255, 1.0);
+	--color-button-active: var(--body-bg);
+	--font-button: "Varela Round", sans-serif;
+	--shadow-button-hover: 0 0 0.3125rem rgba(255, 255, 255, 0.8);
+}
+
+.button {
+  margin-top: 6vh;
+  /* width: 30%; */
+	background-color: var(--bg-button);
+	border: 0.125rem solid var(--border-button);
+	cursor: pointer;
+	letter-spacing: 0.2125rem;
+	line-height: 1;
+	overflow: hidden;
+	padding: 1.25rem 1.875rem;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 
+		background-color 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+		border 1s cubic-bezier(0.19, 1, 0.22, 1),
+		color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+	user-select: none;
+}
+
+.button a {
+	color: var(--color-button);
+	font-family: var(--font-button);
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.button .mask {
+	background-color: var(--bg-mask);
+	height: 6.25rem;
+	position: absolute;
+	transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 12.5rem;
+}
+
+.button .shift {
+	display: inline-block;
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	vertical-align: text-top;
+}
+
+.button:hover {
+	background-color: var(--bg-button-hover);
+	border-color: var(--border-button-hover);
+	box-shadow: var(--shadow-button-hover);
+}
+
+.button:hover a {
+	color: var(--color-button-hover);
+}
+
+.button:hover .mask {
+	background-color: var(--bg-mask-hover);
+	transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+
+.button:hover .shift {
+	transform: translateX(0.3125rem);
+}
+
+.button:active {
+	background-color: var(--bg-button-active);
+}
+
+.button:active a {
+	color: var(--color-button-active);
+}
+
+.button:hover {
+	background-image: url('http://.com/img/codepen/savvy.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 @media screen and (min-width: 300px) and (max-width: 991px) {
+  .register-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-text {
+    margin-bottom: 4vh;
+  }
+
+  .register-img {
+    width: 60%;
+    margin-top: 15vh
+  }
+
+  .about-section .content-column .inner-column {
+    padding-top: 15vh;
+  }
 }
