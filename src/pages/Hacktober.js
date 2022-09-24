@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "../assets/css/Hacktober.css";
-import register from "../assets/images/events/register.png"
+import register from "../assets/images/events/register.png";
+import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
+import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
+import Header from "../component/Header";
 
 const Hacktober = () => {
 
@@ -37,10 +40,44 @@ const Hacktober = () => {
 
     return (
         <div style={{ marginBottom: '10vh' }}>
-            <p class="heading">
-                Hacktober-Fest
-            </p>
 
+            {/* landing */}
+            <div>
+                <Header />
+                <div class='landing-box'>
+                    <lottie-player
+                        src="https://assets3.lottiefiles.com/packages/lf20_bacf0pmj.json"
+                        background="transparent"
+                        speed="1"
+                        style={{ width: '100%', height: "100%" }}
+                        loop
+                        autoplay
+                    >
+                        
+                    </lottie-player>
+
+                    <div class='landing-image-box'>
+                        <img class="Hacktober_Heading" src={Hacktober_Heading} />
+
+                        <div class='landing-image-box' style={{ marginTop: "4%" }}>
+                            <img class="Hacktober_Year" src={Hacktober_Year} />
+                        </div>
+
+                        <div class="button" style={{
+                            marginTop: '26%',
+                            zIndex: 6,
+                        }}>
+                            <a href="#">
+                                Register Now!
+                                <span class="shift">›</span>
+                            </a>
+                            <div class="mask"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
             {/* about section */}
             <section class="about-section">
