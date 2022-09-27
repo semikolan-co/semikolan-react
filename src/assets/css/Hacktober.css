@@ -12,6 +12,9 @@
   top: 18%;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-image-box {
@@ -33,7 +36,6 @@
   right: 0;
   top: 0;
   margin-top: -4%;
-  width: 100%;
 }
 
 .Hacktober_Year {

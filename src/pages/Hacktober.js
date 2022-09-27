@@ -99,19 +99,12 @@ const Hacktober = () => {
 
 
                                 </div>
-                                <div class="btn-box">
-                                    <a href="#" class="theme-btn btn-style-one">Contact Us</a>
-                                </div>
                             </div>
                         </div>
 
                         {/* <!-- Image Column --> */}
                         <div class="image-column col-lg-6 col-md-12 col-sm-12">
                             <div class="inner-column wow fadeInLeft">
-                                <div class="author-desc">
-                                    <h2>Rahul Kumar Yadav</h2>
-                                    <span>Web Developer</span>
-                                </div>
                                 <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images">
                                     <img title="Rahul Kumar Yadav" src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg" alt="" /></a>
                                 </figure>

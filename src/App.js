@@ -157,7 +157,7 @@ export default function App() {
 
             <Route
               exact
-              path="/hacktober"
+              path="/hacktoberfest"
               render={(props) => <Hacktober {...props} />}
             />
 
