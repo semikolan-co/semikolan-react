@@ -226,11 +226,15 @@ section {
 
 /* logo */
 .about-image-box {
+  
 }
 
 .about-image {
   width: 100%;
   /* height: ; */
+  border-radius: 50% !important;
+  box-shadow: 24px 10px 15px -3px rgba(0,0,0,0.1);
+
 }
 
 .container {
