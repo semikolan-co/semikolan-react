@@ -69,7 +69,7 @@ const Hacktober = () => {
 
                         <img class="Hacktober_Year" src={Hacktober_Year} />
 
-                        <button class="register-btn" onClick={() => {
+                        <button style={{backgroundColor: null, border: 0}} class="register-btn" onClick={() => {
                             // alert("Registration will be open soon!")
                             setShowModal(true)
                         }}>
@@ -308,7 +308,7 @@ const Hacktober = () => {
                     <button class="register-btn" onClick={() => {
                         setShowModal(true)
                     }} >
-                        <div style={{border:0}} class="button" style={{ marginTop: '-20%' }}>
+                        <div class="button" style={{ marginTop: '-20%', border:0 }}>
                             <a href="#">
                                 Register Now!
                                 <span class="shift">›</span>
