@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/Hacktober.css";
 import register from "../assets/images/events/register.png";
 import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
 import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
 import Header from "../component/Header";
-import { padding } from "@mui/system";
+// import ReactModal from "react-modal";
+import { Modal } from "reactstrap";
 
 const Hacktober = () => {
 
@@ -39,9 +40,11 @@ const Hacktober = () => {
         },
     ]
 
+    const [ShowModal, setShowModal] = useState(false);
+
     // project
-    const showProject = false;
-    const showSwags = false;
+    const [ShowProject, setShowProject] = useState(false);
+    const [ShowSwags, setShowSwags] = useState(false);
 
     return (
         <div style={{ marginBottom: '10vh' }}>
@@ -67,8 +70,28 @@ const Hacktober = () => {
                         <img class="Hacktober_Year" src={Hacktober_Year} />
 
                         <button class="register-btn" onClick={() => {
-                            alert("Registration will be open soon!")
-                        }} >
+                            // alert("Registration will be open soon!")
+                            setShowModal(true)
+                        }}>
+
+                            <Modal
+                                isOpen={ShowModal}
+                                style={{
+                                    marginTop: '10%',
+                                    backgroundColor: '#1d1e2300',
+                                    border: 0,
+                                }}
+                            >
+
+                                <div class='register-modal'>
+                                    <p class="modal-text">Registration will be open soon!</p>
+                                    <button onClick={() => {
+                                        setShowModal(!ShowModal);
+                                    }} class="modal-button">Ok</button>
+                                </div>
+
+                            </Modal>
+
                             <div class="button" style={{
                                 marginTop: '26%',
                                 zIndex: 6,
@@ -135,7 +158,7 @@ const Hacktober = () => {
                         </div>
                     </div>
                     <div class="row">
-                        {showProject
+                        {ShowProject
                             ?
                             <>
                                 {/* <!-- Start Single Service --> */}
@@ -239,12 +262,12 @@ const Hacktober = () => {
 
             {/* benefits */}
             <div class='benefits' >
-                <div>
+                <div class="benefits-heading-div">
                     <h2 class="benefits-heading">
                         BENEFITS
                     </h2>
                 </div>
-                {showSwags
+                {ShowSwags
                     ?
                     <div class='benefits-wrapper'>
                         {Benefits.map((item, index) => (
@@ -283,9 +306,9 @@ const Hacktober = () => {
                     </h2>
 
                     <button class="register-btn" onClick={() => {
-                        alert("Registration will be open soon!")
+                        setShowModal(true)
                     }} >
-                        <div class="button" style={{ marginTop: '-20%' }}>
+                        <div style={{border:0}} class="button" style={{ marginTop: '-20%' }}>
                             <a href="#">
                                 Register Now!
                                 <span class="shift">›</span>
