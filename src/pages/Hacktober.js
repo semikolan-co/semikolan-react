@@ -130,7 +130,7 @@ const Hacktober = () => {
                         <div class="col-md-10 col-lg-8">
                             <div class="header-section">
                                 <h2 class="title">Projects <span>Repository</span></h2>
-                                <p class="description">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected humour</p>
+                                <p class="description">This month, contribute to our open source projects covering a variety of domains! Find the projects below in which you can contribute!</p>
                             </div>
                         </div>
                     </div>
