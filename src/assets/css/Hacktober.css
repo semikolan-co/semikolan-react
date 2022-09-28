@@ -64,13 +64,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color:#1d1e23;
+  background-color: #1d1e23;
   border-radius: 10px;
   border-width: 0;
 }
 
 .modal-content {
-  background-color:rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
 }
 
@@ -186,11 +186,12 @@ section {
 .sec-title h2 {
   position: relative;
   display: block;
-  font-size: 40px;
+  font-size: 7vh;
   line-height: 1.28em;
   color: #222222;
   font-weight: 600;
   padding-bottom: 18px;
+  text-align: center;
 }
 
 .sec-title h2:before {
@@ -296,8 +297,7 @@ section {
   width: 100%;
   /* height: ; */
   border-radius: 50% !important;
-  box-shadow: 24px 10px 15px -3px rgba(0,0,0,0.1);
-
+  box-shadow: 24px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -485,6 +485,7 @@ ul {
   padding-bottom: 25px;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 7vh;
 }
 
 .section-services .header-section .title:before {
@@ -893,7 +894,39 @@ ul {
   }
 
   .register-text {
+    width: 100%;
+    color: #fff;
+    font-size: 3vh;
+    margin-right: 0;
+    text-align: center;
     margin-bottom: 4vh;
+  }
+
+  .mid-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3vh;
+  }
+
+  .sec-title h2 {
+    position: relative;
+    display: block;
+    font-size: 3.2vh;
+    line-height: 1.28em;
+    color: #222222;
+    font-weight: 600;
+    padding-bottom: 18px;
+    text-align: center;
+  }
+
+  .section-services .header-section .title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 3.2vh;
+    font-weight: 700;
+    
   }
 
   .register-img {

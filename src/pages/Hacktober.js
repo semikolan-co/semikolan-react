@@ -362,9 +362,8 @@ const Hacktober = () => {
               }}
             >
               <div
-                style={{ border: 0 }}
+                style={{ border: 0,  marginTop: "-20%"  }}
                 class="button"
-                style={{ marginTop: "-20%" }}
               >
                 <a href="#">
                   Register Now!
