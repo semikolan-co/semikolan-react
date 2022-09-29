@@ -22,7 +22,7 @@ export default function Home() {
         />
         <About
           num="01."
-          titleline="What is SemiKolan?&#129300;&#129300;"
+          titleline="What is SemiKolan?&#129300;"
           content={semikolan.about.content}
         />
         <Skills num="02." elements={semikolan.skills} />

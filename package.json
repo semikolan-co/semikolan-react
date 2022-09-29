@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
+    "@coreui/coreui": "^4.2.2",
     "@coreui/icons-react": "^1.1.0",
     "@coreui/react": "^3.4.6",
     "@emotion/react": "^11.5.0",
