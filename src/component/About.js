@@ -33,18 +33,22 @@ function About(props) {
               </p>
             </>
           )}
-          <p style={{marginTop: "20px", marginBottom: "20px"}}>
-          <Link
-            to="/about"
-            className="button"
-            data-aos="fade-up"
-            data-aos-duration={500}
-          >
-            Know More
-          </Link>
+          <p style={{ marginTop: "20px", marginBottom: "20px" }}>
+            <Link
+              to="/about"
+              className="button"
+              data-aos="fade-up"
+              data-aos-duration={500}
+            >
+              Know More
+            </Link>
           </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration={500}>
+        <div
+          data-aos="fade-left"
+          data-aos-duration={500}
+          style={{ width: "100%" }}
+        >
           <div className="img filterdiv" />
           <img src={harsh} alt="Profile" className="img profileimg" />
           <div className="img profileimgdiv" />
