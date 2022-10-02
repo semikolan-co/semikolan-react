@@ -85,7 +85,6 @@ const Hacktober = () => {
           </div>
         </div>
       </div>
-
       {/* about section */}
       <section class="about-section">
         <div
@@ -96,7 +95,10 @@ const Hacktober = () => {
           }}
         >
           <div class="row">
-            <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2" style={{justifyContent: "center"}}>
+            <div
+              class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
+              style={{ justifyContent: "center" }}
+            >
               <div class="inner-column">
                 <div class="sec-title">
                   <h2 style={{ color: "#ffffff" }}>What is Hacktoberfest?</h2>
@@ -116,7 +118,7 @@ const Hacktober = () => {
               <div class="about-image-box">
                 <img
                   class="about-image"
-                  style={{borderRadius: "10px"}}
+                  style={{ borderRadius: "10px" }}
                   src="https://raw.githubusercontent.com/github/explore/f47aef15a1c8f22b6fc5c7abf615a918f1322cd6/topics/hacktoberfest/hacktoberfest.png"
                 />
               </div>
@@ -124,7 +126,6 @@ const Hacktober = () => {
           </div>
         </div>
       </section>
-
       {/* project section */}
       <section
         class="section-services"
@@ -293,32 +294,161 @@ const Hacktober = () => {
         </div>
       </section>
 
-      {/* benefits */}
-      <div class="benefits">
-        <div>
-          <h2 class="benefits-heading">BENEFITS</h2>
-        </div>
-        {showSwags ? (
-          <div class="benefits-wrapper">
-            {Benefits.map((item, index) => (
-              <article class="profile">
-                <div class="profile-image">
-                  <img src="https://imgs.search.brave.com/yg4HSuKFXmosvSE8fIWiXNAXZfhrzM0jM57u7iGX4_g/rs:fit:467:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5N/cmIzdHlpajNfSXU1/Mm1IRVhWa0hBSGFI/aCZwaWQ9QXBp" />
-                </div>
-                <h2 class="profile-username">{item.title}</h2>
-                <small class="profile-user-handle">Hacktober fest</small>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <>
-            <div class="center" style={{ margin: 40 }}>
-              <p class="mid-text">Revealing soon !</p>
+      <section
+        class="section-timeline"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="header-section">
+              <h2 class="title">
+                Events <span>Timeline</span>
+              </h2>
+              <p class="description">
+                Here is the complete timeline of the Hacktoberfest 2022!
+              </p>
             </div>
-          </>
-        )}
-      </div>
+          </div>
+        </div>
+        <section id="cd-timeline" className="cd-container">
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+        </section>{" "}
+        {/* cd-timeline */}
+      </section>
 
+      {/* benefits */}
+      <section
+        class="section-timeline"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="header-section">
+              <h2 class="title">
+                hacktoberfest <span>Benefits</span>
+              </h2>
+              <p class="description">
+                Here is the complete benefits of participating in Hacktoberfest 2022!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="benefits">
+          {showSwags ? (
+            <div class="benefits-wrapper">
+              {Benefits.map((item, index) => (
+                <article class="profile">
+                  <div class="profile-image">
+                    <img src="https://imgs.search.brave.com/yg4HSuKFXmosvSE8fIWiXNAXZfhrzM0jM57u7iGX4_g/rs:fit:467:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5N/cmIzdHlpajNfSXU1/Mm1IRVhWa0hBSGFI/aCZwaWQ9QXBp" />
+                  </div>
+                  <h2 class="profile-username">{item.title}</h2>
+                  <small class="profile-user-handle">Hacktober fest</small>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <>
+              <div class="center" style={{ margin: 40 }}>
+                <p class="mid-text">Revealing soon !</p>
+              </div>
+            </>
+          )}
+        </div>
+      </section>
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
@@ -344,7 +474,6 @@ const Hacktober = () => {
 
         <img class="register-img" src={register} />
       </div>
-
       <div>
         <footer className="footer01" id="footer">
           <span>
