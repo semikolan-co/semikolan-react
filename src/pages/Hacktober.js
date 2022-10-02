@@ -65,7 +65,7 @@ const Hacktober = () => {
             <button
               class="register-btn"
               onClick={() => {
-                alert("Registration will be open soon!");
+                window.open('https://hacktoberfest.com/', '_blank').focus();
               }}
             >
               <div
@@ -329,7 +329,7 @@ const Hacktober = () => {
           <button
             class="register-btn"
             onClick={() => {
-              alert("Registration will be open soon!");
+              window.open('https://hacktoberfest.com/', '_blank').focus();
             }}
           >
             <div class="button" style={{ marginTop: "-20%" }}>
