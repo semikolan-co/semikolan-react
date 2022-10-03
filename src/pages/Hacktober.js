@@ -4,17 +4,13 @@ import register from "../assets/images/events/register.png";
 import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
 import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
 import Header from "../component/Header";
-// import ReactModal from "react-modal";
-import { Modal } from "reactstrap";
+import { Link } from "react-router-dom";
+import { padding } from "@mui/system";
 
 const Hacktober = () => {
-
   useEffect(() => {
-
-    return () => {
-    }
-  }, [])
-
+    return () => { };
+  }, []);
 
   // project card data
   const project_card = [
@@ -80,7 +76,7 @@ const Hacktober = () => {
   const [ShowSwags, setShowSwags] = useState(true);
 
   return (
-    <div style={{ marginBottom: "10vh" }}>
+    <div style={{ marginBottom: "5vh" }}>
       {/* landing */}
       <div>
         <Header />
@@ -102,31 +98,9 @@ const Hacktober = () => {
             <button
               class="register-btn"
               onClick={() => {
-                // alert("Registration will be open soon!")
-                setShowModal(true);
+                window.open('https://hacktoberfest.com/', '_blank').focus();
               }}
             >
-              <Modal
-                isOpen={ShowModal}
-                style={{
-                  marginTop: "10%",
-                  backgroundColor: "#1d1e2300",
-                  border: 0,
-                }}
-              >
-                <div class="register-modal">
-                  <p class="modal-text">Registration will be open soon!</p>
-                  <button
-                    onClick={() => {
-                      setShowModal(!ShowModal);
-                    }}
-                    class="modal-button"
-                  >
-                    Ok
-                  </button>
-                </div>
-              </Modal>
-
               <div
                 class="button"
                 style={{
@@ -155,17 +129,20 @@ const Hacktober = () => {
           }}
         >
           <div class="row">
-            <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+            <div
+              class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
+              style={{ justifyContent: "center" }}
+            >
               <div class="inner-column">
                 <div class="sec-title">
                   <h2 style={{ color: "#ffffff" }}>What is Hacktoberfest?</h2>
                 </div>
                 <div class="text">
-                  Hacktoberfest under Digital Ocean is back again with their
-                  one of the most awaited and splendid event for this
-                  forthcoming autumn! ‘Hacktoberfest’, a synonym for ‘Open
-                  Source’, ‘Contributions’, ‘Projects’ and much more, all on
-                  your fingertips.
+                  Hacktoberfest under Digital Ocean is back again with their one
+                  of the most awaited and splendid event for this forthcoming
+                  autumn! ‘Hacktoberfest’, a synonym for ‘Open Source’,
+                  ‘Contributions’, ‘Projects’ and much more, all on your
+                  fingertips.
                 </div>
               </div>
             </div>
@@ -175,6 +152,7 @@ const Hacktober = () => {
               <div class="about-image-box">
                 <img
                   class="about-image"
+                  style={{ borderRadius: "10px" }}
                   src="https://raw.githubusercontent.com/github/explore/f47aef15a1c8f22b6fc5c7abf615a918f1322cd6/topics/hacktoberfest/hacktoberfest.png"
                 />
               </div>
@@ -184,7 +162,6 @@ const Hacktober = () => {
       </section>
 
       {/* project section */}
-
       <section
         class="section-services"
         style={{ backgroundColor: "#0B1B3300" }}
@@ -252,6 +229,123 @@ const Hacktober = () => {
         </div>
       </section>
 
+      {/* time-line section */}
+      <section
+        class="section-timeline"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="header-section">
+              <h2 class="title">
+                Events <span>Timeline</span>
+              </h2>
+              <p class="description">
+                Here is the complete timeline of the Hacktoberfest 2022!
+              </p>
+            </div>
+          </div>
+        </div>
+        <section id="cd-timeline" className="cd-container">
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+          {/* cd-timeline-block */}
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h2>Introduction to Git & GitHub</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                </span>
+              </div>
+              <p>
+                Gear up your Open Source journey and become a keen contributor
+                in this Hacktoberfest with GDSC- UIT RGPV.
+              </p>
+              <ul className="content-skills">
+                <li>EXPLORE</li>
+              </ul>
+            </div>{" "}
+            {/* cd-timeline-content */}
+          </div>{" "}
+        </section>{" "}
+        {/* cd-timeline */}
+      </section>
+
       {/* benefits */}
       <div class="benefits">
         <div class="sec-title">
@@ -295,13 +389,10 @@ const Hacktober = () => {
           <button
             class="register-btn"
             onClick={() => {
-              setShowModal(true);
+              window.open('https://hacktoberfest.com/', '_blank').focus();
             }}
           >
-            <div
-              style={{ border: 0, marginTop: "-20%" }}
-              class="button"
-            >
+            <div class="button" style={{ marginTop: "-20%" }}>
               <a href="#">
                 Register Now!
                 <span class="shift">›</span>
@@ -313,7 +404,19 @@ const Hacktober = () => {
 
         <img class="register-img" src={register} />
       </div>
+
+      {/* footer section */}
+      <div>
+        <footer className="footer01" id="footer">
+          <span>
+            <div>
+              Designed with <Link to="#">&hearts;</Link> by
+              <a href="https://github.com/semikolan-co"> Semikolan</a>
+            </div>
+          </span>
+        </footer>
+      </div>
     </div>
   );
-}
+};
 export default Hacktober;
