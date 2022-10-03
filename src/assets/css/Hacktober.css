@@ -582,8 +582,6 @@ section {
   transition: transform 0.3s ease-out;
 }
 
-
-
 a,
 p,
 h1,
@@ -699,7 +697,7 @@ ul {
   text-decoration: none;
   background-color: #3c999065;
   padding: 2vh 3vh;
-  border-radius:  10vh;
+  border-radius: 10vh;
 }
 
 .section-services .single-service .part-2 a i {
@@ -757,144 +755,45 @@ ul {
   justify-content: space-evenly;
 }
 
-.profile {
-  display: flex;
-  margin-right: 2vh;
-  margin-bottom: 10vh;
-  align-items: center;
-  flex-direction: column;
-  padding: 3rem;
-  width: 90%;
-  max-width: 300px;
-  background-color: #1b2028;
-  border-radius: 16px;
-  position: relative;
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  text-align: center;
-  color: #f1f3f3;
-  background-image: linear-gradient(
-    135deg,
-    #516ea1,
-    #3d598a 15%,
-    #3d598a 20%,
-    #1b2028 100%
-  );
-}
-.profile:after {
-  content: "";
-  display: block;
-  top: -3px;
-  left: -3px;
-  bottom: -3px;
-  right: -3px;
-  z-index: -1;
-  position: absolute;
-  border-radius: 16px;
-  background-image: linear-gradient(
-    135deg,
-    #516ea1,
-    #3d598a 15%,
-    #3d598a 20%,
-    #1b2028 100%
-  );
+.benefits-card {
+  width: 30%;
+  height: 46vh;
+  background-color: #fff;
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 25%);
+  border-radius: 20px;
+  background: url("https://i.imgur.com/2DhmtJ4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.profile:hover {
-  background-image: linear-gradient(
-    135deg,
-    #516ea193,
-    #3d598ab4 15%,
-    #3d598aa9 20%,
-    #516ea1
-  );
+.benefits-box-image {
+  height: 31vh;
+  /* background-color: #5b91a3; */
+  border-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.profile-image {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 175px;
-  height: 175px;
-  position: relative;
-}
-.profile-image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+.benefits-box-image img {
+  /* width: 100%; */
+  /* height: 100%; */
+  border-radius: 20px;
 }
 
-.profile-username {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-}
-
-.profile-user-handle {
-  color: #7d8396;
-}
-
-.profile-actions {
-  margin-top: 1.5rem;
+.benefits-box-bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.profile-actions > * {
-  margin: 0 0.25rem;
+  height: 15vh;
+  padding-left: 10%;
+  z-index: 4;
+  background-color: #4f928bbe;
+  border-radius: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 0px;
 }
 
-.btn {
-  border: 0;
-  background-color: transparent;
-  padding: 0;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  line-height: 1;
-  transition: 0.15s ease;
-}
-.btn--primary {
-  border-radius: 99em;
-  background-color: #3772ff;
-  background-image: linear-gradient(135deg, #5587ff, #3772ff);
+.benefits-box-bottom h4 {
+  font-variant: small-caps;
   color: #fff;
-  padding: 0 1.375em;
-}
-.btn--primary:hover,
-.btn--primary:focus {
-  background-size: 150%;
-}
-.btn--icon {
-  height: 46px;
-  width: 46px;
-  border-radius: 50%;
-  border: 3px solid #343945;
-  color: #7d8396;
-}
-.btn--icon i {
-  font-size: 1.25em;
-}
-.btn--icon:hover,
-.btn--icon:focus {
-  border-color: #7d8396;
-}
-
-.profile-links {
-  margin-top: 3.5rem;
-}
-
-.link {
-  text-decoration: none;
-  color: #7d8396;
-  margin-left: 0.375rem;
-  margin-right: 0.375rem;
-}
-.link i {
-  font-size: 1.25em;
 }
 
 /* register section */
@@ -1033,7 +932,28 @@ ul {
 }
 
 @media screen and (min-width: 300px) and (max-width: 991px) {
-  .register-wrapper {
+  .benefits-wrapper {
+    width: 100%;
+    margin: 4vh 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .benefits-card {
+    margin-bottom: 15%;
+    width: 100%;
+    height: 46vh;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    background: url("https://i.imgur.com/2DhmtJ4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  F .register-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1046,7 +966,7 @@ ul {
     font-size: 3vh;
     margin-right: 0;
     text-align: center;
-    margin-bottom: 4vh;
+    margin-bottom: 14vh;
   }
 
   .mid-text {
@@ -1073,7 +993,14 @@ ul {
     text-transform: uppercase;
     font-size: 3.2vh;
     font-weight: 700;
-    
+  }
+
+  .register-text {
+    width: 100%;
+    color: #fff;
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 14vh;
   }
 
   .register-img {

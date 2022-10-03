@@ -224,7 +224,7 @@ const Hacktober = () => {
                     >
                       <div class="part-1">
                         {/* <i class="fab fa-500px"></i> */}
-                        <h3 class="title" style={{letterSpacing: '1px'}}>
+                        <h3 class="title" style={{ letterSpacing: '1px' }}>
                           {project.title}
                         </h3>
                       </div>
@@ -260,7 +260,20 @@ const Hacktober = () => {
         {ShowSwags ? (
           <div class="benefits-wrapper">
             {Benefits.map((item, index) => (
-              <></>
+              <>
+                <div class="benefits-card">
+
+                  <div class="benefits-box-image">
+                    {/* <img src="https://i.imgur.com/2DhmtJ4.jpg" class="benefits-image" /> */}
+                  </div>
+
+                  <div class="benefits-box-bottom">
+                    <h4>
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+              </>
             ))}
           </div>
         ) : (
