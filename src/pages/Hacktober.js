@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/Hacktober.css";
 import register from "../assets/images/events/register.png";
 import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
@@ -9,38 +9,71 @@ import { padding } from "@mui/system";
 
 const Hacktober = () => {
   useEffect(() => {
-    return () => {};
+    return () => { };
   }, []);
 
   // project card data
   const project_card = [
     {
       id: 1,
-      icon: "",
-      title: "Express delivery innovative Design service",
-      detail:
-        "Express delivery inno service effective logistics solution for delivery of small cargo delivery service.",
+      icon: '',
+      link: 'https://github.com/semikolan-co/keep-document',
+      title: 'Keep Document',
+      detail: 'Details about the project.Details about the project.Details about the project.',
     },
-  ];
+    {
+      id: 2,
+      icon: '',
+      link: 'https://github.com/gdscrgpv/quizbanao',
+      title: 'Quizbanao',
+      detail: 'Details about the project.Details about the project.Details about the project.',
+    }, {
+      id: 3,
+      icon: '',
+      link: 'https://github.com/gdscrgpv/quizbanao-admin',
+      title: 'Quizbanao admin panel',
+      detail: 'Details about the project.Details about the project.Details about the project.',
+    }, {
+      id: 4,
+      icon: '',
+      link: 'https://github.com/semikolan-co/Certificate-Generator',
+      title: 'Certificate generator',
+      detail: 'Details about the project.Details about the project.Details about the project.',
+    },
+    {
+      id: 5,
+      icon: '',
+      link: 'https://github.com/semikolan-co/YouTube-Thumbnail-Downloader',
+      title: 'Youtube Thumbnail Downloader',
+      detail: 'Details about the project.Details about the project.Details about the project.',
+    }, {
+      id: 6,
+      icon: '',
+      link: 'https://github.com/semikolan-co/MovingCursor',
+      title: 'Moving cursor (React package hosted on npm.js)',
+      detail: 'Details about the project.Details about the project.Details about the project.',
+    },
+  ]
 
   const Benefits = [
     {
       id: 1,
-      title: "T-shirts",
+      title: 'T-shirts',
     },
     {
       id: 2,
-      title: "T-shirts",
-    },
-    {
+      title: 'T-shirts',
+    }, {
       id: 3,
-      title: "T-shirts",
+      title: 'T-shirts',
     },
-  ];
+  ]
+
+  const [ShowModal, setShowModal] = useState(false);
 
   // project
-  const showProject = false;
-  const showSwags = false;
+  const [ShowProject, setShowProject] = useState(true);
+  const [ShowSwags, setShowSwags] = useState(true);
 
   return (
     <div style={{ marginBottom: "5vh" }}>
@@ -85,6 +118,7 @@ const Hacktober = () => {
           </div>
         </div>
       </div>
+
       {/* about section */}
       <section class="about-section">
         <div
@@ -126,6 +160,7 @@ const Hacktober = () => {
           </div>
         </div>
       </section>
+
       {/* project section */}
       <section
         class="section-services"
@@ -146,142 +181,42 @@ const Hacktober = () => {
                   Projects <span>Repository</span>
                 </h2>
                 <p class="description">
-                  This month, contribute to our open source projects covering a
-                  variety of domains! Find the projects below in which you can
-                  contribute!
+                  There are many variations of passages of Lorem Ipsum
+                  available but the majority have suffered alteration in some
+                  injected humour
                 </p>
               </div>
             </div>
           </div>
           <div class="row">
-            {showProject ? (
+            {ShowProject ? (
               <>
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service" style={{ background: "#233554" }}>
-                    <div class="part-1">
-                      <i class="fab fa-500px"></i>
-                      <h3 class="title">
-                        Express delivery innovative Design service
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service">
-                    <div class="part-1">
-                      <i class="fab fa-angellist"></i>
-                      <h3 class="title">
-                        Online chat may refer to any kind communication
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
+
+                {/* the project card */}
+                {project_card.map((project, index) => (
+                  <div class="col-md-6 col-lg-4">
+                    <div
+                      class="single-service"
+                      style={{ background: "#233554" }}
+                    >
+                      <div class="part-1">
+                        {/* <i class="fab fa-500px"></i> */}
+                        <h3 class="title" style={{ letterSpacing: '1px' }}>
+                          {project.title}
+                        </h3>
+                      </div>
+                      <div class="part-2">
+                        <p class="description">
+                          {project.detail}
+                        </p>
+                        <a href={project.link}>
+                          <i class="fas fa-arrow-circle-right"></i>Read More
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service">
-                    <div class="part-1">
-                      <i class="fas fa-award"></i>
-                      <h3 class="title">
-                        Service provider provide organizations consulting
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service">
-                    <div class="part-1">
-                      <i class="fab fa-asymmetrik"></i>
-                      <h3 class="title">
-                        Express delivery innovative Design service
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service">
-                    <div class="part-1">
-                      <i class="fas fa-broadcast-tower"></i>
-                      <h3 class="title">
-                        Provide solutions and services to end users
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
-                {/* <!-- Start Single Service --> */}
-                <div class="col-md-6 col-lg-4">
-                  <div class="single-service">
-                    <div class="part-1">
-                      <i class="fab fa-canadian-maple-leaf"></i>
-                      <h3 class="title">
-                        This broad term incorporates all IT businesses
-                      </h3>
-                    </div>
-                    <div class="part-2">
-                      <p class="description">
-                        Express delivery inno service effective logistics
-                        solution for delivery of small cargo delivery service.
-                      </p>
-                      <a href="#">
-                        <i class="fas fa-arrow-circle-right"></i>Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- / End Single Service --> */}
+                ))}
+
               </>
             ) : (
               <>
@@ -294,6 +229,7 @@ const Hacktober = () => {
         </div>
       </section>
 
+      {/* time-line section */}
       <section
         class="section-timeline"
         style={{ backgroundColor: "#0B1B3300" }}
@@ -411,44 +347,38 @@ const Hacktober = () => {
       </section>
 
       {/* benefits */}
-      <section
-        class="section-timeline"
-        style={{ backgroundColor: "#0B1B3300" }}
-      >
-        <div class="row justify-content-center text-center">
-          <div class="col-md-10 col-lg-8">
-            <div class="header-section">
-              <h2 class="title">
-                hacktoberfest <span>Benefits</span>
-              </h2>
-              <p class="description">
-                Here is the complete benefits of participating in Hacktoberfest 2022!
-              </p>
-            </div>
-          </div>
+      <div class="benefits">
+        <div class="sec-title">
+          <h2 style={{ color: "#ffffff" }}>Perks Of Participating</h2>
         </div>
-        <div class="benefits">
-          {showSwags ? (
-            <div class="benefits-wrapper">
-              {Benefits.map((item, index) => (
-                <article class="profile">
-                  <div class="profile-image">
-                    <img src="https://imgs.search.brave.com/yg4HSuKFXmosvSE8fIWiXNAXZfhrzM0jM57u7iGX4_g/rs:fit:467:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5N/cmIzdHlpajNfSXU1/Mm1IRVhWa0hBSGFI/aCZwaWQ9QXBp" />
+        {ShowSwags ? (
+          <div class="benefits-wrapper">
+            {Benefits.map((item, index) => (
+              <>
+                <div class="benefits-card">
+
+                  <div class="benefits-box-image">
+                    {/* <img src="https://i.imgur.com/2DhmtJ4.jpg" class="benefits-image" /> */}
                   </div>
-                  <h2 class="profile-username">{item.title}</h2>
-                  <small class="profile-user-handle">Hacktober fest</small>
-                </article>
-              ))}
+
+                  <div class="benefits-box-bottom">
+                    <h4>
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+              </>
+            ))}
+          </div>
+        ) : (
+          <>
+            <div class="center" style={{ margin: 40 }}>
+              <p class="mid-text">Revealing soon !</p>
             </div>
-          ) : (
-            <>
-              <div class="center" style={{ margin: 40 }}>
-                <p class="mid-text">Revealing soon !</p>
-              </div>
-            </>
-          )}
-        </div>
-      </section>
+          </>
+        )}
+      </div>
+
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
@@ -474,6 +404,8 @@ const Hacktober = () => {
 
         <img class="register-img" src={register} />
       </div>
+
+      {/* footer section */}
       <div>
         <footer className="footer01" id="footer">
           <span>
