@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../assets/css/Hacktober.css";
+import "../assets/css/hacktober.css";
 import register from "../assets/images/events/register.png";
 import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
 import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
@@ -9,65 +9,75 @@ import { padding } from "@mui/system";
 
 const Hacktober = () => {
   useEffect(() => {
-    return () => { };
+    return () => {};
   }, []);
 
   // project card data
   const project_card = [
     {
       id: 1,
-      icon: '',
-      link: 'https://github.com/semikolan-co/keep-document',
-      title: 'Keep Document',
-      detail: 'Details about the project.Details about the project.Details about the project.',
+      icon: "",
+      link: "https://github.com/semikolan-co/keep-document",
+      title: "Keep Document",
+      detail:
+        "An Android App for securing and storing your personal identities and documents.",
     },
     {
       id: 2,
-      icon: '',
-      link: 'https://github.com/gdscrgpv/quizbanao',
-      title: 'Quizbanao',
-      detail: 'Details about the project.Details about the project.Details about the project.',
-    }, {
+      icon: "",
+      link: "https://github.com/gdscrgpv/quizbanao",
+      title: "QuizBanao",
+      detail:
+        "QuizBanao is a quiz-taking app created with live events and webinars in mind.",
+    },
+    {
       id: 3,
-      icon: '',
-      link: 'https://github.com/gdscrgpv/quizbanao-admin',
-      title: 'Quizbanao admin panel',
-      detail: 'Details about the project.Details about the project.Details about the project.',
-    }, {
+      icon: "",
+      link: "https://github.com/gdscrgpv/quizbanao-admin",
+      title: "QuizBanao Admin Panel",
+      detail:
+        "This is the Admin Panel of the QuizBanao App by which we can add, delete, & edit the quiz.",
+    },
+    {
       id: 4,
-      icon: '',
-      link: 'https://github.com/semikolan-co/Certificate-Generator',
-      title: 'Certificate generator',
-      detail: 'Details about the project.Details about the project.Details about the project.',
+      icon: "",
+      link: "https://github.com/semikolan-co/Certificate-Generator",
+      title: "Certificate Generator",
+      detail:
+        "A simple web-based JavaScript tool to generate certificates and customize them.",
     },
     {
       id: 5,
-      icon: '',
-      link: 'https://github.com/semikolan-co/YouTube-Thumbnail-Downloader',
-      title: 'Youtube Thumbnail Downloader',
-      detail: 'Details about the project.Details about the project.Details about the project.',
-    }, {
-      id: 6,
-      icon: '',
-      link: 'https://github.com/semikolan-co/MovingCursor',
-      title: 'Moving cursor (React package hosted on npm.js)',
-      detail: 'Details about the project.Details about the project.Details about the project.',
+      icon: "",
+      link: "https://github.com/semikolan-co/YouTube-Thumbnail-Downloader",
+      title: "Youtube Thumbnail Downloader",
+      detail:
+        "A web based tool to extract & download Youtube Thumbnail very easily.",
     },
-  ]
+    {
+      id: 6,
+      icon: "",
+      link: "https://github.com/semikolan-co/MovingCursor",
+      title: "Moving Cursor",
+      detail:
+        "MovingCursor is a React.js package that implements a cursor that follows the mouse position.",
+    },
+  ];
 
   const Benefits = [
     {
       id: 1,
-      title: 'T-shirts',
+      title: "T-shirts",
     },
     {
       id: 2,
-      title: 'T-shirts',
-    }, {
-      id: 3,
-      title: 'T-shirts',
+      title: "T-shirts",
     },
-  ]
+    {
+      id: 3,
+      title: "T-shirts",
+    },
+  ];
 
   const [ShowModal, setShowModal] = useState(false);
 
@@ -98,7 +108,7 @@ const Hacktober = () => {
             <button
               class="register-btn"
               onClick={() => {
-                window.open('https://hacktoberfest.com/', '_blank').focus();
+                window.open("https://hacktoberfest.com/", "_blank").focus();
               }}
             >
               <div
@@ -121,14 +131,8 @@ const Hacktober = () => {
 
       {/* about section */}
       <section class="about-section">
-        <div
-          class="container"
-          style={{
-            marginTop: "0%",
-            paddingBottom: "0%",
-          }}
-        >
-          <div class="row">
+        <div class="container">
+          <div class="row hacktober-content">
             <div
               class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
               style={{ justifyContent: "center" }}
@@ -153,7 +157,7 @@ const Hacktober = () => {
                 <img
                   class="about-image"
                   style={{ borderRadius: "10px" }}
-                  src="https://raw.githubusercontent.com/github/explore/f47aef15a1c8f22b6fc5c7abf615a918f1322cd6/topics/hacktoberfest/hacktoberfest.png"
+                  src="https://raw.githubusercontent.com/github/Explore/f47aef15a1c8f22b6fc5c7abf615a918f1322cd6/topics/hacktoberfest/hacktoberfest.png"
                 />
               </div>
             </div>
@@ -181,17 +185,16 @@ const Hacktober = () => {
                   Projects <span>Repository</span>
                 </h2>
                 <p class="description">
-                  There are many variations of passages of Lorem Ipsum
-                  available but the majority have suffered alteration in some
-                  injected humour
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority have suffered alteration in some injected
+                  humour.
                 </p>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row project-cards">
             {ShowProject ? (
               <>
-
                 {/* the project card */}
                 {project_card.map((project, index) => (
                   <div class="col-md-6 col-lg-4">
@@ -201,27 +204,24 @@ const Hacktober = () => {
                     >
                       <div class="part-1">
                         {/* <i class="fab fa-500px"></i> */}
-                        <h3 class="title" style={{ letterSpacing: '1px' }}>
+                        <h3 class="title" style={{ letterSpacing: "1px" }}>
                           {project.title}
                         </h3>
                       </div>
                       <div class="part-2">
-                        <p class="description">
-                          {project.detail}
-                        </p>
-                        <a href={project.link}>
+                        <p class="description">{project.detail}</p>
+                        <a href={project.link} className="content-skills">
                           <i class="fas fa-arrow-circle-right"></i>Read More
                         </a>
                       </div>
                     </div>
                   </div>
                 ))}
-
               </>
             ) : (
               <>
                 <div>
-                  <p class="mid-text">To be released soon !</p>
+                  <p class="mid-text">To be released soon!</p>
                 </div>
               </>
             )}
@@ -253,11 +253,12 @@ const Hacktober = () => {
               <h2>Introduction to Git & GitHub</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />3 October
-                  2022
+                  <i className="fa fa-calendar" aria-hidden="true" />
+                  To be announced!
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                  <i className="fa fa-clock" aria-hidden="true" />
+                  To be announced!
                 </span>
               </div>
               <p>
@@ -265,7 +266,7 @@ const Hacktober = () => {
                 in this Hacktoberfest with GDSC- UIT RGPV.
               </p>
               <ul className="content-skills">
-                <li>EXPLORE</li>
+                <li>Explore</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -277,11 +278,12 @@ const Hacktober = () => {
               <h2>Introduction to Git & GitHub</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />3 October
-                  2022
+                  <i className="fa fa-calendar" aria-hidden="true" />
+                  To be announced!
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                  <i className="fa fa-clock" aria-hidden="true" />
+                  To be announced!
                 </span>
               </div>
               <p>
@@ -289,7 +291,7 @@ const Hacktober = () => {
                 in this Hacktoberfest with GDSC- UIT RGPV.
               </p>
               <ul className="content-skills">
-                <li>EXPLORE</li>
+                <li>Explore</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -301,11 +303,12 @@ const Hacktober = () => {
               <h2>Introduction to Git & GitHub</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />3 October
-                  2022
+                  <i className="fa fa-calendar" aria-hidden="true" />
+                  To be announced!
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                  <i className="fa fa-clock" aria-hidden="true" />
+                  To be announced!
                 </span>
               </div>
               <p>
@@ -313,7 +316,7 @@ const Hacktober = () => {
                 in this Hacktoberfest with GDSC- UIT RGPV.
               </p>
               <ul className="content-skills">
-                <li>EXPLORE</li>
+                <li>Explore</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -325,11 +328,12 @@ const Hacktober = () => {
               <h2>Introduction to Git & GitHub</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />3 October
-                  2022
+                  <i className="fa fa-calendar" aria-hidden="true" />
+                  To be announced!
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />7 PM
+                  <i className="fa fa-clock" aria-hidden="true" />
+                  To be announced!
                 </span>
               </div>
               <p>
@@ -337,7 +341,7 @@ const Hacktober = () => {
                 in this Hacktoberfest with GDSC- UIT RGPV.
               </p>
               <ul className="content-skills">
-                <li>EXPLORE</li>
+                <li>Explore</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -349,22 +353,21 @@ const Hacktober = () => {
       {/* benefits */}
       <div class="benefits">
         <div class="sec-title">
-          <h2 style={{ color: "#ffffff" }}>Perks Of Participating</h2>
+          <h2 class="title">
+            Projects <span>Repository</span>
+          </h2>
         </div>
         {ShowSwags ? (
           <div class="benefits-wrapper">
             {Benefits.map((item, index) => (
               <>
                 <div class="benefits-card">
-
                   <div class="benefits-box-image">
                     {/* <img src="https://i.imgur.com/2DhmtJ4.jpg" class="benefits-image" /> */}
                   </div>
 
                   <div class="benefits-box-bottom">
-                    <h4>
-                      {item.title}
-                    </h4>
+                    <h4>{item.title}</h4>
                   </div>
                 </div>
               </>
@@ -373,7 +376,7 @@ const Hacktober = () => {
         ) : (
           <>
             <div class="center" style={{ margin: 40 }}>
-              <p class="mid-text">Revealing soon !</p>
+              <p class="mid-text">Revealing soon!</p>
             </div>
           </>
         )}
@@ -382,14 +385,12 @@ const Hacktober = () => {
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
-          <h2 class="register-text">
-            What are you waiting for? Register Now !
-          </h2>
+          <h2 class="register-text">What are you waiting for? Register Now!</h2>
 
           <button
             class="register-btn"
             onClick={() => {
-              window.open('https://hacktoberfest.com/', '_blank').focus();
+              window.open("https://hacktoberfest.com/", "_blank").focus();
             }}
           >
             <div class="button" style={{ marginTop: "-20%" }}>
