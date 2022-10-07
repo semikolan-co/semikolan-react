@@ -10,8 +10,9 @@
 [![GitHub forks](https://img.shields.io/github/forks/semikolan-co/semikolan-react?style=social&labelColor=0a192f&color=a8b2d1)](https://github.com/semikolan-co/semikolan-react/network)
 [![GitHub stars](https://img.shields.io/github/stars/semikolan-co/semikolan-react?style=social&labelColor=0a192f&color=a8b2d1)](https://github.com/semikolan-co/semikolan-react/stargazers)
   
-![Hactoberfest](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
+![Hactoberfest 21](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
 ![DWoC](https://img.shields.io/badge/DWoC-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
+![Hactoberfest 22](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red?style=for-the-badge&labelColor=0a192f&color=64ffda)
 </div>
 
 
