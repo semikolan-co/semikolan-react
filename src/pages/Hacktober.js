@@ -185,9 +185,7 @@ const Hacktober = () => {
                   Projects <span>Repository</span>
                 </h2>
                 <p class="description">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some injected
-                  humour.
+                Here are the some projects under which you can make your Hacktoberfest contributions:
                 </p>
               </div>
             </div>
@@ -254,11 +252,11 @@ const Hacktober = () => {
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
                   <i className="fa fa-calendar" aria-hidden="true" />
-                  To be announced!
+                  3 October 2022
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-clock" aria-hidden="true" />
-                  To be announced!
+                  7 PM Onwards
                 </span>
               </div>
               <p>
@@ -266,7 +264,7 @@ const Hacktober = () => {
                 in this Hacktoberfest with GDSC- UIT RGPV.
               </p>
               <ul className="content-skills">
-                <li>Explore</li>
+                <li>Recording will be released soon.</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -275,23 +273,22 @@ const Hacktober = () => {
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture"></div>
             <div className="cd-timeline-content">
-              <h2>Introduction to Git & GitHub</h2>
+              <h2> Demystifying Open Source</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
                   <i className="fa fa-calendar" aria-hidden="true" />
-                  To be announced!
+                  16 October 2022
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-clock" aria-hidden="true" />
-                  To be announced!
+                  5 PM Onwards
                 </span>
               </div>
               <p>
-                Gear up your Open Source journey and become a keen contributor
-                in this Hacktoberfest with GDSC- UIT RGPV.
+              Let's demystify the myths behind open-source with our speaker. <br/> Vraj Desai (GSOC Contributor @Oppia Foundation).
               </p>
               <ul className="content-skills">
-                <li>Explore</li>
+                <li>Registration will be announnced soon.</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -300,48 +297,23 @@ const Hacktober = () => {
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture"></div>
             <div className="cd-timeline-content">
-              <h2>Introduction to Git & GitHub</h2>
+              <h2>Hacktoberfest Hack Party</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
                   <i className="fa fa-calendar" aria-hidden="true" />
-                  To be announced!
+                  31 October 2022
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fa fa-clock" aria-hidden="true" />
-                  To be announced!
+                  11 AM Onwards
                 </span>
               </div>
               <p>
-                Gear up your Open Source journey and become a keen contributor
-                in this Hacktoberfest with GDSC- UIT RGPV.
+                Venue:  EC Conference Hall, RGPV Bhopal <br/><br/>
+                Let's wrap up this year's Hacktoberfest by talking about How you can continue your journey in Open source and rewarding this year's top contributors.
               </p>
               <ul className="content-skills">
-                <li>Explore</li>
-              </ul>
-            </div>{" "}
-            {/* cd-timeline-content */}
-          </div>{" "}
-          {/* cd-timeline-block */}
-          <div className="cd-timeline-block">
-            <div className="cd-timeline-img cd-picture"></div>
-            <div className="cd-timeline-content">
-              <h2>Introduction to Git & GitHub</h2>
-              <div className="timeline-content-info">
-                <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />
-                  To be announced!
-                </span>
-                <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />
-                  To be announced!
-                </span>
-              </div>
-              <p>
-                Gear up your Open Source journey and become a keen contributor
-                in this Hacktoberfest with GDSC- UIT RGPV.
-              </p>
-              <ul className="content-skills">
-                <li>Explore</li>
+                <li>Registration will be announnced soon.</li>
               </ul>
             </div>{" "}
             {/* cd-timeline-content */}
@@ -349,39 +321,7 @@ const Hacktober = () => {
         </section>{" "}
         {/* cd-timeline */}
       </section>
-
-      {/* benefits */}
-      <div class="benefits">
-        <div class="sec-title">
-          <h2 class="title">
-            Projects <span>Repository</span>
-          </h2>
-        </div>
-        {ShowSwags ? (
-          <div class="benefits-wrapper">
-            {Benefits.map((item, index) => (
-              <>
-                <div class="benefits-card">
-                  <div class="benefits-box-image">
-                    {/* <img src="https://i.imgur.com/2DhmtJ4.jpg" class="benefits-image" /> */}
-                  </div>
-
-                  <div class="benefits-box-bottom">
-                    <h4>{item.title}</h4>
-                  </div>
-                </div>
-              </>
-            ))}
-          </div>
-        ) : (
-          <>
-            <div class="center" style={{ margin: 40 }}>
-              <p class="mid-text">Revealing soon!</p>
-            </div>
-          </>
-        )}
-      </div>
-
+      
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
