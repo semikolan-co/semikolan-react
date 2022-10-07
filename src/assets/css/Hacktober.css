@@ -1421,10 +1421,12 @@ Main components
     font-weight: 600;
     padding-bottom: 18px;
     text-align: center;
+    font-size: 5vh;
   }
 
   .section-services .header-section .title {
     position: relative;
+    font-size: 5vh;
     margin-bottom: 42px;
     padding-bottom: 18px;
     text-transform: uppercase;
