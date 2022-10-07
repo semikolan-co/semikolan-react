@@ -1,15 +1,13 @@
-import Lottie from 'react-lottie';
-import home from '../assets/lottie/home';
-import about from '../assets/lottie/about';
-import achievements from '../assets/lottie/achievements';
-import git from '../assets/lottie/git';
+import Lottie from "react-lottie";
+import home from "../assets/lottie/home";
+import about from "../assets/lottie/about";
+import achievements from "../assets/lottie/achievements";
+import git from "../assets/lottie/git";
 import contact from "../assets/lottie/contact";
 import work from "../assets/lottie/work";
 import join from "../assets/lottie/join";
 import Typed from "react-typed";
 import React, { useEffect } from "react";
-
-
 
 const lotties = {
   home: home,
@@ -18,34 +16,37 @@ const lotties = {
   git: git,
   contact: contact,
   work: work,
-  join:join
+  join: join,
 };
 function Landing(props) {
   // const [typedController,setTypedController] = useState();
   var typedController;
   useEffect(() => {
-
-    if(props.IndexPage){
-    console.log('jhjhjhkjkj')
-    window.addEventListener("scroll", ()=>{
-        if(window.scrollY > 300){
-        console.log(window.scrollY)
-        typedController.stop();
-        }else{
-        typedController.start();
-        console.log("00000");
-        }
-    }, true);
-  }
-  } );
-   const clock2 = {
-     loop: true,
-     autoplay: true,
-     animationData: lotties[props.lottiename],
-     rendererSettings: {
-       preserveAspectRatio: "xMidYMid slice",
-     },
-   };
+    if (props.IndexPage) {
+      console.log("jhjhjhkjkj");
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (window.scrollY > 300) {
+            console.log(window.scrollY);
+            typedController.stop();
+          } else {
+            typedController.start();
+            console.log("00000");
+          }
+        },
+        true
+      );
+    }
+  });
+  const clock2 = {
+    loop: true,
+    autoplay: true,
+    animationData: lotties[props.lottiename],
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="home01">
       <div className="homebox01">
@@ -60,7 +61,7 @@ function Landing(props) {
                 strings={[
                   "For the Developer",
                   "By the Developer",
-                  "To the Developer"
+                  "To the Developer",
                 ]}
                 typeSpeed={40}
                 backSpeed={50}
@@ -79,14 +80,16 @@ function Landing(props) {
         <span data-aos="fade-right" data-aos-duration={500}>
           {props.p3}
         </span>
-        {props.buttontext && <a
-          data-aos="fade-right"
-          data-aos-duration={500}
-          data-aos-anchor-placement="top-bottom"
-          href={props.redirect}
-        >
-          {props.buttontext}
-        </a>}
+        {props.buttontext && (
+          <a
+            data-aos="fade-right"
+            data-aos-duration={500}
+            data-aos-anchor-placement="top-bottom"
+            href={props.redirect}
+          >
+            {props.buttontext}
+          </a>
+        )}
       </div>
       <div
         className="lottie"

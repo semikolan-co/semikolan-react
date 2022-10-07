@@ -415,9 +415,29 @@ body {
   word-spacing: 8px;
 }
 
-.aboutdiv>div>p>a {
-  color: var(--Green);
+@media only screen and (max-width: 1200px) {
+  .custom {
+    padding-top: 20% !important;
+  }
+}
+
+.know-more-button {
+  font-family: var(--bs-font-sans-serif);
+  padding: 9px 18px;
+  border-radius: 10px;
+  border: 3px solid var(--LightestSlate);
+  max-width: 180px;
+  text-align: center;
+  font-size: 1.3em;
   text-decoration: none;
+  color: var(--LightestSlate);
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.know-more-button:hover {
+  border: 3px dashed var(--Green);
+  color: var(--Green);
 }
 
 /*About Ends  */

@@ -251,7 +251,7 @@ const Hacktober = () => {
 
       {/* about section */}
       <section class="about-section">
-        <div class="container">
+        <div class="container" style={{paddingTop:"0"}}>
           <div class="row hacktober-content">
             <div
               class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
