@@ -17,16 +17,16 @@ const Hacktober = () => {
     {
       id: 1,
       icon: "",
-      link: "https://github.com/semikolan-co/keep-document",
-      title: "Keep Document",
+      link: "https://github.com/gdscrgpv/gdsc-website",
+      title: "GDSC UIT RGPV Website",
       detail:
-        "An Android App for securing and storing your personal identities and documents.",
+        "This repository contains of the codebase of official website of the GDSC UIT RGPV Chapter.",
     },
     {
       id: 2,
       icon: "",
       link: "https://github.com/gdscrgpv/quizbanao",
-      title: "QuizBanao",
+      title: "QuizBanao App",
       detail:
         "QuizBanao is a quiz taking app created with live events and webinars in mind.",
     },
@@ -41,10 +41,10 @@ const Hacktober = () => {
     {
       id: 4,
       icon: "",
-      link: "https://github.com/semikolan-co/Certificate-Generator",
-      title: "Certificate Generator",
+      link: "https://github.com/semikolan-co/semikolan-react",
+      title: "Semikolan Website",
       detail:
-        "A simple web-based JavaScript tool to generate certificates and customize them.",
+        "This is the codebase of Semikolan website developed using React.js framework.",
     },
     {
       id: 5,
@@ -61,6 +61,126 @@ const Hacktober = () => {
       title: "Moving Cursor",
       detail:
         "MovingCursor is a library that implements a cursor that follows the mouse position.",
+    },
+    {
+      id: 7,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Quote-maker",
+      title: "Quote Make App",
+      detail:
+        "This repository contains of the codebase of Quote Maker App for developing quotes.",
+    },
+    {
+      id: 8,
+      icon: "",
+      link: "https://github.com/gdscrgpv/react-todo",
+      title: "React To Do App",
+      detail:
+        "This repository contains of the codebase of To Do App created using React.js framework.",
+    },
+    {
+      id: 9,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Snake-xenzia",
+      title: "Snake Xenzia Game",
+      detail:
+        "This repository contains of the codebase of Snake Xenzia game implemented in JavaScript",
+    },
+    {
+      id: 10,
+      icon: "",
+      link: "https://github.com/semikolan-co/keep-document",
+      title: "Keep Document App",
+      detail:
+        "An Android App for securing and storing your personal identities and documents.",
+    },
+    {
+      id: 11,
+      icon: "",
+      link: "https://github.com/semikolan-co/Certificate-Generator",
+      title: "Certificate Generator",
+      detail:
+        "A simple web-based JavaScript tool to generate certificates and customize them.",
+    },
+    {
+      id: 12,
+      icon: "",
+      link: "https://github.com/gdscrgpv/angular-todo",
+      title: "Angular To Do App",
+      detail:
+        "This repository contains of the codebase Cult Angular App to use most of the Angular skills.",
+    },
+    {
+      id: 13,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Converter",
+      title: "Converter",
+      detail:
+        "This repository contains of the codebase of Number System Converter.",
+    },
+    {
+      id: 14,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Dino-game",
+      title: "Dino Game",
+      detail:
+        "This is everyone's favourite Dino Game implemented using JavaScript.",
+    },
+    {
+      id: 15,
+      icon: "",
+      link: "https://github.com/gdscrgpv/electronjs-todo",
+      title: "Electronic JS To Do App",
+      detail:
+        "This is contains of the codebase of To Do App implemented using Electronic JavaScript.",
+    },
+    {
+      id: 16,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Face-mask-detection",
+      title: "Face Mask Detection",
+      detail:
+        "A Face Mask Detection system built using Tensorflow and OpenCV in Python.",
+    },
+    {
+      id: 17,
+      icon: "",
+      link: "https://github.com/gdscrgpv/Flutter-cool-todo",
+      title: "Flutter To Do App",
+      detail:
+        "This repository contains of the codebase of To Do application developed using Flutter.",
+    },
+    {
+      id: 18,
+      icon: "",
+      link: "https://github.com/gdscrgpv/meme-king",
+      title: "Meme King",
+      detail:
+        "This repository contains of the codebase of Meme Website for real meme kings.",
+    },
+    {
+      id: 19,
+      icon: "",
+      link: "https://github.com/semikolan-co/blog.semikolan.co",
+      title: "Semikolan Blog",
+      detail:
+        "This repository contains the codebase for SemiKolan Blogs. Tech Stack used here is Laravel (PHP).",
+    },
+    {
+      id: 20,
+      icon: "",
+      link: "https://github.com/semikolan-co/Instalyzer",
+      title: "Instalyzer",
+      detail:
+        "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities.",
+    },
+    {
+      id: 21,
+      icon: "",
+      link: "https://github.com/semikolan-co/Codegram",
+      title: "Codegram App",
+      detail:
+        "An Open-Source Android Social Media App for the developers, by the developers and to the developers.",
     },
   ];
 
@@ -185,7 +305,8 @@ const Hacktober = () => {
                   Projects <span>Repository</span>
                 </h2>
                 <p class="description">
-                Here are the some projects under which you can make your Hacktoberfest contributions:
+                  Here are the some projects under which you can make your
+                  Hacktoberfest contributions:
                 </p>
               </div>
             </div>
@@ -251,12 +372,11 @@ const Hacktober = () => {
               <h2>Introduction to Git & GitHub</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
-                  <i className="fa fa-calendar" aria-hidden="true" />
-                  3 October 2022
+                  <i className="fa fa-calendar" aria-hidden="true" />3 October
+                  2022
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />
-                  7 PM Onwards
+                  <i className="fa fa-clock" aria-hidden="true" />7 PM Onwards
                 </span>
               </div>
               <p>
@@ -280,12 +400,12 @@ const Hacktober = () => {
                   16 October 2022
                 </span>
                 <span className="timeline-content-info-date">
-                  <i className="fa fa-clock" aria-hidden="true" />
-                  5 PM Onwards
+                  <i className="fa fa-clock" aria-hidden="true" />5 PM Onwards
                 </span>
               </div>
               <p>
-              Let's demystify the myths behind open-source with our speaker. <br/> Vraj Desai (GSOC Contributor @Oppia Foundation).
+                Let's demystify the myths behind open-source with our speaker.{" "}
+                <br /> Vraj Desai (GSOC Contributor @Oppia Foundation).
               </p>
               <ul className="content-skills">
                 <li>Registration will be announnced soon.</li>
@@ -309,8 +429,11 @@ const Hacktober = () => {
                 </span>
               </div>
               <p>
-                Venue:  EC Conference Hall, RGPV Bhopal <br/><br/>
-                Let's wrap up this year's Hacktoberfest by talking about How you can continue your journey in Open source and rewarding this year's top contributors.
+                Venue: EC Conference Hall, RGPV Bhopal <br />
+                <br />
+                Let's wrap up this year's Hacktoberfest by talking about How you
+                can continue your journey in Open source and rewarding this
+                year's top contributors.
               </p>
               <ul className="content-skills">
                 <li>Registration will be announnced soon.</li>
@@ -321,7 +444,7 @@ const Hacktober = () => {
         </section>{" "}
         {/* cd-timeline */}
       </section>
-      
+
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
