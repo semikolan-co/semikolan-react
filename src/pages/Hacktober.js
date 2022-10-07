@@ -28,7 +28,7 @@ const Hacktober = () => {
       link: "https://github.com/gdscrgpv/quizbanao",
       title: "QuizBanao",
       detail:
-        "QuizBanao is a quiz-taking app created with live events and webinars in mind.",
+        "QuizBanao is a quiz taking app created with live events and webinars in mind.",
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const Hacktober = () => {
       id: 5,
       icon: "",
       link: "https://github.com/semikolan-co/YouTube-Thumbnail-Downloader",
-      title: "Youtube Thumbnail Downloader",
+      title: "Thumbnail Downloader",
       detail:
         "A web based tool to extract & download Youtube Thumbnail very easily.",
     },
@@ -60,7 +60,7 @@ const Hacktober = () => {
       link: "https://github.com/semikolan-co/MovingCursor",
       title: "Moving Cursor",
       detail:
-        "MovingCursor is a React.js package that implements a cursor that follows the mouse position.",
+        "MovingCursor is a library that implements a cursor that follows the mouse position.",
     },
   ];
 

@@ -13,7 +13,7 @@ import MovingCursor from "./component/MovingCursor";
 // import MovingCursor from 'movingcursor'
 import UnderConstruction from "./pages/UnderConstruction";
 import EventsPage from "./pages/Events";
-import Hacktober from "./pages/hacktober";
+import Hacktober from "./pages/Hacktober";
 
 export default function App() {
   return (
