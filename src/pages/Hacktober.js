@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../assets/css/hacktober.css";
+import "../assets/css/Hacktober.css";
 import register from "../assets/images/events/register.png";
 import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
 import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
