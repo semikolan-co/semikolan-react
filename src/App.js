@@ -48,7 +48,7 @@ export default function App() {
               path="/contact"
               render={(props) => <Contact {...props} />}
             />
-            {/* <Route exact path="/join" render={(props) => <JoinPage {...props} />} /> */}
+            {<Route exact path="/join" render={(props) => <JoinPage {...props} />} />}
             <Route
               exact
               path="/dev/:name"
@@ -82,11 +82,6 @@ export default function App() {
             <Route
               exact
               path="/blogs"
-              render={(props) => <UnderConstruction {...props} />}
-            />
-            <Route
-              exact
-              path="/join"
               render={(props) => <UnderConstruction {...props} />}
             />
             <Route
