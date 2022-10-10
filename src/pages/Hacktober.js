@@ -251,7 +251,7 @@ const Hacktober = () => {
 
       {/* about section */}
       <section class="about-section">
-        <div class="container" style={{paddingTop:"0"}}>
+        <div class="container" style={{ paddingTop: "0" }}>
           <div class="row hacktober-content">
             <div
               class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
@@ -443,6 +443,36 @@ const Hacktober = () => {
           </div>{" "}
         </section>{" "}
         {/* cd-timeline */}
+      </section>
+
+      {/* support section */}
+      <section
+        className="support-section"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="header-section">
+              <h2 class="title">
+                Supported <span>By</span>
+              </h2>
+              {/* <p class="description">
+                Here is the complete timeline of the Hacktoberfest 2022!
+              </p> */}
+            </div>
+          </div>
+        </div>
+
+        <div class="support-wrapper">
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_cwqf5i6h.json"
+            background="transparent"
+            speed="1"
+            style={{ width: "100%", height: "100%" }}
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </section>
 
       {/* register section */}
