@@ -1355,6 +1355,68 @@ Main components
   word-spacing: 8px;
 }
 
+.support-section {
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+  background-color: #211f24;
+  color: #fff;
+}
+
+.support-section .header-section {
+  margin-bottom: 35px;
+}
+
+.support-section .header-section .title {
+  position: relative;
+  margin-bottom: 42px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 7vh;
+}
+
+.support-section .header-section .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 1px;
+  background-color: #3c998f;
+}
+
+.support-section .header-section .title:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 3px;
+  background-color: #3c998f;
+}
+
+.support-section .header-section .title span {
+  color: #3c998f;
+}
+
+.support-section .header-section .description {
+  /* color: #6f6f71; */
+  margin-bottom: 20px;
+  /* font-size: 16px; */
+  /* line-height: 26px; */
+  /* color: #848484; */
+  /* font-weight: 400; */
+  /* align-items: flex-end; */
+
+  font-size: 1.1em;
+  /* padding-right: 50px; */
+  color: var(--LightSlate);
+  font-weight: 500;
+  word-spacing: 8px;
+}
+
 @media screen and (min-width: 300px) and (max-width: 991px) {
 
   .register-wrapper {
@@ -1364,6 +1426,29 @@ Main components
 
   .register-wrapper .register-btn {
     margin-top: 0;
+  }
+
+  .register-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .support-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .support-wrapper .register-btn {
+    margin-top: 0;
+  }
+
+  .support-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .benefits-wrapper {
@@ -1386,13 +1471,6 @@ Main components
     background: url("https://i.imgur.com/2DhmtJ4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  F .register-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .register-text {
@@ -1469,5 +1547,24 @@ Main components
   .button {
     font-size: 2vh;
     letter-spacing: 2px;
+  }
+}
+
+/* support */
+.support-wrapper {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  margin: 0 auto;
+  background: #ffffff00;
+  /* box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25); */
+}
+
+@media only screen and (max-width: 500px) {
+  .support-wrapper {
+    width: 200px;
   }
 }
