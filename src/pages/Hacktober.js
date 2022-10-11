@@ -329,7 +329,7 @@ const Hacktober = () => {
                       </div>
                       <div class="part-2">
                         <p class="description">{project.detail}</p>
-                        <a href={project.link} className="content-skills">
+                        <a href={project.link} target = "_blank" className="content-skills">
                           <i class="fas fa-arrow-circle-right"></i>Read More
                         </a>
                       </div>
