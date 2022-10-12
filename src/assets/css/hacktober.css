@@ -629,7 +629,6 @@ ul {
 /* project section */
 
 .section-services {
-  padding-top: 15%;
   padding-bottom: 80px;
   background-color: #211f24;
   color: #fff;
@@ -1294,6 +1293,7 @@ Main components
 }
 
 .section-timeline {
+  padding-top: 15%;
   padding-bottom: 80px;
   font-family: "Poppins", sans-serif;
   background-color: #211f24;
