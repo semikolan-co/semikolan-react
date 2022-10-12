@@ -285,69 +285,6 @@ const Hacktober = () => {
         </div>
       </section>
 
-      {/* project section */}
-      <section
-        class="section-services"
-        style={{ backgroundColor: "#0B1B3300" }}
-      >
-        <div
-          class="container"
-          style={{
-            marginTop: "0%",
-            paddingBottom: "0%",
-            paddingTop: "0%",
-          }}
-        >
-          <div class="row justify-content-center text-center">
-            <div class="col-md-10 col-lg-8">
-              <div class="header-section">
-                <h2 class="title">
-                  Projects <span>Repository</span>
-                </h2>
-                <p class="description">
-                  Here are the some projects under which you can make your
-                  Hacktoberfest contributions:
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row project-cards">
-            {ShowProject ? (
-              <>
-                {/* the project card */}
-                {project_card.map((project, index) => (
-                  <div class="col-md-6 col-lg-4">
-                    <div
-                      class="single-service"
-                      style={{ background: "#233554" }}
-                    >
-                      <div class="part-1">
-                        {/* <i class="fab fa-500px"></i> */}
-                        <h3 class="title" style={{ letterSpacing: "1px" }}>
-                          {project.title}
-                        </h3>
-                      </div>
-                      <div class="part-2">
-                        <p class="description">{project.detail}</p>
-                        <a href={project.link} target = "_blank" className="content-skills">
-                          <i class="fas fa-arrow-circle-right"></i>Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </>
-            ) : (
-              <>
-                <div>
-                  <p class="mid-text">To be released soon!</p>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      </section>
-
       {/* time-line section */}
       <section
         class="section-timeline"
@@ -443,6 +380,69 @@ const Hacktober = () => {
           </div>{" "}
         </section>{" "}
         {/* cd-timeline */}
+      </section>
+
+      {/* project section */}
+      <section
+        class="section-services"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div
+          class="container"
+          style={{
+            marginTop: "0%",
+            paddingBottom: "0%",
+            paddingTop: "0%",
+          }}
+        >
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="header-section">
+                <h2 class="title">
+                  Projects <span>Repository</span>
+                </h2>
+                <p class="description">
+                  Here are the some projects under which you can make your
+                  Hacktoberfest contributions:
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row project-cards">
+            {ShowProject ? (
+              <>
+                {/* the project card */}
+                {project_card.map((project, index) => (
+                  <div class="col-md-6 col-lg-4">
+                    <div
+                      class="single-service"
+                      style={{ background: "#233554" }}
+                    >
+                      <div class="part-1">
+                        {/* <i class="fab fa-500px"></i> */}
+                        <h3 class="title" style={{ letterSpacing: "1px" }}>
+                          {project.title}
+                        </h3>
+                      </div>
+                      <div class="part-2">
+                        <p class="description">{project.detail}</p>
+                        <a href={project.link} target = "_blank" className="content-skills">
+                          <i class="fas fa-arrow-circle-right"></i>Read More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              <>
+                <div>
+                  <p class="mid-text">To be released soon!</p>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
       </section>
 
       {/* support section */}
