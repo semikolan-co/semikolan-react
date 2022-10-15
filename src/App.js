@@ -14,7 +14,7 @@ import MovingCursor from "./component/MovingCursor";
 import UnderConstruction from "./pages/UnderConstruction";
 import EventsPage from "./pages/Events";
 import Hacktober from "./pages/Hacktober";
-
+import Hacktoberjson from "./json/leaderboard.json";
 export default function App() {
   return (
     <>
@@ -155,6 +155,12 @@ export default function App() {
               path="/hacktoberfest"
               render={(props) => <Hacktober {...props} />}
             />
+            //set route for json
+            {/* <Route
+              exact
+              path="/hacktoberfest/leaderboard"
+              render={(props) => <Hacktoberjson {...props} />}
+            /> */}
 
             <Route path="" render={(props) => <Error404Page {...props} />} />
           </Switch>

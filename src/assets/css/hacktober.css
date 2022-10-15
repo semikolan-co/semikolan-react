@@ -1568,3 +1568,108 @@ Main components
     width: 200px;
   }
 }
+
+
+/*--------------------------leaderboard css-----------------------*/
+input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date] {
+    padding: 10px;
+    /* width: 100%;
+    .form-control{ */
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 24px;
+    color: #555;
+    background-color: #f1f1f1;
+    border: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date], .material.woocommerce-page[data-form-style="default"] input#coupon_code {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0);
+}
+/* /end Codepen Specific */
+/* Ladder Navigation */
+  #leaderboard {
+      padding:50px;
+  }
+  .ladder-nav {
+      display:flex;
+      flex-wrap:wrap;
+      align-items: center;
+      background:#3C998F;
+      padding:10px 25px;
+      border-radius:10px;
+      border:1px solid #64FFDA;
+  }
+  .ladder-title {
+    flex:2;
+  }
+  .ladder-search {
+    flex:1;
+    padding-right:25px;
+  }
+  .ladder-title {
+    font-size:20px;
+    color:#64FFDA !important;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+  .ladder-search input {
+      color:white
+  }
+  .ladder-search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #64FFDA;
+  }
+  .ladder-search input::-moz-placeholder { /* Firefox 19+ */
+      color: #64FFDA;
+  }
+  .ladder-search input:-ms-input-placeholder { /* IE 10+ */
+      color: #64FFDA;
+  }
+  .ladder-search input:-moz-placeholder { /* Firefox 18- */
+      color:#64FFDA;
+  }
+/* /end Ladder Navigation */
+/* Leaderboard Results */
+.leaderboard-results {
+  text-align:left;
+  border-collapse: collapse;
+}
+.leaderboard-results thead th {
+  padding: 25px;
+  color:#747474;
+  font-size:14px;
+  font-weight:bold;
+}
+.leaderboard-results tbody td {
+  padding:15px 25px;
+  /* background:#1a1a1a; */
+  font-size:16px;
+  border-bottom:1px solid #233554;
+}
+.leaderboard-results tbody td:nth-of-type(7) {
+  font-weight:bold;
+}
+
+.leaderboard-results tbody tr {
+  color:#747474;
+}
+.leaderboard-results tbody tr:first-child {
+  color:#64FFDA;
+}
+.leaderboard-results tbody span {
+  font-weight:bold;
+  padding:10px 15px;
+  border-radius:50%;
+}
+.leaderboard-results tbody tr:first-child span {
+  background:#64FFDA;
+  color:white;
+}
+.leaderboard-results tbody tr span {
+  background:#262626;
+  color:#747474;
+}
+/* /end Leaderboard Results */
