@@ -6,29 +6,24 @@ import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
 import Header from "../component/Header";
 import { Link } from "react-router-dom";
 import { padding } from "@mui/system";
-import COMMUNITY from '../json/githubrepo.json'
+import Community from "../json/githubrepo.json";
 
 const Hacktober = () => {
   useEffect(() => {
     return () => {};
-   
   }, []);
-  
 
   // project card data
   const leaderboard = [
     {
-      name:'rajatbhaskare7',
-      commits:'4',
+      name: "rajatbhaskare7",
+      commits: "4",
     },
     {
-      name:'meinhoonharsh',
-      commits:'40',
+      name: "meinhoonharsh",
+      commits: "40",
     },
-
-
-
-  ]
+  ];
 
   const Benefits = [
     {
@@ -261,35 +256,30 @@ const Hacktober = () => {
               <>
                 {/* the project card */}
                 {/*show only 6 repo cards and show more   */}
-                {COMMUNITY.map((project, index) => (
+                {Community.map((project, index) => (
                   <div class="col-md-6 col-lg-4">
                     <div
                       class="single-service"
                       style={{ background: "#233554" }}
                     >
                       <div class="part-1">
-                   
                         <h3 class="title" style={{ letterSpacing: "1px" }}>
                           {project.title}
-                          
                         </h3>
                       </div>
                       <div class="part-2">
                         <p class="description">{project.detail}</p>
-                        <a href={project.link} target = "_blank" className="content-skills">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          className="content-skills"
+                        >
                           <i class="fas fa-arrow-circle-right"></i>Read More
                         </a>
                       </div>
                     </div>
                   </div>
-                ))} 
-                
-                
-               
-
-                
-
-
+                ))}
               </>
             ) : (
               <>
@@ -332,8 +322,8 @@ const Hacktober = () => {
         </div>
       </section>
       {/* leaderboard */}
-      
-	{/* <section id="leaderboard">
+
+      {/* <section id="leaderboard">
 		<nav class="ladder-nav">
 			<div class="ladder-title">
 			<h1>leaderboard</h1>

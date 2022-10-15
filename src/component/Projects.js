@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { BrowserRouter as Link } from "react-router-dom";
-import projectJson from "../json/Initiatives.json";
+import projectJson from "../json/initiatives.json";
 
 const resolveImagepath = (imgName) => {
   return require(`../assets/images/${imgName}`).default;

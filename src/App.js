@@ -14,7 +14,7 @@ import MovingCursor from "./component/MovingCursor";
 import UnderConstruction from "./pages/UnderConstruction";
 import EventsPage from "./pages/Events";
 import Hacktober from "./pages/Hacktober";
-import Hacktoberboard from "./pages/hacktoberboard";
+import HacktoberBoard from "./pages/HacktoberBoard";
 export default function App() {
   return (
     <>
@@ -159,7 +159,7 @@ export default function App() {
             <Route
               exact
               path="/hacktoberfest/leaderboard"
-              render={(props) => <Hacktoberboard {...props} />}
+              render={(props) => <HacktoberBoard {...props} />}
             />
 
             <Route path="" render={(props) => <Error404Page {...props} />} />

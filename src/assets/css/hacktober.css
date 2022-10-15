@@ -1606,30 +1606,40 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
   .ladder-title {
     flex:2;
   }
+
   .ladder-search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* .ladder-search {
     flex:1;
     padding-right:25px;
-  }
+  } */
   .ladder-title {
     font-size:20px;
+    font-family: var(--consolas);
     color:#64FFDA !important;
     font-weight:bold;
-    text-transform:uppercase;
   }
   .ladder-search input {
+    font-family: var(--consolas);
       color:white
   }
   .ladder-search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: #64FFDA;
+      font-family: var(--consolas);
   }
   .ladder-search input::-moz-placeholder { /* Firefox 19+ */
       color: #64FFDA;
+      font-family: var(--consolas);
   }
   .ladder-search input:-ms-input-placeholder { /* IE 10+ */
       color: #64FFDA;
+      font-family: var(--consolas);
   }
   .ladder-search input:-moz-placeholder { /* Firefox 18- */
       color:#64FFDA;
+      font-family: var(--consolas);
   }
 /* /end Ladder Navigation */
 /* Leaderboard Results */
