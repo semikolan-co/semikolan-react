@@ -1673,3 +1673,9 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
   color:#747474;
 }
 /* /end Leaderboard Results */
+
+
+/*--------------------------leaderboard page css-----------------------*/
+.leaderboardpage{
+  background-color: #0F203B !important;
+}
