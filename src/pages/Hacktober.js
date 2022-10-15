@@ -331,7 +331,7 @@ const Hacktober = () => {
       </section>
       {/* leaderboard */}
       
-	<section id="leaderboard">
+	{/* <section id="leaderboard">
 		<nav class="ladder-nav">
 			<div class="ladder-title">
 			<h1>leaderboard</h1>
@@ -367,7 +367,7 @@ const Hacktober = () => {
 		
 			</tbody>
 		</table>
-	</section>
+	</section> */}
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
