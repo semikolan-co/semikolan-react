@@ -407,9 +407,11 @@ const Hacktober = () => {
                 Let's demystify the myths behind open-source with our speaker.{" "}
                 <br /> Vraj Desai (GSOC Contributor @Oppia Foundation).
               </p>
-              <ul className="content-skills">
-                <li>Registration will be announnced soon.</li>
-              </ul>
+              <a href="https://semiurl.tech/demystify">
+                <ul className="content-skills">
+                  <li>Register Now</li>
+                </ul>
+              </a>
             </div>{" "}
             {/* cd-timeline-content */}
           </div>{" "}
