@@ -16,7 +16,19 @@ const Hacktober = () => {
   
 
   // project card data
-  
+  const leaderboard = [
+    {
+      name:'rajatbhaskare7',
+      commits:'4',
+    },
+    {
+      name:'meinhoonharsh',
+      commits:'40',
+    },
+
+
+
+  ]
 
   const Benefits = [
     {
@@ -317,7 +329,45 @@ const Hacktober = () => {
           ></lottie-player>
         </div>
       </section>
-
+      {/* leaderboard */}
+      
+	<section id="leaderboard">
+		<nav class="ladder-nav">
+			<div class="ladder-title">
+			<h1>leaderboard</h1>
+			</div>
+			<div class="ladder-search">
+				<input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
+			</div>
+		</nav>
+		<table id="rankings" class="leaderboard-results" width="100%">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>github </th>
+					<th>Commits</th>
+				
+	
+				</tr>
+			</thead>
+			<tbody>
+        {
+          leaderboard.map((item, index) => {
+            return (
+              <tr>
+                <td>{index + 1}</td>
+                <td>{item.name  }</td>
+                <td>{item.commits}</td>
+             
+              </tr>
+            )
+          })
+        }
+       
+		
+			</tbody>
+		</table>
+	</section>
       {/* register section */}
       <div class="register-wrapper">
         <div class="register-box">
