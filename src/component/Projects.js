@@ -1,6 +1,7 @@
-import React from "react";
 import "./Projects.css";
+
 import { BrowserRouter as Link } from "react-router-dom";
+import React from "react";
 import projectJson from "../json/initiatives.json";
 
 const resolveImagepath = (imgName) => {
