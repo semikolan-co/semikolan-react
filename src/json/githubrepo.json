@@ -1,204 +1,177 @@
 [
-
-        {
-          "id": 1,
-          "icon": "",
-          "link": "https://github.com/gdscrgpv/gdsc-website",
-          "title": "GDSC UIT RGPV Website",
-          "detail":"This repository contains of the codebase of official website of the GDSC UIT RGPV Chapter."
-        },
-        {
-       
-        "id": 2,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/quizbanao",
-        "title": "QuizBanao App",
-        "detail": "QuizBanao is a quiz taking app created with live events and webinars in mind."
-        },
-        {
-        
-        "id": 3,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/quizbanao-admin",
-        "title": "QuizBanao Admin Panel",
-        "detail": "This is the Admin Panel of the QuizBanao App by which we can add, delete, & edit the quiz."
-        },
-        
-        {
-        
-        "id": 4,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/semikolan-react",
-        "title": "Semikolan Website",
-        "detail": "This is the codebase of Semikolan website developed using React.js framework."
-        },
-        
-        {
-      
-
-        "id": 5,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/youtube-thumbnail-downloader",
-        "title": "Youtube Thumbnail Downloader",
-        "detail": "A web based tool to extract & download Youtube Thumbnail very easily."
-        },
-        
-        {
-        
-
-        "id": 6,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/MovingCursor",
-        "title": "Moving Cursor",
-        "detail": "MovingCursor is a library that implements a cursor that follows the mouse position."
-        
-        },
-        {
-       
-
-        "id": 7,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/Quote-maker",
-        "title": "Quote Maker App",
-        "detail": "This repository contains of the codebase of Quote Maker App for developing quotes."
-        
-        },
-        {
-       
-        "id": 8,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/react-todo",
-        "title": "React To Do App",
-        "detail": "This repository contains of the codebase of To Do App created using React.js framework."
-        },
-        
-        {
-        
-        
-        "id": 9,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/Snake-xenzia",
-        "title": "Snake Xenzia Game",
-        "detail": "This repository contains of the codebase of Snake Xenzia game implemented in JavaScript"
-        },
-        
-        
-        {
-        
-        "id": 10,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/keep-document",
-        "title": "Keep Document App",
-        "detail": "An Android App for securing and storing your personal identities and documents."
-        },
-
-        {
-        
-
-        "id": 11,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/Certificate-Generator",
-        "title": "Certificate Generator",
-        "detail": "A simple web-based JavaScript tool to generate certificates and customize them."
-    
-
-        },
-        {
-      
-        "id": 12,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/angular-todo",
-        "title": "Angular To Do App",
-        "detail": "This repository contains of the codebase Cult Angular App to use most of the Angular skills."
-    
-        },
-        {
-
-        "id": 13,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/Converter",
-        "title": "Converter",
-        "detail": "This repository contains of the codebase of Number System Converter."
-    
-    
-        },
-        {
-        
-        "id": 14,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/Dino-game",
-        "title": "Dino Game",
-        "detail": "This is everyone's favourite Dino Game implemented using JavaScript."
-    
-    
-        },
-        {
-     
-        "id": 15,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/electronjs-todo",
-        "title": "Electronic JS To Do App",
-        "detail": "This is contains of the codebase of To Do App implemented using Electronic JavaScript."
-        },
-        {
-
-
-        "id": 16,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/Face-mask-detection",
-        "title": "Face Mask Detection",
-        "detail": "A Face Mask Detection system built using Tensorflow and OpenCV in Python."
-      
-
-        },
-        {
-        "id": 17,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/Flutter-cool-todo",
-        "title": "Flutter To Do App",
-        "detail": "This repository contains of the codebase of To Do application developed using Flutter."
-        
-        },
-        {
-        
-        "id": 18,
-        "icon": "",
-        "link": "https://github.com/gdscrgpv/meme-king",
-        "title": "Meme King",
-        "detail": "This repository contains of the codebase of Meme Website for real meme kings."
-        
-    
-        },
-        {
-        
-        "id": 19,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/blog.semikolan.co",
-        "title": "Semikolan Blog",
-        "detail": "This repository contains the codebase for SemiKolan Blogs. Tech Stack used here is Laravel (PHP)."
-        
-        
-        },
-        {
-        
-        "id": 20,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/Instalyzer",
-        "title": "Instalyzer",
-        "detail": "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities."
-        
-        
-        },
-        {
-      
-        "id": 21,
-        "icon": "",
-        "link": "https://github.com/semikolan-co/Codegram",
-        "title": "Codegram App",
-        "detail": "An Open-Source Android Social Media App for the developers, by the developers and to the developers."
-        
-        
-    
-        }
-     
-    ]
+  {
+    "id": 1,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/gdsc-website",
+    "title": "GDSC UIT RGPV Website",
+    "detail": "This repository contains of the codebase of official website of the GDSC UIT RGPV Chapter."
+  },
+  {
+    "id": 2,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/quizbanao",
+    "title": "QuizBanao App",
+    "detail": "QuizBanao is a quiz taking app created with live events and webinars in mind."
+  },
+  {
+    "id": 3,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/quizbanao-admin",
+    "title": "QuizBanao Admin Panel",
+    "detail": "This is the Admin Panel of the QuizBanao App by which we can add, delete, & edit the quiz."
+  },
+  {
+    "id": 4,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/semikolan-react",
+    "title": "Semikolan Website",
+    "detail": "This is the codebase of Semikolan website developed using React.js framework."
+  },
+  {
+    "id": 5,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/youtube-thumbnail-downloader",
+    "title": "Youtube Thumbnail Downloader",
+    "detail": "A web based tool to extract & download Youtube Thumbnail very easily."
+  },
+  {
+    "id": 6,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/MovingCursor",
+    "title": "Moving Cursor",
+    "detail": "MovingCursor is a library that implements a cursor that follows the mouse position."
+  },
+  {
+    "id": 7,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Quote-maker",
+    "title": "Quote Maker App",
+    "detail": "This repository contains of the codebase of Quote Maker App for developing quotes."
+  },
+  {
+    "id": 8,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/react-todo",
+    "title": "React To Do App",
+    "detail": "This repository contains of the codebase of To Do App created using React.js framework."
+  },
+  {
+    "id": 9,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/Snake-xenzia",
+    "title": "Snake Xenzia Game",
+    "detail": "This repository contains of the codebase of Snake Xenzia game implemented in JavaScript"
+  },
+  {
+    "id": 10,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/keep-document",
+    "title": "Keep Document App",
+    "detail": "An Android App for securing and storing your personal identities and documents."
+  },
+  {
+    "id": 11,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Certificate-Generator",
+    "title": "Certificate Generator",
+    "detail": "A simple web-based JavaScript tool to generate certificates and customize them."
+  },
+  {
+    "id": 12,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/angular-todo",
+    "title": "Angular To Do App",
+    "detail": "This repository contains of the codebase Cult Angular App to use most of the Angular skills."
+  },
+  {
+    "id": 13,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/Converter",
+    "title": "Converter",
+    "detail": "This repository contains of the codebase of Number System Converter."
+  },
+  {
+    "id": 14,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/Dino-game",
+    "title": "Dino Game",
+    "detail": "This is everyone's favourite Dino Game implemented using JavaScript."
+  },
+  {
+    "id": 15,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/electronjs-todo",
+    "title": "Electronic JS To Do App",
+    "detail": "This is contains of the codebase of To Do App implemented using Electronic JavaScript."
+  },
+  {
+    "id": 16,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/Face-mask-detection",
+    "title": "Face Mask Detection",
+    "detail": "A Face Mask Detection system built using Tensorflow and OpenCV in Python."
+  },
+  {
+    "id": 17,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/Flutter-cool-todo",
+    "title": "Flutter To Do App",
+    "detail": "This repository contains of the codebase of To Do application developed using Flutter."
+  },
+  {
+    "id": 18,
+    "icon": "",
+    "link": "https://github.com/gdscrgpv/meme-king",
+    "title": "Meme King",
+    "detail": "This repository contains of the codebase of Meme Website for real meme kings."
+  },
+  {
+    "id": 19,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/blog.semikolan.co",
+    "title": "Semikolan Blog",
+    "detail": "This repository contains the codebase for SemiKolan Blogs. Tech Stack used here is Laravel (PHP)."
+  },
+  {
+    "id": 20,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Instalyzer",
+    "title": "Instalyzer",
+    "detail": "Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities."
+  },
+  {
+    "id": 21,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Codegram",
+    "title": "Codegram App",
+    "detail": "An Open-Source Android Social Media App for the developers, by the developers and to the developers."
+  },
+  {
+    "id": 22,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Guardian",
+    "title": "Guardian",
+    "detail": "This is an Anti-Ragging App developed under GDSC Solution Challenge 2022."
+  },
+  {
+    "id": 23,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/TwoEar",
+    "title": "TwoEar",
+    "detail": "An App which is template for Ecommerce App developed using Dart & Flutter."
+  },
+  {
+    "id": 24,
+    "icon": "",
+    "link": "https://github.com/semikolan-co/Supeswallpaper",
+    "title": "Supeswallpaper",
+    "detail": "This is an Android Wallpaper Application developed using Kotlin & Firebase."
+  },
+  {
+    "id": 25,
+    "icon": "",
+    "link": " https://github.com/semikolan-co/Go-QR",
+    "title": "Go-QR",
+    "detail": "A website to solve the problem of attendance in Offline Session."
+  }
+]
