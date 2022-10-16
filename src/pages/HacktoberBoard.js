@@ -12,6 +12,8 @@ import axios from 'axios';
 import { get } from 'reactjs-captcha/dist/captcha-settings';
 import { padding } from '@mui/system';
 import register from '../assets/images/events/register.png';
+import { FaGithubAlt } from "react-icons/fa";
+import { GiDiamondTrophy } from "react-icons/gi";
 
 const Hacktober = () => {
   // project card data
@@ -75,9 +77,14 @@ const Hacktober = () => {
                   return (
                     <tr>
                       <td>{index + 1}</td>
-                      <td>{data.username[key]}</td>
-                      <td>{data.commits[key]}</td>
-                    </tr>
+                      <td>
+                      <FaGithubAlt /> {data.username[key]}
+                    </td>
+                    <td>
+                      <GiDiamondTrophy /> {data.commits[key]}
+                    </td>
+                  </tr>
+                
                   );
                 })}
             </tbody>
