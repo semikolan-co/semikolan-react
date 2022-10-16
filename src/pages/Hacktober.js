@@ -331,7 +331,47 @@ const Hacktober = () => {
           ></lottie-player>
         </div>
       </section>
+      
       {/* leaderboard */}
+
+      <section
+        className="support-section"
+        style={{ backgroundColor: "#0B1B3300" }}
+      >
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8">
+            <div class="header-section">
+              <h2 class="title">
+                Leaderboard <span>2022</span>
+              </h2>
+              {/* <p class="description">
+                Here is the complete timeline of the Hacktoberfest 2022!
+              </p> */}
+            </div>
+          </div>
+        </div>
+
+        <div class="support-wrapper">
+        <button
+              class="register-btn"
+             
+            >
+              <div
+                class="button"
+                style={{
+                 marginTop: "0%",
+                  zIndex: 6,
+                }}
+              >
+                <Link to="/hacktoberfest/leaderboard">
+                  Leaderboard
+                  <span class="shift">›</span>
+                </Link>
+                <div class="mask"></div>
+              </div>
+            </button>
+        </div>
+      </section>
       
 	{/* <section id="leaderboard">
 		<nav class="ladder-nav">
