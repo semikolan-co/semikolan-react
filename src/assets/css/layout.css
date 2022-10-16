@@ -825,6 +825,10 @@ body {
   max-width: 95%;
 }
 
+.loader {
+  color: var(--Green);
+}
+
 .subscribediv>span {
   color: var(--LightestSlate);
   font-size: 1.28em;
