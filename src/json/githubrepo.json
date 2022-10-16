@@ -173,12 +173,5 @@
     "link": " https://github.com/semikolan-co/Go-QR",
     "title": "Go-QR",
     "detail": "A website to solve the problem of attendance in Offline Session."
-  },
-  {
-    "id": 26,
-    "icon": "",
-    "link": "https://github.com/semikolan-co/Quizzler",
-    "title": "Quizzler",
-    "detail": "A basic Quiz App with only front-end."
   }
 ]
