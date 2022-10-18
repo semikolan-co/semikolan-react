@@ -923,3 +923,15 @@ body {
     transform: scale(1.2, 1);
   }
 }
+
+.leader_board_pagination {
+  color: var(--Green)
+}
+
+.page-item.active .page-link {
+  background-color: var(--Green);
+  border-color: var(--Green);
+}
+.page-link {
+  color: var(--Green);
+}

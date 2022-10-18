@@ -8,6 +8,7 @@ import { GiDiamondTrophy } from 'react-icons/gi';
 import Hacktober_Heading from '../assets/images/events/HacktoberHeading.png';
 import Hacktober_Year from '../assets/images/events/HacktoberYear.png';
 import Header from '../component/Header';
+import LeaderBoardPagination from '../component/LeaderBoardPagination';
 import { Link } from 'react-router-dom';
 import Spinner from '../component/Spinner';
 import axios from 'axios';
@@ -18,9 +19,13 @@ import register from '../assets/images/events/register.png';
 
 const Hacktober = () => {
   // project card data
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
-  const [immutableData, setimmutableData] = useState([])
+  const [immutableData, setimmutableData] = useState([]);
+  const [totalPages, setTotalPages] = useState(0);
+  const [currentPage, setCurrentPage] = useState(4);
+  const resultsPerPage = 5;
+
   // get data from https://hacktoberfest-leaderboard.lordblackwood.repl.co/leaderboard with axios and corsoption
 
   const getdata = async () => {
@@ -38,11 +43,19 @@ const Hacktober = () => {
 
     setData(res.data);
     setimmutableData(res.data);
+    const totalPages = Math.ceil(Object.values(res.data.username).length / resultsPerPage);
+    setTotalPages(totalPages);
     setLoading(false);
   };
   useEffect(() => {
     getdata();
   }, []);
+
+  useEffect(() => {
+    const start = parseInt((currentPage - 1) * resultsPerPage);
+    const end = parseInt(currentPage * resultsPerPage);
+    console.log('🚀 ~ file: hacktoberboard.js ~ line 58 ~ useEffect ~ end', end);
+  }, [currentPage]);
 
   const handleSearch = (e) => {
     let searchWrd = e.target.value.toLowerCase();
@@ -59,7 +72,6 @@ const Hacktober = () => {
       });
       setData({ commits: data.commits, username: newDataObject['username'] });
     }
-    console.log("🚀 ~ file: hacktoberboard.js ~ line 61 ~ handleSearch ~ data", data)
   };
   return (
     <div>
@@ -120,6 +132,13 @@ const Hacktober = () => {
             </tbody>
           </table>
         )}
+        <LeaderBoardPagination
+          totalPages={totalPages}
+          data={data}
+          resultsPerPage={5}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        />
       </section>
       {/* register section */}
 
