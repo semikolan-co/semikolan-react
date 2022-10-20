@@ -28,6 +28,7 @@
     "react-icons": "^4.6.0",
     "react-lottie": "^1.2.3",
     "react-recaptcha": "^2.3.10",
+    "react-responsive-pagination": "^1.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-simple-captcha": "^8.2.0",
