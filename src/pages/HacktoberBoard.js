@@ -23,8 +23,8 @@ const Hacktober = () => {
   const [loading, setLoading] = useState(false);
   const [immutableData, setimmutableData] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
-  const [currentPage, setCurrentPage] = useState(4);
-  const resultsPerPage = 5;
+  const [currentPage, setCurrentPage] = useState(1);
+  const [resultsPerPage] = useState(5);
 
   // get data from https://hacktoberfest-leaderboard.lordblackwood.repl.co/leaderboard with axios and corsoption
 
@@ -73,6 +73,13 @@ const Hacktober = () => {
       setData({ commits: data.commits, username: newDataObject['username'] });
     }
   };
+
+  const indexOfLastResult = currentPage * resultsPerPage;
+  const indexOfFirstResult = indexOfLastResult - resultsPerPage;
+  const currentResults = data.commits ? Object.keys(data.commits).slice(indexOfFirstResult, indexOfLastResult) : null;
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div>
       {/* landing */}
@@ -112,12 +119,12 @@ const Hacktober = () => {
             </thead>
             <tbody>
               {data.commits &&
-                Object.keys(data.commits).map((key, index) => {
+                currentResults.map((key) => {
                   return (
                     <tr>
                       {data.username[key] && (
                         <>
-                          <td>{index + 1}</td>
+                          <td>{Number(key) + 1}</td>
                           <td>
                             <FaGithubAlt /> {data.username[key]}
                           </td>
@@ -135,8 +142,8 @@ const Hacktober = () => {
         <LeaderBoardPagination
           totalPages={totalPages}
           data={data}
-          resultsPerPage={5}
-          setCurrentPage={setCurrentPage}
+          resultsPerPage={resultsPerPage}
+          paginate={paginate}
           currentPage={currentPage}
         />
       </section>

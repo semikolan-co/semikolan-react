@@ -924,9 +924,9 @@ body {
   }
 }
 
-.leader_board_pagination {
-  color: var(--Green)
-}
+/* .leader_board_pagination {
+  color: var(--Green);
+} */
 
 .page-item.active .page-link {
   background-color: var(--Green);
