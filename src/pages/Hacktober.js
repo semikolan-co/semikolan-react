@@ -6,29 +6,24 @@ import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
 import Header from "../component/Header";
 import { Link } from "react-router-dom";
 import { padding } from "@mui/system";
-import COMMUNITY from '../json/githubrepo.json'
+import COMMUNITY from "../json/githubrepo.json";
 
 const Hacktober = () => {
   useEffect(() => {
     return () => {};
-   
   }, []);
-  
 
   // project card data
   const leaderboard = [
     {
-      name:'rajatbhaskare7',
-      commits:'4',
+      name: "rajatbhaskare7",
+      commits: "4",
     },
     {
-      name:'meinhoonharsh',
-      commits:'40',
+      name: "meinhoonharsh",
+      commits: "40",
     },
-
-
-
-  ]
+  ];
 
   const Benefits = [
     {
@@ -97,7 +92,7 @@ const Hacktober = () => {
 
       {/* about section */}
       <section class="about-section">
-        <div class="container" style={{ paddingTop: "0" }}>
+        <div class="container" style={{ paddingTop: "2%" }}>
           <div class="row hacktober-content">
             <div
               class="content-column col-lg-6 col-md-12 col-sm-12 order-2"
@@ -190,9 +185,9 @@ const Hacktober = () => {
                 Let's demystify the myths behind open-source with our speaker.{" "}
                 <br /> Vraj Desai (GSOC Contributor @Oppia Foundation).
               </p>
-              <a href="https://semiurl.tech/demystify">
+              <a href="https://www.youtube.com/watch?v=e53waeqDMvE">
                 <ul className="content-skills">
-                  <li>Register Now</li>
+                  <li>View Recording</li>
                 </ul>
               </a>
             </div>{" "}
@@ -268,28 +263,23 @@ const Hacktober = () => {
                       style={{ background: "#233554" }}
                     >
                       <div class="part-1">
-                   
                         <h3 class="title" style={{ letterSpacing: "1px" }}>
                           {project.title}
-                          
                         </h3>
                       </div>
                       <div class="part-2">
                         <p class="description">{project.detail}</p>
-                        <a href={project.link} target = "_blank" className="content-skills">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          className="content-skills"
+                        >
                           <i class="fas fa-arrow-circle-right"></i>Read More
                         </a>
                       </div>
                     </div>
                   </div>
-                ))} 
-                
-                
-               
-
-                
-
-
+                ))}
               </>
             ) : (
               <>
@@ -331,7 +321,7 @@ const Hacktober = () => {
           ></lottie-player>
         </div>
       </section>
-      
+
       {/* leaderboard */}
 
       <section
@@ -352,28 +342,25 @@ const Hacktober = () => {
         </div>
 
         <div class="support-wrapper">
-        <button
-              class="register-btn"
-             
+          <button class="register-btn" style={{ marginTop: "0%" }}>
+            <div
+              class="button"
+              style={{
+                marginTop: "0%",
+                zIndex: 6,
+              }}
             >
-              <div
-                class="button"
-                style={{
-                 marginTop: "0%",
-                  zIndex: 6,
-                }}
-              >
-                <Link to="/hacktoberfest/leaderboard">
-                  Leaderboard
-                  <span class="shift">›</span>
-                </Link>
-                <div class="mask"></div>
-              </div>
-            </button>
+              <Link to="/hacktoberfest/leaderboard">
+                Leaderboard
+                <span class="shift">›</span>
+              </Link>
+              <div class="mask"></div>
+            </div>
+          </button>
         </div>
       </section>
-      
-	{/* <section id="leaderboard">
+
+      {/* <section id="leaderboard">
 		<nav class="ladder-nav">
 			<div class="ladder-title">
 			<h1>leaderboard</h1>
