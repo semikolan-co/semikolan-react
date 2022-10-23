@@ -1507,6 +1507,10 @@ Main components
     font-weight: 700;
   }
 
+  .support-section .header-section .title {
+    font-size: 5vh;
+  }
+
   .register-text {
     width: 100%;
     color: #fff;
@@ -1761,4 +1765,7 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
     white-space: nowrap;
   }
   
+  .support-section .header-section .title {
+    font-size: 2rem;
+  }
 }
