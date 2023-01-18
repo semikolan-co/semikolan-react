@@ -746,7 +746,7 @@ body {
 
 .capt {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
   margin-top: -30px;
 }
 
@@ -767,8 +767,6 @@ body {
   border-radius: 10px;
   display: flex;
   text-decoration: none;
-
-  border: 3px solid var(--Green);
   transition: 0.5s ease;
   justify-content: center;
   position: relative;
@@ -782,9 +780,9 @@ body {
 
 .newsletterdiv input {
   background: transparent;
-  border: none;
   outline: none;
   text-align: center;
+  border: 3px solid var(--Green) !important;
   color: var(--LightestSlate);
 }
 
@@ -796,10 +794,8 @@ body {
   padding: 10px 20px;
   outline: none;
   position: relative;
-  top: -2px;
-  margin-bottom: -3px;
-  right: -2px;
-  width: 105%;
+  right: 2px;
+  width: 100%;
   height: calc(100% + 5px);
   background: var(--Green);
   transition: 0.5s ease;
