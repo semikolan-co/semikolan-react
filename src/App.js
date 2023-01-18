@@ -15,6 +15,7 @@ import UnderConstruction from "./pages/UnderConstruction";
 import EventsPage from "./pages/Events";
 import Hacktober from "./pages/Hacktober";
 import HacktoberBoard from "./pages/HacktoberBoard";
+import UXMeetup from "./pages/UXMeetup";
 export default function App() {
   return (
     <>
@@ -154,6 +155,11 @@ export default function App() {
               exact
               path="/hacktoberfest"
               render={(props) => <Hacktober {...props} />}
+            />
+            <Route
+              exact
+              path="/ux-meetup"
+              render={(props) => <UXMeetup {...props} />}
             />
             //set route for json
             <Route
