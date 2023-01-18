@@ -13,7 +13,7 @@ export default function UXMeetup() {
           p1="Bringing to you the Bhopal’s first ever UX meetup!"
           p2="Bhopal UX Meetup"
           p3="On 28th Feb 2023"
-          buttontext="Explore"
+          buttontext="Register Now"
         />
       </UXLayout>
     </>
