@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UXLanding from "../component/UXLanding";
-import MainLayout from "../layouts/MainLayout";
+import UXLayout from "../layouts/UXLayout";
 
 export default function UXMeetup() {
   return (
     <>
-      <MainLayout title="UX Meetup | SemiKolan">
+      <UXLayout title="UX Meetup | SemiKolan">
       <UXLanding
           lottiename="uxmeetup"
           redirect="#ux-meetup"
@@ -15,7 +15,7 @@ export default function UXMeetup() {
           p3="On 28th Feb 2023"
           buttontext="Explore"
         />
-      </MainLayout>
+      </UXLayout>
     </>
   );
 }

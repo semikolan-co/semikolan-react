@@ -264,7 +264,7 @@ body {
 .homebox01 > span:nth-child(2) {
   color: var(--White);
   font-weight: bolder;
-  font-size: 5.4em;
+  font-size: 4.75em;
 }
 
 .homebox01 > span:nth-child(3) {
@@ -300,14 +300,62 @@ body {
   opacity: 0.8;
 }
 
+.ux-lottie {
+  position: absolute;
+  right: 50px;
+  bottom: 220px;
+  opacity: 0.8;
+}
+
 .lottie-element {
   width: 300px;
 }
 
 .ux-lottie-element {
-  width: 550px;
+  width:  550px;
 }
 
+@media (min-width: 1400px) and (max-width: 1530px) {
+  .ux-lottie-element {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1400px) {
+  .ux-lottie-element {
+    width: 400px;
+  }
+
+  .ux-lottie {
+    bottom: 150px;
+  }
+}
+
+@media (min-width: 842px) and (max-width: 1150px) {
+  .ux-lottie-element {
+    width: 350px;
+  }
+
+  .ux-lottie {
+    bottom: 100px;
+  }
+}
+
+@media (min-width: 822px) and (max-width: 842px) {
+  .ux-lottie-element {
+    width: 250px;
+  }
+
+  .ux-lottie {
+    bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 822px) {
+  .ux-lottie-element {
+    display: none;
+  }
+}
 /* Home Ends */
 
 /* About Starts */

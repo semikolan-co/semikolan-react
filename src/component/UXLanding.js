@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 const lotties = {
   uxmeetup: uxmeetup,
 };
-function Landing(props) {
+function UXLanding(props) {
   // const [typedController,setTypedController] = useState();
   var typedController;
   useEffect(() => {
@@ -80,7 +80,7 @@ function Landing(props) {
         )}
       </div>
       <div
-        className="lottie"
+        className="ux-lottie"
         data-aos="fade-up"
         data-aos-duration={500}
         data-aos-anchor-placement="top-bottom"
@@ -95,4 +95,4 @@ function Landing(props) {
   );
 }
 
-export default Landing;
+export default UXLanding;
