@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-size: 16px; */
   box-sizing: border-box;
 }
 
@@ -39,16 +38,7 @@ body {
 .bodydiv {
   background-image: linear-gradient(120deg, var(--Navy), var(--LightNavy));
   width: 100%;
-  /* font-family: 'Didact Gothic', sans-serif; */
-  /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
 }
-
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* width */
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -73,11 +63,6 @@ body {
   background: var(--Green);
 }
 
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
 /*..header0101*/
 
 .header01 {
@@ -99,7 +84,7 @@ body {
   background-color: var(--Navy);
 }
 
-.header01>span>a {
+.header01 > span > a {
   display: inline-block;
   font-weight: bold;
   color: var(--Green);
@@ -113,7 +98,7 @@ body {
   float: right;
 }
 
-.nav01>ul {
+.nav01 > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -122,14 +107,14 @@ body {
   transition: all 1s ease;
 }
 
-.nav01>ul>li {
+.nav01 > ul > li {
   display: inline-block;
   padding: 13px 18px;
   border: 3px dashed transparent;
   transition: 0.5s ease;
 }
 
-.nav01>ul>li:last-child {
+.nav01 > ul > li:last-child {
   padding: 10px 18px;
   background: var(--Green);
   transition: 0.5s ease;
@@ -138,38 +123,38 @@ body {
   font-weight: bold;
 }
 
-.nav01>ul>li:last-child:hover {
+.nav01 > ul > li:last-child:hover {
   background: transparent;
 }
 
-.nav01>ul>li:last-child:hover>a {
+.nav01 > ul > li:last-child:hover > a {
   color: var(--Green);
 }
 
-.nav01>ul>li:hover {
+.nav01 > ul > li:hover {
   border: 3px dashed var(--Green);
   cursor: pointer;
 }
 
-.nav01>ul>li>a {
+.nav01 > ul > li > a {
   color: var(--White);
   text-decoration: none;
 }
 
-.nav01>ul>li:last-child>a {
+.nav01 > ul > li:last-child > a {
   color: var(--Navy);
 }
 
-.nav01>ul>li:hover>a {
+.nav01 > ul > li:hover > a {
   color: var(--Green);
 }
 
-.nav01>ul>li>a>em {
+.nav01 > ul > li > a > em {
   color: var(--Green);
   font-style: normal;
 }
 
-.header01>i {
+.header01 > i {
   padding: 15px 15px;
   border: 3px dashed transparent;
   color: var(--Green);
@@ -179,14 +164,12 @@ body {
   transition: 0.5s ease;
 }
 
-.header01>i:hover {
+.header01 > i:hover {
   border-color: var(--Green);
 }
 
 /* Header Ends */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
+
 /* Social Icon Starts */
 
 .socialicons {
@@ -203,13 +186,13 @@ body {
   flex-direction: column;
 }
 
-.iconsdiv>a {
+.iconsdiv > a {
   padding: 5px;
   color: var(--Slate);
   font-size: 1.1em;
 }
 
-.iconsdiv>a:hover {
+.iconsdiv > a:hover {
   position: relative;
   color: var(--Green);
   bottom: 3px;
@@ -225,9 +208,6 @@ body {
 }
 
 /* Social Icon Ends */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
 
 .container-80 {
   width: 75vw;
@@ -259,9 +239,6 @@ body {
   border: 3px dashed var(--Green);
 }
 
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------- */
 /* Home Starts */
 
 .home01 {
@@ -278,26 +255,26 @@ body {
   flex-direction: column;
 }
 
-.homebox01>span:nth-child(1) {
+.homebox01 > span:nth-child(1) {
   color: var(--Green);
   font-family: var(--consolas);
   font-size: 1.4em;
 }
 
-.homebox01>span:nth-child(2) {
+.homebox01 > span:nth-child(2) {
   color: var(--White);
   font-weight: bolder;
   font-size: 5.4em;
 }
 
-.homebox01>span:nth-child(3) {
+.homebox01 > span:nth-child(3) {
   color: var(--Slate);
   font-weight: bolder;
   font-size: 4em;
   width: calc(100% - 200px);
 }
 
-.homebox01>a {
+.homebox01 > a {
   padding: 9px;
   border-radius: 10px;
   border: 3px solid var(--LightestSlate);
@@ -311,7 +288,7 @@ body {
   transition: 0.5s ease;
 }
 
-.homebox01>a:hover {
+.homebox01 > a:hover {
   border: 3px dashed var(--Green);
   color: var(--Green);
 }
@@ -328,9 +305,7 @@ body {
 }
 
 /* Home Ends */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
+
 /* About Starts */
 
 .titleline {
@@ -342,7 +317,7 @@ body {
   font-weight: bold;
 }
 
-.titleline>span>em {
+.titleline > span > em {
   font-size: 0.9em;
   color: var(--Green);
   font-style: normal;
@@ -364,7 +339,7 @@ body {
   padding-top: 50px;
 }
 
-.aboutdiv>div {
+.aboutdiv > div {
   /* padding: 20px 0; */
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
@@ -402,12 +377,12 @@ body {
   opacity: 0;
 }
 
-.filterdiv:hover~.profileimgdiv {
+.filterdiv:hover ~ .profileimgdiv {
   top: 10px;
   left: 10px;
 }
 
-.aboutdiv>div>p {
+.aboutdiv > div > p {
   font-size: 1.1em;
   padding-right: 50px;
   color: var(--LightSlate);
@@ -441,10 +416,7 @@ body {
 }
 
 /*About Ends  */
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
+
 /* Work Project */
 
 .projectheight {
@@ -458,29 +430,29 @@ body {
   position: relative;
 }
 
-.projectdiv>div {
+.projectdiv > div {
   position: relative;
 }
 
-.projectdiv:nth-child(odd)>div:first-child {
+.projectdiv:nth-child(odd) > div:first-child {
   float: left;
 }
 
-.projectdiv:nth-child(even)>div:first-child {
+.projectdiv:nth-child(even) > div:first-child {
   float: right;
 }
 
-.projectdiv:nth-child(odd)>div:nth-child(2) {
+.projectdiv:nth-child(odd) > div:nth-child(2) {
   right: 0;
   align-items: flex-end;
 }
 
-.projectdiv:nth-child(even)>div:nth-child(2) {
+.projectdiv:nth-child(even) > div:nth-child(2) {
   left: 0;
   align-items: flex-start;
 }
 
-.projectdiv>div:nth-child(2) {
+.projectdiv > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   top: 0;
@@ -489,12 +461,12 @@ body {
   position: absolute;
 }
 
-.projectdiv>div>img {
+.projectdiv > div > img {
   aspect-ratio: 16/9;
   z-index: 1;
 }
 
-.projectdiv>div>div {
+.projectdiv > div > div {
   position: absolute;
   aspect-ratio: 16/9;
   background: var(--Green);
@@ -505,23 +477,23 @@ body {
   transition: 0.5s ease;
 }
 
-.projectdiv>div>div:hover {
+.projectdiv > div > div:hover {
   opacity: 0;
 }
 
-.projectdiv>div>span:nth-child(1) {
+.projectdiv > div > span:nth-child(1) {
   color: var(--Green);
   font-size: 1.3em;
   font-family: var(--consolas);
 }
 
-.projectdiv>div>span:nth-child(2) {
+.projectdiv > div > span:nth-child(2) {
   color: var(--LightSlate);
   font-size: 1.8em;
   font-weight: bold;
 }
 
-.projectdiv>div>span:nth-child(3) {
+.projectdiv > div > span:nth-child(3) {
   color: var(--White);
   font-size: 1.1em;
   font-family: var(--consolas);
@@ -533,32 +505,25 @@ body {
   background: var(--LightestNavy);
 }
 
-.projectdiv>div>span:nth-child(4) {
+.projectdiv > div > span:nth-child(4) {
   color: var(--LightestSlate);
   font-size: 1.1em;
   font-family: var(--consolas);
 }
 
-.projectdiv>div>span:nth-child(5) {
+.projectdiv > div > span:nth-child(5) {
   word-spacing: 5px;
 }
 
-.projectdiv>div>span:nth-child(5)>a {
+.projectdiv > div > span:nth-child(5) > a {
   color: var(--LightestSlate);
   font-size: 1.6em;
   margin: 10px 0;
 }
 
-.projectdiv>div>span:nth-child(5)>a:hover {
+.projectdiv > div > span:nth-child(5) > a:hover {
   color: var(--Green);
 }
-
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
 
 .achievementdiv {
   margin: 30px 0;
@@ -578,7 +543,7 @@ body {
   /* align-items: center; */
 }
 
-.achievementdiv>div {
+.achievementdiv > div {
   background: var(--LightestNavy);
   color: var(--LightSlate);
   margin: 5px;
@@ -590,8 +555,7 @@ body {
   flex-direction: column;
 }
 
-
-.communitydiv>a {
+.communitydiv > a {
   background: var(--LightestNavy);
   color: var(--LightSlate);
   margin: 5px;
@@ -605,71 +569,63 @@ body {
   cursor: pointer;
 }
 
-.communitydiv>a>div {
+.communitydiv > a > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
 }
 
-.achievementdiv>div>i {
+.achievementdiv > div > i {
   font-size: 2.7em;
   color: var(--Green);
   margin-bottom: 10px;
   /* margin: 5px; */
 }
 
-.achievementdiv>div>span:nth-child(2) {
+.achievementdiv > div > span:nth-child(2) {
   font-size: 1.8em;
   color: var(--LightestSlate);
   /* margin: 5px; */
   font-weight: bold;
 }
 
-.communitydiv>a>div>i {
+.communitydiv > a > div > i {
   font-size: 2.7em;
   color: var(--Green);
   margin-bottom: 10px;
   /* margin: 5px; */
 }
 
-
-
-.communitydiv>a>div>span:nth-child(2) {
+.communitydiv > a > div > span:nth-child(2) {
   font-size: 1.8em;
   color: var(--LightestSlate);
   /* margin: 5px; */
   font-weight: bold;
 }
 
-/* ---------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
 /* .gitdiv */
 
-.gitdiv>div:nth-child(2) {
+.gitdiv > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.gitdiv>div:nth-child(2)>span:nth-child(1) {
+.gitdiv > div:nth-child(2) > span:nth-child(1) {
   font-size: 2.7em;
   color: var(--White);
   font-weight: bold;
 }
 
-.gitdiv>div:nth-child(2)>span:nth-child(2) {
+.gitdiv > div:nth-child(2) > span:nth-child(2) {
   font-size: 1.2em;
   color: var(--Slate);
   margin: 10px 0;
 }
 
-.gitdiv>div:nth-child(2)>button {
+.gitdiv > div:nth-child(2) > button {
   font-size: 1.1em;
   color: var(--Green);
   padding: 10px 20px;
@@ -682,7 +638,7 @@ body {
   transition: 0.5s ease;
 }
 
-.gitdiv>div:nth-child(2)>a {
+.gitdiv > div:nth-child(2) > a {
   font-size: 1.1em;
   color: var(--Green);
   padding: 10px 20px;
@@ -695,18 +651,18 @@ body {
   transition: 0.5s ease;
 }
 
-.gitdiv>div>span>a {
+.gitdiv > div > span > a {
   color: var(--Green);
   text-decoration: none;
 }
 
-.gitdiv>div:nth-child(2)>button:hover {
+.gitdiv > div:nth-child(2) > button:hover {
   color: var(--Green);
   text-decoration: none;
   border: 3px dashed var(--Green);
 }
 
-.gitdiv>div:nth-child(2)>a:hover {
+.gitdiv > div:nth-child(2) > a:hover {
   color: var(--Green);
   text-decoration: none;
   border: 3px dashed var(--Green);
@@ -716,28 +672,12 @@ body {
   width: 450px;
 }
 
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-
 .techicon {
   height: 50px;
   margin: 20px 0;
   cursor: pointer;
   transition: top 0.5s ease;
 }
-
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
 
 .footer01 {
   display: flex;
@@ -746,11 +686,11 @@ body {
 
 .capt {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
   margin-top: -30px;
 }
 
-.footer01>span {
+.footer01 > span {
   color: var(--LightSlate);
   margin-top: 30px;
   display: flex;
@@ -767,24 +707,22 @@ body {
   border-radius: 10px;
   display: flex;
   text-decoration: none;
-
-  border: 3px solid var(--Green);
   transition: 0.5s ease;
   justify-content: center;
   position: relative;
   margin-bottom: 30px;
 }
 
-.footer01>span a {
+.footer01 > span a {
   color: var(--Green);
   text-decoration: none;
 }
 
 .newsletterdiv input {
   background: transparent;
-  border: none;
   outline: none;
   text-align: center;
+  border: 3px solid var(--Green) !important;
   color: var(--LightestSlate);
 }
 
@@ -796,10 +734,8 @@ body {
   padding: 10px 20px;
   outline: none;
   position: relative;
-  top: -2px;
-  margin-bottom: -3px;
-  right: -2px;
-  width: 105%;
+  right: 2px;
+  width: 100%;
   height: calc(100% + 5px);
   background: var(--Green);
   transition: 0.5s ease;
@@ -829,19 +765,12 @@ body {
   color: var(--Green);
 }
 
-.subscribediv>span {
+.subscribediv > span {
   color: var(--LightestSlate);
   font-size: 1.28em;
   padding-right: 10%;
   text-align: left;
 }
-
-/* ------------------------------------------------- ----------------------------*/
-/* ------------------------------------------------- ----------------------------*/
-/* ------------------------------------------------- ----------------------------*/
-/* ------------------------------------------------- ----------------------------*/
-/* ------------------------------------------------- ----------------------------*/
-/* ------------------------------------------------- ----------------------------*/
 
 .loader01 {
   background: var(--Navy);
@@ -913,7 +842,6 @@ body {
 }
 
 @keyframes shadow {
-
   0%,
   100% {
     transform: scale(1, 1);
