@@ -582,7 +582,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   /* align-items: center; */
 }
 
@@ -598,9 +598,9 @@ body {
 .achievementdiv > div {
   background: var(--LightestNavy);
   color: var(--LightSlate);
-  margin: 5px;
+  margin: 25px;
   flex-grow: 1;
-  max-width: 300px;
+  max-width: 350px;
   padding: 25px;
   border-radius: 10px;
   display: flex;
@@ -628,15 +628,16 @@ body {
   cursor: pointer;
 }
 
-.achievementdiv > div > span:nth-child(2){
+.achievementdiv > div > span:nth-child(2) {
   font-size: 1.8em;
   color: var(--LightestSlate);
-  margin-top: 5px;
   font-weight: bold;
 }
 
 .speaker-linkedin {
   color: white;
+  display: flex;
+  justify-content: center;
   padding-top: 1rem;
 }
 

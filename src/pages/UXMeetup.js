@@ -18,7 +18,7 @@ export default function UXMeetup() {
           redirect="#ux-meetup"
           p1="Bringing to you the Bhopal’s first ever UX meetup!"
           p2="Bhopal UX Meetup"
-          p3="On 28th Feb 2023"
+          p3="On 27th Feb 2023"
           buttontext="Register Now"
         />
 
@@ -31,7 +31,6 @@ export default function UXMeetup() {
 
         <UXSpeakers
           num="02."
-          speakers={uxmeetup.speakers.slice(0, 6)}
         />
 
         <UXCommunity num="03." Community={uxmeetup.community.slice(0, 4)} />
