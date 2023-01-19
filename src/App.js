@@ -151,22 +151,22 @@ export default function App() {
               render={(props) => <UnderConstruction {...props} />}
             />
 
-            <Route
+            {/* <Route
               exact
               path="/hacktoberfest"
               render={(props) => <Hacktober {...props} />}
-            />
+            /> */}
             <Route
               exact
               path="/ux-meetup"
               render={(props) => <UXMeetup {...props} />}
             />
             //set route for json
-            <Route
+            {/* <Route
               exact
               path="/hacktoberfest/leaderboard"
               render={(props) => <HacktoberBoard {...props} />}
-            />
+            /> */}
 
             <Route path="" render={(props) => <Error404Page {...props} />} />
           </Switch>

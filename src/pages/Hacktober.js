@@ -5,7 +5,6 @@ import Hacktober_Heading from "../assets/images/events/HacktoberHeading.png";
 import Hacktober_Year from "../assets/images/events/HacktoberYear.png";
 import Header from "../component/Header";
 import { Link } from "react-router-dom";
-import { padding } from "@mui/system";
 import COMMUNITY from "../json/githubrepo.json";
 
 const Hacktober = () => {
