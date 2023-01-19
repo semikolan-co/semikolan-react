@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/uxmeetup.css";
 import UXLanding from "../component/UXLanding";
-import About from "../component/About";
+import UXAbout from "../component/UXAbout";
 import UXLayout from "../layouts/UXLayout";
-import Community from "../component/Community.js";
+import UXCommunity from "../component/UXCommunity.js";
 import uxmeetup from "../json/uxmeetup.json";
 import Venue from "../component/Venue";
 
@@ -21,14 +21,14 @@ export default function UXMeetup() {
           buttontext="Register Now"
         />
 
-        <About
+        <UXAbout
           num="01."
           titleline="About"
           content={uxmeetup.about.content}
           removeViewMore
         />
 
-        <Community num="03." Community={uxmeetup.community.slice(0, 4)} />
+        <UXCommunity num="03." Community={uxmeetup.community.slice(0, 4)} />
 
         <Venue num="04." />
       </UXLayout>
