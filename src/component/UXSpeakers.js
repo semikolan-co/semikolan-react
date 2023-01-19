@@ -1,4 +1,5 @@
 import garima from "../assets/images/garima.jpg";
+import lock from "../assets/images/lock.jpg";
 
 function UXSpeakers(props) {
   return (
@@ -10,28 +11,40 @@ function UXSpeakers(props) {
         <div className="line-horizontal" />
       </div>
       <div className="achievementdiv">
-        {props.speakers.map((speakers, i) => {
-          return (
-            <div className data-aos="fade-up" data-aos-duration={500}>
-              {/* <i className={`fa fa-${speakers.icon}`} /> */}
-              <img src={garima} style={{ borderRadius: "10px" }} />
-              <span>{speakers.title}</span>
-              <span>{speakers.description}</span>
-              <span>{speakers.experience}</span>
-              <a
-              className="speaker-linkedin"
-                href={speakers.linkedin}
-              >
-                <i
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos="fade-up"
-                  data-aos-duration={500}
-                  className="fa fa-linkedin"
-                />
-              </a>
-            </div>
-          );
-        })}
+        <div className data-aos="fade-up" data-aos-duration={500}>
+          {/* <i className={`fa fa-${speakers.icon}`} /> */}
+          <img src={garima} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center" , marginTop:"10px"}}>Garima Mehta</span>
+          <span style={{ textAlign: "center", fontWeight: "bold" }}>Sr. Product Designer at PayU</span>
+          <span style={{ textAlign: "center", marginTop:"10px" }}>ADPList Mentor | Ex- Infosys, EY, Microsoft</span>
+          <a
+            className="speaker-linkedin"
+            href="https://www.linkedin.com/in/qalamkaari-garima"
+          >
+            <i
+              data-aos-anchor-placement="top-bottom"
+              data-aos="fade-up"
+              data-aos-duration={500}
+              className="fa fa-linkedin"
+            />
+          </a>
+        </div>
+        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+          {/* <i className={`fa fa-${speakers.icon}`} /> */}
+          <img src={lock} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center" }}>To be announced shortly!</span>
+        </div>
+        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+          {/* <i className={`fa fa-${speakers.icon}`} /> */}
+          <img src={lock} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center" }}>To be announced shortly!</span>
+        </div>
+        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+          {/* <i className={`fa fa-${speakers.icon}`} /> */}
+          <img src={lock} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center" }}>To be announced shortly!</span>
+        </div>
+        );
       </div>
     </div>
   );
