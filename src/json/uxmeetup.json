@@ -1,24 +1,19 @@
 {
-    "about": {
-      "content": "Semikolan in collaboration with GDSC UIT-RGPV invites you to Bhopal’s first-ever UX meetup. Level up your career in design with some amazing talks, panel discussions and networking sessions with our guests. If you love the design and meeting interesting folks, don’t miss this chance. It is the first UX meet-up in Bhopal and the second in central India i.e. Madhya Pradesh. There will be a pannel discussion and talks over product design and all",
-      "img": "harsh"
-    },
-    "community": [
-      {
-        "title": "Hack Odisha",
-        "icon": "hackodhisa"
-      },
-      {
-        "title": "Hack this fall",
-        "icon": "hackthisfall"
-      },
-      {
-        "title": "Script winter of code",
-        "icon": "swoc"
-      },
-      {
-        "title": "Infinite clone conspiracy",
-        "icon": "ICC"
-      }
-    ]
-  }
+  "about": {
+    "content": "Semikolan in collaboration with GDSC UIT-RGPV invites you to Bhopal’s first-ever UX meetup. Level up your career in design with some amazing talks, panel discussions and networking sessions with our guests. If you love the design and meeting interesting folks, don’t miss this chance. It is the first UX meet-up in Bhopal and the second in central India i.e. Madhya Pradesh. There will be a pannel discussion and talks over product design and all.",
+    "img": "harsh"
+  },
+  "community": [
+    {
+      "title": "GDSC UIT-RGPV",
+      "icon": "gdscuitrgpv"
+    }
+  ],
+  "speakers": [
+    {
+      "title": "Garmia Mehta",
+      "description": "Product Designer & ADPList Mentor",
+      "experience": "Sr. Product Designer at PayU | Ex- Infosys, EY, Microsoft"
+    }
+  ]
+}
