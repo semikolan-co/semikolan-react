@@ -8,5 +8,13 @@
       "title": "GDSC UIT-RGPV",
       "icon": "gdscuitrgpv"
     }
+  ],
+  "companies": [
+    "payu",
+    "mindtree",
+    "microsoft",
+    "adplist",
+    "cisco",
+    "infosys"
   ]
 }

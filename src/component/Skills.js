@@ -50,7 +50,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div id="about" className="about container" style={{paddingTop:"12%"}}>
+      <div id="about" className="about container" style={{paddingTop:"12%", marginTop:"150px"}}>
         <div
           className="titleline"
           data-aos="fade-right"

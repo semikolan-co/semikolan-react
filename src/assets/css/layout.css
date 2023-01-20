@@ -600,7 +600,19 @@ body {
   color: var(--LightSlate);
   margin: 25px;
   flex-grow: 1;
-  max-width: 350px;
+  max-width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-card {
+  background: var(--LightestNavy);
+  color: var(--LightSlate);
+  margin: 25px;
+  flex-grow: 1;
+  max-width: 350px !important;
   padding: 25px;
   border-radius: 10px;
   display: flex;
@@ -729,6 +741,12 @@ body {
 
 .techicon {
   height: 50px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: top 0.5s ease;
+}
+.comicon {
+  height: 75px;
   margin: 20px 0;
   cursor: pointer;
   transition: top 0.5s ease;

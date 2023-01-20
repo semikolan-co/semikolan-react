@@ -96,7 +96,7 @@ export default function Error404(props) {
       {/* Explanation in JS tab */}
       {/* The two texts */}
 
-      <div id="about" className="about container">
+      <div id="about" className="about container" style={{marginTop:"100px"}}>
         <div
           className="titleline"
           data-aos="fade-right"

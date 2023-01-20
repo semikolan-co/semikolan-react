@@ -11,7 +11,7 @@ function UXSpeakers(props) {
         <div className="line-horizontal" />
       </div>
       <div className="achievementdiv">
-        <div className data-aos="fade-up" data-aos-duration={500}>
+        <div className="speaker-card" data-aos="fade-up" data-aos-duration={500}>
           {/* <i className={`fa fa-${speakers.icon}`} /> */}
           <img src={garima} style={{ borderRadius: "10px" }} />
           <span style={{ textAlign: "center" , marginTop:"10px"}}>Garima Mehta</span>
@@ -29,17 +29,17 @@ function UXSpeakers(props) {
             />
           </a>
         </div>
-        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+        <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
           {/* <i className={`fa fa-${speakers.icon}`} /> */}
           <img src={lock} style={{ borderRadius: "10px" }} />
           <span style={{ textAlign: "center" }}>To be announced shortly!</span>
         </div>
-        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+        <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
           {/* <i className={`fa fa-${speakers.icon}`} /> */}
           <img src={lock} style={{ borderRadius: "10px" }} />
           <span style={{ textAlign: "center" }}>To be announced shortly!</span>
         </div>
-        <div className data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
+        <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
           {/* <i className={`fa fa-${speakers.icon}`} /> */}
           <img src={lock} style={{ borderRadius: "10px" }} />
           <span style={{ textAlign: "center" }}>To be announced shortly!</span>
