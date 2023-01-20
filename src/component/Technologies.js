@@ -34,58 +34,58 @@ import React from 'react'
 
 export default class Technology extends React.Component {
   technologies = {
-    ajax:ajax,
-    bootstrap:bootstrap,
-    jquery:jquery,
-    python:python,
-    sass:sass,
-    json:json,
-    flask:flask,
-    git:git,
-    github:github,
-    heroku:heroku,
-    photoshop:photoshop,
-    fontawesome:fontawesome,
-    flutter:Flutter,
-    kotlin:Kotlin,
-    java:Java,
-    django:Django,
-    react:Reactlogo,
-    reactnative:ReactNative,
-    figma:Figma,
-    adobexd:Adobexd,
-    replit:Replit,
-    azure:Azure,
-    illustrator:Illustrator,
-    netlify:Netlify,
-    firebase:Firebase,
-    mongodb:Mongodb,
-    c:C,
-    csharp:Csharp,
-    cpp:Cpp,
-    blender:Blender,
+    ajax: ajax,
+    bootstrap: bootstrap,
+    jquery: jquery,
+    python: python,
+    sass: sass,
+    json: json,
+    flask: flask,
+    git: git,
+    github: github,
+    heroku: heroku,
+    photoshop: photoshop,
+    fontawesome: fontawesome,
+    flutter: Flutter,
+    kotlin: Kotlin,
+    java: Java,
+    django: Django,
+    react: Reactlogo,
+    reactnative: ReactNative,
+    figma: Figma,
+    adobexd: Adobexd,
+    replit: Replit,
+    azure: Azure,
+    illustrator: Illustrator,
+    netlify: Netlify,
+    firebase: Firebase,
+    mongodb: Mongodb,
+    c: C,
+    csharp: Csharp,
+    cpp: Cpp,
+    blender: Blender,
   }
-  
-  render(){
-   return (
-       <div id="tech" className="about container">
-  <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
-    <span><em>03.</em>&nbsp;Technologies &amp; Tools</span>
-    <div className="line-horizontal" />
-  </div>
-  <div className="aboutdiv">
-    <div className="row w-100">
-      {this.props.technologies.map((technology, i) => {    
-           return (<div className="col-xl-2 col-lg-2 col-md-3 col-4 text-center">
-        <img src={this.technologies[technology]} alt="Technology Icon" className="techicon" />
-      </div>) 
-        })}
+
+  render() {
+    return (
+      <div id="tech" className="about container" style={{marginTop:"100px", marginBottom:"100px"}}>
+        <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
+          <span><em>03.</em>&nbsp;Technologies &amp; Tools</span>
+          <div className="line-horizontal" />
+        </div>
+        <div className="aboutdiv">
+          <div className="row w-100">
+            {this.props.technologies.map((technology, i) => {
+              return (<div className="col-xl-2 col-lg-2 col-md-3 col-4 text-center">
+                <img src={this.technologies[technology]} alt="Technology Icon" className="techicon" />
+              </div>)
+            })}
+          </div>
+        </div>
       </div>
-  </div>
-</div>
 
 
-  );
-   }
+    );
+  }
 }
 

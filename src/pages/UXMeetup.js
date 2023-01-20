@@ -8,6 +8,7 @@ import UXCommunity from "../component/UXCommunity.js";
 import UXSpeakers from "../component/UXSpeakers";
 import uxmeetup from "../json/uxmeetup.json";
 import Venue from "../component/Venue";
+import Companies from "../component/Companies";
 
 export default function UXMeetup() {
   return (
@@ -33,9 +34,11 @@ export default function UXMeetup() {
           num="02."
         />
 
-        <UXCommunity num="03." Community={uxmeetup.community.slice(0, 4)} />
+        <Companies num="03." companies={uxmeetup.companies} />
 
-        <Venue num="04." />
+        <UXCommunity num="04." Community={uxmeetup.community.slice(0, 4)} />
+
+        <Venue num="05." />
       </UXLayout>
     </>
   );

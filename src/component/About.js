@@ -2,7 +2,7 @@ import harsh from "../assets/images/about.png";
 import { Link } from "react-router-dom";
 function About(props) {
   return (
-    <div id="about" className="about container custom">
+    <div id="about" className="about container custom" style={{marginTop:"150px"}}>
       <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
         <span>
           <em>{props.num}</em>&nbsp;{props.titleline}
