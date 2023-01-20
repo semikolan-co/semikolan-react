@@ -68,7 +68,7 @@ export default class Technology extends React.Component {
 
   render() {
     return (
-      <div id="tech" className="about container" style={{marginTop:"100px", marginBottom:"100px"}}>
+      <div id="tech" className="about container" style={{ marginTop: "100px", marginBottom: "100px" }}>
         <div className="titleline" data-aos="fade-right" data-aos-duration={500}>
           <span><em>03.</em>&nbsp;Technologies &amp; Tools</span>
           <div className="line-horizontal" />
