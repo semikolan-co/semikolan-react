@@ -16,7 +16,7 @@ export default function UXMeetup() {
       <UXLayout title="UX Meetup | SemiKolan">
         <UXLanding
           lottiename="uxmeetup"
-          redirect="#ux-meetup"
+          // redirect="#ux-meetup"
           p1="Bringing to you the Bhopal’s first ever UX meetup!"
           p2="Bhopal UX Meetup"
           p3="On 27th Feb 2023"
