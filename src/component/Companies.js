@@ -16,31 +16,53 @@ import makemytrip from '../assets/images/companies/makemytrip.png';
 import saal from '../assets/images/companies/saal.jpg';
 import solative from '../assets/images/companies/solative.jpg';
 import swoo from '../assets/images/companies/swoo.jpg';
-import apna from "../assets/images/companies/apna.jpg"
+import apna from "../assets/images/companies/apna.jpg";
+import accenture from "../assets/images/companies/accenture.jpg";
+import iitk from "../assets/images/companies/iitk.jpg";
+import jwt from "../assets/images/companies/jwt.jpg";
+import neuratech from "../assets/images/companies/neuratech.jpg";
+import recro from "../assets/images/companies/recro.jpg";
+import designed from  "../assets/images/companies/designed.jpg";
+import reliance from "../assets/images/companies/reliance.jpg";
+import risd from "../assets/images/companies/risd.jpg";
+import softude from "../assets/images/companies/softude.jpg";
+import uniliver from "../assets/images/companies/uniliver.jpg";
+import wongdoody from "../assets/images/companies/wongdoody.jpg"
 
 import React from 'react'
 
 export default class Companies extends React.Component {
     companies = {
-        payu: payu,
-        mindtree: mindtree,
-        microsoft: microsoft,
-        adplist: adplist,
-        cisco: cisco,
-        infosys: infosys,
-        crompton: crompton,
-        designerrs: designerrs,
-        ey: ey,
-        apna: apna,
-        hexaware: hexaware,
-        induce: induce,
-        infostretch: infostretch,
-        infosysdigital: infosysdigital,
-        inmobi: inmobi,
-        saal: saal,
-        solative: solative,
-        swoo: swoo,
-        makemytrip: makemytrip
+        payu:payu,
+        microsoft:microsoft,
+        iitk:iitk,
+        accenture:accenture,
+        reliance: reliance,
+        uniliver:uniliver,
+        makemytrip:makemytrip,
+        mindtree:mindtree,
+        softude:softude,
+        cisco:cisco,
+        infosys:infosys,
+        apna:apna,
+        jwt:jwt,
+        neuratech:neuratech,
+        recro:recro,
+        crompton:crompton,
+        risd:risd,
+        adplist:adplist,
+        wongdoody:wongdoody,
+        designed:designed,
+        designerrs:designerrs,
+        ey:ey,
+        hexaware:hexaware,
+        induce:induce,
+        infosysdigital:infosysdigital,
+        infostretch:infostretch,
+        inmobi:inmobi,
+        saal:saal,
+        solative:solative,
+        swoo:swoo
     }
 
     render() {
