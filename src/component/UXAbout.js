@@ -33,7 +33,7 @@ function About(props) {
               </p>
             </>
           )}
-          <p style={{ marginTop: "40px", marginBottom: "20px" }}>
+          {/* <p style={{ marginTop: "40px", marginBottom: "20px" }}>
             <Link
               to="/about"
               // className="button"
@@ -45,7 +45,7 @@ function About(props) {
                 Know More
               </a>
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

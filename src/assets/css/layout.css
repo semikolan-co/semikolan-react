@@ -747,6 +747,7 @@ body {
 }
 .comicon {
   height: 75px;
+  width: auto;
   margin: 20px 0;
   cursor: pointer;
   transition: top 0.5s ease;
