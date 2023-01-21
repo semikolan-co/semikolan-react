@@ -16,6 +16,7 @@ import makemytrip from '../assets/images/companies/makemytrip.png';
 import saal from '../assets/images/companies/saal.jpg';
 import solative from '../assets/images/companies/solative.jpg';
 import swoo from '../assets/images/companies/swoo.jpg';
+import apna from "../assets/images/companies/apna.jpg"
 
 import React from 'react'
 
@@ -30,6 +31,7 @@ export default class Companies extends React.Component {
         crompton: crompton,
         designerrs: designerrs,
         ey: ey,
+        apna: apna,
         hexaware: hexaware,
         induce: induce,
         infostretch: infostretch,
