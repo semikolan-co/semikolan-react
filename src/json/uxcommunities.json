@@ -3,5 +3,40 @@
     "title": "GDSC UIT RGPV",
     "icon": "logo_gdscuitrgpv.png",
     "url": "https://gdsc.community.dev/university-institute-of-technology-rgpv-bhopal/"
+  },
+  {
+    "title": "GDSC MANIT",
+    "icon": "gdscmanit.png",
+    "url": "https://gdsc.community.dev/maulana-azad-national-institute-of-technology-bhopal/"
+  },
+  {
+    "title": "GDSC LNCT",
+    "icon": "gdsclnct.png",
+    "url": "https://gdsc.community.dev/lakshmi-narain-college-of-technology-lnct-bhopal/"
+  },
+  {
+    "title": "GDSC LNCTS",
+    "icon": "gdsclncts.png",
+    "url": "https://gdsc.community.dev/lakshmi-narain-college-of-technology-and-science-lncts-bhopal/"
+  },
+  {
+    "title": "GDSC Oriental",
+    "icon": "gdsco.png",
+    "url": "https://gdsc.community.dev/oriental-institute-of-science-technology-bhopal/"
+  },
+  {
+    "title": "GDSC IIIT Bhopal",
+    "icon": "gdsciiit.png",
+    "url": "https://gdsc.community.dev/indian-institute-of-information-technology-bhopal/"
+  },
+  {
+    "title": "Flutter Bhopal",
+    "icon": "logo_flutterbhopal.png",
+    "url": "https://twitter.com/flutterbhopal"
+  },
+  {
+    "title": "CNCF Bhopal",
+    "icon": "logo_cncfbhopal.png",
+    "url": "https://community.cncf.io/bhopal"
   }
 ]
