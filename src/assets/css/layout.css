@@ -622,7 +622,7 @@ body {
 .communitydiv > a {
   background: var(--LightestNavy);
   color: var(--LightSlate);
-  margin: 5px;
+  margin: 20px;
   flex-grow: 1;
   max-width: 300px;
   padding: 25px;
