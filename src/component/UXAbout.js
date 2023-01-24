@@ -33,19 +33,16 @@ function About(props) {
               </p>
             </>
           )}
-          {/* <p style={{ marginTop: "40px", marginBottom: "20px" }}>
-            <Link
-              to="/about"
-              // className="button"
-              data-aos="fade-up"
-              data-aos-duration={500}
-            >
+          <p style={{ marginTop: "40px", marginBottom: "20px" }}>
+            
               <a className="know-more-button"
+              data-aos="fade-up"
+              href="https://docs.google.com/document/d/1B9EZa_hCoCEQ6_DsP1H8NPi22z2TBi9a1wGrPZ1cg5Y/edit?usp=sharing"
+              data-aos-duration={500}
               >
-                Know More
+                Code of Conduct
               </a>
-            </Link>
-          </p> */}
+          </p>
         </div>
       </div>
     </div>
