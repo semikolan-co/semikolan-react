@@ -937,3 +937,7 @@ body {
 .page-link {
   color: var(--Green);
 }
+
+.about-button {
+  display: flex;
+}
