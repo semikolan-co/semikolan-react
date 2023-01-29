@@ -33,7 +33,8 @@ function About(props) {
               </p>
             </>
           )}
-          <p style={{ marginTop: "40px", marginBottom: "20px" }}>
+          <div className="about-button">
+          <p style={{ marginTop: "40px", marginBottom: "20px", marginRight: "20px" }}>
             
               <a className="know-more-button"
               data-aos="fade-up"
@@ -43,6 +44,17 @@ function About(props) {
                 Code of Conduct
               </a>
           </p>
+          <p style={{ marginTop: "40px", marginBottom: "20px" }}>
+            
+              <a className="know-more-button"
+              data-aos="fade-up"
+              href="https://drive.google.com/file/d/1rvXHpZl95P54jIskc46MSw8ti6zVKz3H/view?usp=sharing"
+              data-aos-duration={500}
+              >
+                Event Brochure
+              </a>
+          </p>
+          </div>
         </div>
       </div>
     </div>

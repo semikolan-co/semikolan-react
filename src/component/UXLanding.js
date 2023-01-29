@@ -68,6 +68,8 @@ function UXLanding(props) {
         <span data-aos="fade-right" data-aos-duration={500}>
           {props.p3}
         </span>
+           
+
         {props.buttontext && (
           <a
             data-aos="fade-right"
