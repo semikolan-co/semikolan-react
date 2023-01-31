@@ -76,7 +76,7 @@ function UXLanding(props) {
             data-aos-duration={500}
             data-aos-anchor-placement="top-bottom"
             // href={props.redirect}
-            onClick={() => alert('Registration will be opened soon!')}
+            onClick={() => alert('Registrations will open soon!')}
           >
             {props.buttontext}
           </a>
