@@ -67,20 +67,20 @@ function UXSpeakers(props) {
           </a>
         </div>
         <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
-          <img src={mansi} style={{ borderRadius: "10px" }} />
-          <span style={{ textAlign: "center", marginTop: "10px" }}>Mansi Dave</span>
-          <span style={{ textAlign: "center", fontWeight: "bold" }}>User Experience Designer at Mindtree</span>
-          <span style={{ textAlign: "center", marginTop: "10px" }}>Ex - Solvative, Infostretch</span>
+          <img src={lock} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center", marginTop: "10px" }}>Coming Soon</span>
+          {/* <span style={{ textAlign: "center", fontWeight: "bold" }}>User Experience Designer at Mindtree</span>
+          <span style={{ textAlign: "center", marginTop: "10px" }}>Ex - Solvative, Infostretch</span> */}
           <a
             className="speaker-linkedin"
-            href="https://www.linkedin.com/in/mansi-dave-54992a97/"
+            href=""
           >
-            <i
+            {/* <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
               className="fa fa-linkedin"
-            />
+            /> */}
           </a>
         </div>
         );
