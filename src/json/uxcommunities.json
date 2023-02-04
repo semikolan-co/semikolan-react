@@ -38,5 +38,15 @@
     "title": "CNCF Bhopal",
     "icon": "logo_cncfbhopal.png",
     "url": "https://community.cncf.io/bhopal"
+  },
+  {
+    "title": "ConnectUp",
+    "icon": "connectup.png",
+    "url": "https://connectup.in/"
+  },
+  {
+    "title": "Commerce World",
+    "icon": "image.png",
+    "url": "https://www.linkedin.com/company/commerce-world1913/"
   }
 ]
