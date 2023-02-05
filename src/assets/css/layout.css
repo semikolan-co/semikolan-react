@@ -942,8 +942,8 @@ body {
   display: flex;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
   .about-button {
-    display: block;
+    display: block !important;
   }
 }
