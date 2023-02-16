@@ -45,8 +45,18 @@
     "url": "https://connectup.in/"
   },
   {
+    "title": "Asper",
+    "icon": "asper.jpg",
+    "url": "https://www.linkedin.com/company/theasperteam/"
+  },
+  {
     "title": "Commerce World",
     "icon": "image.png",
     "url": "https://www.linkedin.com/company/commerce-world1913/"
+  },
+  {
+    "title": "TnP Cell RGPV",
+    "icon": "rgpv.png",
+    "url": "https://www.linkedin.com/company/training-and-placement-cell-uitrgpv-bhopal/"
   }
 ]

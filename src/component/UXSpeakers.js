@@ -1,7 +1,7 @@
 import garima from "../assets/images/garima.jpg";
-import lock from "../assets/images/lock.jpg";
+// import lock from "../assets/images/lock.jpg";
 import akshay from "../assets/images/akshay.png";
-import mansi from "../assets/images/mansi.png";
+import namrata from "../assets/images/namrata.jpg";
 import sanjeev from "../assets/images/sanjeev.png";
 
 function UXSpeakers(props) {
@@ -67,20 +67,20 @@ function UXSpeakers(props) {
           </a>
         </div>
         <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
-          <img src={lock} style={{ borderRadius: "10px" }} />
-          <span style={{ textAlign: "center", marginTop: "10px" }}>Coming Soon</span>
-          {/* <span style={{ textAlign: "center", fontWeight: "bold" }}>User Experience Designer at Mindtree</span>
-          <span style={{ textAlign: "center", marginTop: "10px" }}>Ex - Solvative, Infostretch</span> */}
+          <img src={namrata} style={{ borderRadius: "10px" }} />
+          <span style={{ textAlign: "center", marginTop: "10px" }}>Narmata Singh</span>
+          <span style={{ textAlign: "center", fontWeight: "bold" }}>Assistant Professor at NIFT Bhopal</span>
+          <span style={{ textAlign: "center", marginTop: "10px" }}>Ex - ImagineXP, Jagran Lakecity University</span>
           <a
             className="speaker-linkedin"
-            href=""
+            href="https://www.linkedin.com/in/namrata-singh-6350144a/"
           >
-            {/* <i
+            <i
               data-aos-anchor-placement="top-bottom"
               data-aos="fade-up"
               data-aos-duration={500}
               className="fa fa-linkedin"
-            /> */}
+            />
           </a>
         </div>
         );
