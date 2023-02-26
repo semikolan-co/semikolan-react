@@ -3,5 +3,10 @@
       "title": "GitHub",
       "icon": "github.png",
       "url": "https://github.com/"
+    },
+    {
+      "title": "TDPVista",
+      "icon": "tdpvista.png",
+      "url": "https://tdpvista.com/"
     }
   ]

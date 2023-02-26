@@ -10,6 +10,7 @@ import UXSpeakers from "../component/UXSpeakers";
 import uxmeetup from "../json/uxmeetup.json";
 import Venue from "../component/Venue";
 import Companies from "../component/Companies";
+import UXFood from "../component/UXFood";
 
 export default function UXMeetup() {
   return (
@@ -40,8 +41,9 @@ export default function UXMeetup() {
         <UXCommunity num="04." Community={uxmeetup.community.slice(0, 4)} />
 
         <UXSponsor num="05." sponsors={uxmeetup.sponsors}/>
+        <UXFood num="06."/>
 
-        <Venue num="06." />
+        <Venue num="07." />
       </UXLayout>
     </>
   );
