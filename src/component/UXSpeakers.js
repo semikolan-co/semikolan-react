@@ -68,7 +68,7 @@ function UXSpeakers(props) {
         </div>
         <div className="speaker-card" data-aos="fade-up" data-aos-duration={500} style={{ justifyContent: "center" }}>
           <img src={namrata} style={{ borderRadius: "10px" }} />
-          <span style={{ textAlign: "center", marginTop: "10px" }}>Narmata Singh</span>
+          <span style={{ textAlign: "center", marginTop: "10px" }}>Namrata Singh</span>
           <span style={{ textAlign: "center", fontWeight: "bold" }}>Assistant Professor at NIFT Bhopal</span>
           <span style={{ textAlign: "center", marginTop: "10px" }}>Ex - ImagineXP, Jagran Lakecity University</span>
           <a
