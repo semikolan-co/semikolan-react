@@ -76,7 +76,7 @@ function Join(props) {
                 Join our Developers Group on Whatsapp.  
                 <br />
               </span>
-              <a href="https://chat.whatsapp.com/GBks01Lpce9IPTOHIN3cIZ">
+              <a href="https://chat.whatsapp.com/JkziLvrgfImGQ7rHTEuLLY">
                 Join Group
               </a>
             </div>
