@@ -7,7 +7,7 @@
         "description": "SemiKolan Blog is a Platform for Learners  to Learn and Share thier Knowledge among others",
         "technologies": "PHP Laravel HTML CSS ",
         "github_repo_link": "https://github.com/semikolan-co/blog.semikolan.co",
-        "external_link": "https://blog.semikolan.co/"
+        "external_link": "https://blog.semikolan.com/"
       },
       {
         "type": "Media",
@@ -26,7 +26,7 @@
         "description": "Semikolan is a Platform for like minded Learners, Developers and Enthusiasts to Learn, Connect, create great connections and work on various Open-Source projects. SemiKolan is a Community For the Developers, By the Developers, To the Developers",
         "technologies": "CSS JS HTML",
         "github_repo_link": "https://github.com/semikolan-co/semikolan-react",
-        "external_link": "https://semikolan.co/"
+        "external_link": "https://blog.semikolan.com"
       }
     
      
